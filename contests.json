@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-03 00:01:31",
+  "last_updated": "2026-03-03 01:12:10",
   "contests": [
     {
       "platform": "AtCoder",
@@ -133,13 +133,6 @@
       "start_time": "2026-03-03 14:00:00",
       "duration": "5小时0分钟",
       "url": "https://www.luogu.com.cn/contest/310905"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Kotlin Heroes: Episode 14",
-      "start_time": "2026-03-02 22:35:00",
-      "duration": "2小时30分钟",
-      "url": "https://codeforces.com/contest/2199"
     },
     {
       "platform": "luogu",
