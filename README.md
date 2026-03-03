@@ -2,7 +2,8 @@
 
 一个现代化的编程竞赛日历网页应用，帮助竞赛爱好者追踪各大平台的比赛信息。
 
-> 🎉 2025-08-24 更新：新增邮件提醒系统！现在可以通过 GitHub Actions 实现每日比赛信息推送。
+> 🎉 2025-08-24 更新：新增邮件提醒系统！现在可以通过 GitHub Actions 实现每日比赛信息推送。  
+> 从acmApi更名为CodeCal
 
 ## 预览 👀
 
@@ -49,7 +50,7 @@
 
 | 平台 Logo | 平台 | 说明 | 官网 |
 |-----------|------|------|------|
-| ![Codeforces](icons/codeforces.png =600x) | Codeforces | 全球最大的竞赛平台 | [访问](https://codeforces.com) |
+| ![Codeforces](icons/codeforces.png) | Codeforces | 全球最大的竞赛平台 | [访问](https://codeforces.com) |
 | ![AtCoder](icons/atcoder.png) | AtCoder | 日本顶级竞赛平台 | [访问](https://atcoder.jp) |
 | ![LeetCode](icons/leetcode.png) | LeetCode | 算法题库和竞赛平台 | [访问](https://leetcode.com) |
 | ![牛客网](icons/nowcoder.png) | 牛客网 | 综合竞赛和面试平台 | [访问](https://www.nowcoder.com) |
@@ -59,14 +60,14 @@
 ## 🚀 快速开始
 
 ### 在线访问
-访问官网：[https://canjisam.github.io/acmApi/](https://canjisam.github.io/acmApi/)
+访问官网：[https://ChanYeeSum.github.io/CodeCal/](https://ChanYeeSum.github.io/CodeCal/)
 
 ### 本地部署
 
 1. 克隆仓库：
    ```bash
-   git clone https://github.com/canjisam/acmApi.git
-   cd acmApi
+   git clone https://github.com/ChanYeeSum/CodeCal.git
+   cd CodeCal
    ```
 
 2. 启动本地服务器：
@@ -137,7 +138,7 @@
 
 ## 📝 版权信息
 
-© 2025 [canjisam](https://github.com/canjisam). All rights reserved.
+© 2025 [ChanYeeSum](https://github.com/ChanYeeSum). All rights reserved.
 - 自动化：GitHub Actions
 - 数据源：各平台 API + 定时更新
 

@@ -53,11 +53,11 @@
             最后更新时间：{{ updateTime }}
         </div>
         
+        <div id="toast-container"></div>
     </div>
 
     <script>
         const { createApp } = Vue
-
         createApp({
             data() {
                 return {
@@ -70,6 +70,7 @@
             },
             created() {
                 document.documentElement.setAttribute('data-theme', this.theme);
+               
             },
             computed: {
                 filteredContests() {
@@ -87,10 +88,11 @@
             },
             methods: {
                 copyContestInfo(contest) {
-                    const text = `${contest.name}\n开始时间：${contest.start_time}\n平台：${contest.platform}\n\n© 2025 canjisam. All rights reserved.`;
+                    const text = `${contest.name}\n开始时间：${contest.start_time}\n平台：${contest.platform}\n\n© 2025 ChanYeeSum. All rights reserved.`;
                     navigator.clipboard.writeText(text)
-                        .then(() => alert('已复制比赛信息并添加版权声明'))
+                        .then(() => showToast('已复制比赛信息并添加版权声明'))
                         .catch(err => console.error('复制失败:', err));
+                    const container = document.getElementById('toast-container');
                 },
                 toggleTheme() {
                     this.theme = this.theme === 'light' ? 'dark' : 'light';
@@ -119,7 +121,7 @@
         }).mount('#app')
     </script>
     <footer class="footer">
-        <p>© 2025 canjisam. All rights reserved.</p>
+        <p>© 2025 ChanYeeSum. All rights reserved.</p>
     </footer>
 </body>
 
