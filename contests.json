@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-03 13:02:12",
+  "last_updated": "2026-03-03 14:08:18",
   "contests": [
     {
       "platform": "AtCoder",
@@ -259,13 +259,6 @@
       "start_time": "2026-02-16 20:30:00",
       "duration": "3小时30分钟",
       "url": "https://www.luogu.com.cn/contest/300994"
-    },
-    {
-      "platform": "luogu",
-      "name": "「LCOI」Round 2 & 除夕赛",
-      "start_time": "2026-02-16 14:00:00",
-      "duration": "2小时30分钟",
-      "url": "https://www.luogu.com.cn/contest/308153"
     }
   ]
 }
