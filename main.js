@@ -19,7 +19,7 @@ function copyToClipboard() {
   const selected = window.getSelection().toString().trim();
   if (selected) {
     const tempElem = document.createElement('textarea');
-    tempElem.value = `${selected}\n\n—— Copyright © ${new Date().getFullYear()} canjisam\nSource: https://canjisam.github.io/acmApi/`;
+    tempElem.value = `${selected}\n\n—— Copyright © ${new Date().getFullYear()} ChanYeeSum\nSource: https://ChanYeeSum.github.io/CodeCal/`;
     document.body.appendChild(tempElem);
     tempElem.select();
     document.execCommand('copy');
@@ -40,7 +40,7 @@ function sharePage() {
 
 // 新增反馈功能
 function feedback() {
-  window.open('mailto:contact@canjisam.github.io?subject=ACM工具反馈');
+  window.open('mailto:contact@ChanYeeSum.github.io?subject=ACM工具反馈');
 }
 // 定义更新时间函数
 function updateTitleTime() {
