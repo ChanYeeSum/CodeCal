@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-03 19:53:56",
+  "last_updated": "2026-03-03 21:38:42",
   "contests": [
     {
       "platform": "AtCoder",
@@ -252,13 +252,6 @@
       "start_time": "2026-02-19 08:00:00",
       "duration": "60小时0分钟",
       "url": "https://www.luogu.com.cn/contest/305706"
-    },
-    {
-      "platform": "luogu",
-      "name": "【LGR-271-Div.3】洛谷基础赛 #31 &「WYZOI」中国新年跨年赛 2025→2026",
-      "start_time": "2026-02-16 20:30:00",
-      "duration": "3小时30分钟",
-      "url": "https://www.luogu.com.cn/contest/300994"
     }
   ]
 }
