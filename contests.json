@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-06 07:35:39",
+  "last_updated": "2026-03-06 11:12:32",
   "contests": [
     {
       "platform": "AtCoder",
@@ -44,11 +44,25 @@
       "url": "https://atcoder.jp/contests/abc450"
     },
     {
+      "platform": "NowCoder",
+      "name": "牛客小白月赛130",
+      "start_time": "2026-03-20 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/129583?from=acm_calendar"
+    },
+    {
       "platform": "Codeforces",
       "name": "Educational Codeforces Round 188 (Rated for Div. 2)",
       "start_time": "2026-03-16 22:35:00",
       "duration": "2小时0分钟",
       "url": "https://codeforces.com/contest/2204"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客周赛 Round 135",
+      "start_time": "2026-03-15 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/129582?from=acm_calendar"
     },
     {
       "platform": "NowCoder",
@@ -266,13 +280,6 @@
       "start_time": "2026-02-21 14:00:00",
       "duration": "4小时30分钟",
       "url": "https://www.luogu.com.cn/contest/299754"
-    },
-    {
-      "platform": "luogu",
-      "name": "FeSo4OI Long Round #1 春节欢乐赛",
-      "start_time": "2026-02-19 08:00:00",
-      "duration": "60小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/305706"
     }
   ]
 }
