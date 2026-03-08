@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-08 14:02:50",
+  "last_updated": "2026-03-08 15:06:47",
   "contests": [
     {
       "platform": "AtCoder",
@@ -140,13 +140,6 @@
       "start_time": "2026-03-08 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-492"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "2026 ICPC Asia Pacific Championship - Online Mirror (Unrated, Online Mirror, ICPC Rules, Teams Preferred)",
-      "start_time": "2026-03-08 09:45:00",
-      "duration": "5小时0分钟",
-      "url": "https://codeforces.com/contest/2206"
     },
     {
       "platform": "NowCoder",
