@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-09 07:47:25",
+  "last_updated": "2026-03-09 11:19:45",
   "contests": [
     {
       "platform": "AtCoder",
@@ -105,6 +105,13 @@
       "start_time": "2026-03-14 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc449"
+    },
+    {
+      "platform": "luogu",
+      "name": "『1&0』OI Round 1",
+      "start_time": "2026-03-14 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/300998"
     },
     {
       "platform": "AtCoder",
@@ -259,13 +266,6 @@
       "start_time": "2026-02-22 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://www.luogu.com.cn/contest/251331"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 490",
-      "start_time": "2026-02-22 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-490"
     }
   ]
 }
