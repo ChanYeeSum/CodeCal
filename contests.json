@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-09 13:08:23",
+  "last_updated": "2026-03-09 14:36:01",
   "contests": [
     {
       "platform": "AtCoder",
@@ -259,13 +259,6 @@
       "start_time": "2026-02-23 14:30:00",
       "duration": "4小时0分钟",
       "url": "https://www.luogu.com.cn/contest/305992"
-    },
-    {
-      "platform": "luogu",
-      "name": "【LGR-268-Div.2】洛谷 2 月月赛 IV & TBOI Round 1",
-      "start_time": "2026-02-22 14:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/251331"
     }
   ]
 }
