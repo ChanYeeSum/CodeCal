@@ -14,7 +14,10 @@ CSS = """body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Robo
 .contest-info { margin-left: 10px; color: #666; font-size: 14px; }
 .contest-link { display: inline-block; margin-top: 8px; color: #0366d6; text-decoration: none; }
 .contest-link:hover { text-decoration: underline; }
-.header { margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #e1e4e8; }"""
+.header { margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #e1e4e8; }
+.footer { margin-top: 30px; padding-top: 15px; border-top: 1px solid #e1e4e8; color: #666; font-size: 14px; }
+.footer a { color: #0366d6; text-decoration: none; }
+.footer a:hover { text-decoration: underline; }"""
 
 HTML_TEMPLATE = """<!DOCTYPE html>
 <html>
@@ -32,6 +35,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <ul class="contest-list">
     {contests}
 </ul>
+<div class="footer">
+ <p>📅 竞赛日历：<a href="https://ChanYeeSum.github.io/CodeCal/" target="_blank">https://ChanYeeSum.github.io/CodeCal/</a></p>
+</div>
 </body>
 </html>
 """
