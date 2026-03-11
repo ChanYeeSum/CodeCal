@@ -102,6 +102,12 @@ body {
   box-shadow: 0 4px 0px var(--border-color);
 }
 
+.top-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -148,7 +154,6 @@ body {
   font-weight: 600;
   transition: all var(--transition-fast);
   box-shadow: 3px 3px 0px var(--border-color);
-  margin-right: 12px;
 }
 
 .sidebar-btn:hover {
@@ -183,6 +188,9 @@ body {
 .view-switcher {
   display: flex;
   gap: 12px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-link {
@@ -228,12 +236,12 @@ body {
   gap: 20px;
   overflow: hidden;
   transition: width 0.35s ease, margin 0.35s ease;
-  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .sidebar.expanded {
   width: var(--sidebar-width);
-  margin-left: 0;
+  margin-right: 0;
 }
 
 /* 平台筛选 */
@@ -389,7 +397,7 @@ body {
   border: 2px solid var(--border-color);
   box-shadow: 5px 5px 0px var(--border-color);
   overflow: hidden;
-  margin-right: 16px;
+  margin-left: 16px;
 }
 
 /* FullCalendar 样式重写 */
@@ -851,12 +859,12 @@ body {
   .sidebar {
     width: 100%;
     flex-direction: row;
-    margin-left: 0;
+    margin-right: 0;
   }
 
   .sidebar.expanded {
     width: 100%;
-    margin-left: 0;
+    margin-right: 0;
   }
 
   .platform-filters {
@@ -892,6 +900,8 @@ body {
     order: 3;
     width: 100%;
     justify-content: center;
+    position: static;
+    transform: none;
   }
 
   .nav-link {
@@ -921,6 +931,15 @@ body {
 
   .calendar-wrapper {
     margin: 0 0 16px 0;
+  }
+
+  .top-left {
+    gap: 8px;
+  }
+
+  .sidebar-btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
   }
 
   .fc .fc-toolbar {
