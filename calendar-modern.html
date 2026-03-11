@@ -27,8 +27,13 @@
   <div id="app">
     <!-- 顶部导航栏 -->
     <header class="top-bar">
-      <div class="logo">
-        <span class="logo-text">编程竞赛日历</span>
+      <div class="top-left">
+        <button class="sidebar-btn" @click="sidebarExpanded = !sidebarExpanded">
+          {{ sidebarExpanded ? "◀" : "▶" }}
+        </button>
+        <div class="logo">
+          <span class="logo-text">编程竞赛日历</span>
+        </div>
       </div>
 
       <nav class="view-switcher">
@@ -37,9 +42,6 @@
       </nav>
 
       <div class="top-actions">
-        <button class="sidebar-btn" @click="sidebarExpanded = !sidebarExpanded">
-          {{ sidebarExpanded ? "▶" : "◀" }}
-        </button>
         <button class="theme-toggle" @click="toggleTheme" :title="theme === 'dark' ? '切换到亮色模式' : '切换到暗色模式'">
           {{ theme === 'dark' ? '☀️' : '🌙' }}
         </button>
@@ -48,13 +50,6 @@
 
     <!-- 主内容区 -->
     <div class="modern-container">
-      <!-- 日历主区域 -->
-      <main class="main-content">
-        <div class="calendar-wrapper">
-          <div id="calendar"></div>
-        </div>
-      </main>
-
       <!-- 侧边栏 -->
       <aside class="sidebar" :class="{ expanded: sidebarExpanded }">
         <!-- 平台筛选 -->
@@ -102,6 +97,13 @@
           </div>
         </div>
       </aside>
+
+      <!-- 日历主区域 -->
+      <main class="main-content">
+        <div class="calendar-wrapper">
+          <div id="calendar"></div>
+        </div>
+      </main>
     </div>
 
     <!-- 比赛详情弹窗 -->
@@ -191,6 +193,14 @@
       watch: {
         selectedPlatform() {
           this.refreshCalendar();
+        },
+        sidebarExpanded() {
+          // 延迟执行以确保过渡动画完成后再更新尺寸
+          setTimeout(() => {
+            if (this.calendar) {
+              this.calendar.updateSize();
+            }
+          }, 400);
         }
       },
       created() {
