@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeCal - 编程竞赛日历</title>
+  <link rel="icon" type="image/png" href="icons/icon.png">
+
+  <!-- 字体 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vue 3 -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <!-- FullCalendar -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/locales/zh-cn.global.min.js"></script>
+
+  <!-- 样式 -->
+  <link rel="stylesheet" href="calendar-modern.css">
+  <link rel="stylesheet" href="platform-tag-modern.css">
+</head>
+
+<body>
+  <div id="app">
+    <!-- 顶部导航栏 -->
+    <header class="top-bar">
+      <div class="logo">
+        <span class="logo-text">编程竞赛日历</span>
+      </div>
+
+      <nav class="view-switcher">
+        <a href="index.html" class="nav-link">列表视图</a>
+        <a href="calendar-modern.html" class="nav-link active">日历视图</a>
+      </nav>
+
+      <div class="top-actions">
+        <button class="sidebar-btn" @click="sidebarExpanded = !sidebarExpanded">
+          {{ sidebarExpanded ? "▶" : "◀" }}
+        </button>
+        <button class="theme-toggle" @click="toggleTheme" :title="theme === 'dark' ? '切换到亮色模式' : '切换到暗色模式'">
+          {{ theme === 'dark' ? '☀️' : '🌙' }}
+        </button>
+      </div>
+    </header>
+
+    <!-- 主内容区 -->
+    <div class="modern-container">
+      <!-- 日历主区域 -->
+      <main class="main-content">
+        <div class="calendar-wrapper">
+          <div id="calendar"></div>
+        </div>
+      </main>
+
+      <!-- 侧边栏 -->
+      <aside class="sidebar" :class="{ expanded: sidebarExpanded }">
+        <!-- 平台筛选 -->
+        <div class="platform-filters">
+          <div class="sidebar-title">平台筛选</div>
+          <div class="platform-list">
+            <button
+              v-for="platform in platforms"
+              :key="platform.id"
+              :class="['platform-filter-btn', { active: selectedPlatform === platform.id }]"
+              @click="selectedPlatform = platform.id"
+            >
+              <span class="platform-dot" :style="{ background: platform.color }"></span>
+              {{ platform.name }}
+            </button>
+          </div>
+        </div>
+
+        <!-- 即将开始 -->
+        <div class="upcoming-contests">
+          <div class="sidebar-title">即将开始</div>
+          <div class="upcoming-list" v-if="upcomingContests.length > 0">
+            <div
+              v-for="contest in upcomingContests"
+              :key="contest.url"
+              class="upcoming-item"
+              @click="openContest(contest)"
+            >
+              <div class="upcoming-time">
+                <span class="upcoming-day">{{ formatDay(contest.start_time) }}</span>
+                <span class="upcoming-month">{{ formatMonth(contest.start_time) }}</span>
+              </div>
+              <div class="upcoming-info">
+                <div class="upcoming-name">{{ contest.name }}</div>
+                <div class="upcoming-platform">
+                  <span :class="['event-platform', contest.platform.toLowerCase()]">{{ contest.platform }}</span>
+                  {{ formatTime(contest.start_time) }}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div v-else class="empty-state">
+            <div class="empty-state-icon">📭</div>
+            <div class="empty-state-text">近期无比赛</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- 比赛详情弹窗 -->
+    <div :class="['modal-overlay', { active: selectedContest }]" @click.self="closeModal">
+      <div class="modal-content" v-if="selectedContest">
+        <div class="modal-header">
+          <h3 class="modal-title">{{ selectedContest.name }}</h3>
+          <button class="modal-close" @click="closeModal">×</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-row">
+            <div class="modal-icon" :class="selectedContest.platform.toLowerCase()">
+              {{ getPlatformIcon(selectedContest.platform) }}
+            </div>
+            <div>
+              <div class="modal-label">比赛平台</div>
+              <div class="modal-value">{{ selectedContest.platform }}</div>
+            </div>
+          </div>
+          <div class="modal-row">
+            <div class="modal-icon">📅</div>
+            <div>
+              <div class="modal-label">开始时间</div>
+              <div class="modal-value">{{ selectedContest.start_time }}</div>
+            </div>
+          </div>
+          <div class="modal-row">
+            <div class="modal-icon">⏱️</div>
+            <div>
+              <div class="modal-label">持续时间</div>
+              <div class="modal-value">{{ selectedContest.duration }}</div>
+            </div>
+          </div>
+          <a :href="selectedContest.url" target="_blank" class="modal-link">
+            查看比赛详情 →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast 提示容器 -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+    <p>© {{ currentYear }} ChanYeeSum. All rights reserved.</p>
+    </footer>  </div>
+
+  <script>
+    const { createApp } = Vue;
+
+    createApp({
+      data() {
+        return {
+          contests: [],
+          calendar: null,
+          theme: localStorage.getItem('theme') || 'light',
+          selectedPlatform: 'all',
+          selectedContest: null,
+          sidebarExpanded: false,
+          currentYear: new Date().getFullYear(),
+          platforms: [
+            { id: 'all', name: '全部平台', color: '#4f46e5' },
+            { id: 'Codeforces', name: 'Codeforces', color: '#3b82f6' },
+            { id: 'LeetCode', name: 'LeetCode', color: '#f97316' },
+            { id: 'NowCoder', name: '牛客', color: '#06b6d4' },
+            { id: 'luogu', name: '洛谷', color: '#22c55e' },
+            { id: 'AtCoder', name: 'AtCoder', color: '#a855f7' }
+          ]
+        };
+      },
+      computed: {
+        filteredContests() {
+          if (this.selectedPlatform === 'all') {
+            return this.contests;
+          }
+          return this.contests.filter(contest => contest.platform === this.selectedPlatform);
+        },
+        upcomingContests() {
+          const now = new Date();
+          return this.filteredContests
+            .filter(contest => new Date(contest.start_time) > now)
+            .sort((a, b) => new Date(a.start_time) - new Date(b.start_time))
+            .slice(0, 5);
+        }
+      },
+      watch: {
+        selectedPlatform() {
+          this.refreshCalendar();
+        }
+      },
+      created() {
+        document.documentElement.setAttribute('data-theme', this.theme);
+      },
+      mounted() {
+        this.fetchContests().then(() => {
+          this.initCalendar();
+        });
+      },
+      methods: {
+        async fetchContests() {
+          try {
+            const response = await fetch('contests.json');
+            const data = await response.json();
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            // 筛选今天之后的比赛
+            this.contests = data.contests.filter(contest => {
+              const contestDate = new Date(contest.start_time);
+              return contestDate >= today;
+            });
+          } catch (error) {
+            console.error('Error fetching contests:', error);
+            this.showToast('加载比赛数据失败', 'error');
+          }
+        },
+
+        initCalendar() {
+          const calendarEl = document.getElementById('calendar');
+
+          this.calendar = new FullCalendar.Calendar(calendarEl, {
+            locale: 'zh-cn',
+            initialView: 'timeGridWeek',
+            headerToolbar: {
+              left: 'prev,next today',
+              center: 'title',
+              right: 'timeGridWeek,timeGridDay,dayGridMonth'
+            },
+            buttonText: {
+              today: '今天',
+              week: '周',
+              day: '日',
+              month: '月'
+            },
+            nowIndicator: true,
+            slotMinTime: '00:00:00',
+            slotMaxTime: '24:00:00',
+            allDaySlot: false,
+            weekends: true,
+            height: 'auto',
+
+            events: this.filteredContests.map(contest => ({
+              id: contest.url,
+              title: contest.name,
+              start: contest.start_time,
+              end: this.calculateEndTime(contest),
+              extendedProps: {
+                platform: contest.platform,
+                duration: contest.duration,
+                url: contest.url
+              },
+              backgroundColor: this.getPlatformColor(contest.platform),
+              borderColor: 'transparent'
+            })),
+
+            eventContent: this.renderEventContent,
+            eventClick: this.handleEventClick,
+            eventDidMount: this.handleEventDidMount
+          });
+
+          this.calendar.render();
+        },
+
+        calculateEndTime(contest) {
+          // 解析时长字符串并计算结束时间
+          const duration = contest.duration;
+          const match = duration.match(/(\d+)小时|(\d+)分钟/g);
+          let totalMinutes = 0;
+
+          if (match) {
+            match.forEach(part => {
+              if (part.includes('小时')) {
+                totalMinutes += parseInt(part) * 60;
+              } else if (part.includes('分钟')) {
+                totalMinutes += parseInt(part);
+              }
+            });
+          }
+
+          const startTime = new Date(contest.start_time);
+          startTime.setMinutes(startTime.getMinutes() + totalMinutes);
+          return startTime;
+        },
+
+        getPlatformColor(platform) {
+          const colors = {
+            'Codeforces': '#3b82f6',
+            'LeetCode': '#f97316',
+            'NowCoder': '#06b6d4',
+            'luogu': '#22c55e',
+            'AtCoder': '#a855f7'
+          };
+          return colors[platform] || '#4f46e5';
+        },
+
+        renderEventContent(arg) {
+          const platform = arg.event.extendedProps.platform;
+          return {
+            html: `
+              <div class="contest-event" style="border-left-color: ${this.getPlatformColor(platform)}">
+                <span class="event-platform ${platform.toLowerCase()}">${platform}</span>
+                <span class="event-title">${arg.event.title}</span>
+              </div>
+            `
+          };
+        },
+
+        handleEventClick(info) {
+          const props = info.event.extendedProps;
+          this.selectedContest = {
+            name: info.event.title,
+            platform: props.platform,
+            start_time: this.formatDateTime(info.event.start),
+            duration: props.duration,
+            url: props.url
+          };
+        },
+
+        handleEventDidMount(info) {
+          // 可以在这里添加 tooltip 或其他交互
+        },
+
+        refreshCalendar() {
+          if (this.calendar) {
+            this.calendar.removeAllEvents();
+            this.calendar.addEventSource(this.filteredContests.map(contest => ({
+              id: contest.url,
+              title: contest.name,
+              start: contest.start_time,
+              end: this.calculateEndTime(contest),
+              extendedProps: {
+                platform: contest.platform,
+                duration: contest.duration,
+                url: contest.url
+              },
+              backgroundColor: this.getPlatformColor(contest.platform),
+              borderColor: 'transparent'
+            })));
+          }
+        },
+
+        toggleTheme() {
+          this.theme = this.theme === 'light' ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', this.theme);
+          localStorage.setItem('theme', this.theme);
+        },
+
+        openContest(contest) {
+          this.selectedContest = contest;
+        },
+
+        closeModal() {
+          this.selectedContest = null;
+        },
+
+        formatDay(dateStr) {
+          return new Date(dateStr).getDate();
+        },
+
+        formatMonth(dateStr) {
+          const months = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
+          return months[new Date(dateStr).getMonth()];
+        },
+
+        formatTime(dateStr) {
+          const date = new Date(dateStr);
+          return `${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}`;
+        },
+
+        formatDateTime(date) {
+          if (!date) return '';
+          const d = new Date(date);
+          return `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')} ${d.getHours().toString().padStart(2, '0')}:${d.getMinutes().toString().padStart(2, '0')}:${d.getSeconds().toString().padStart(2, '0')}`;
+        },
+
+        getPlatformIcon(platform) {
+          const icons = {
+            'Codeforces': '⚡',
+            'LeetCode': '🔥',
+            'NowCoder': '🐄',
+            'luogu': '🌲',
+            'AtCoder': '🎯'
+          };
+          return icons[platform] || '🏆';
+        },
+
+        showToast(message, type = 'info') {
+          const container = document.getElementById('toast-container');
+          const toast = document.createElement('div');
+          toast.className = 'toast';
+          toast.textContent = message;
+          container.appendChild(toast);
+
+          setTimeout(() => {
+            toast.remove();
+          }, 3000);
+        }
+      }
+    }).mount('#app');
+  </script>
+</body>
+</html>

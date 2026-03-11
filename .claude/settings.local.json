@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__exa__web_search_exa",
+      "mcp__open-websearch__search",
+      "Bash(xxd D:/jisam/Documents/GitHub/CodeCal/calendar-modern.html | head -n 60)"
+    ]
+  }
+}

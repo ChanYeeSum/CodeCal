@@ -1,0 +1,75 @@
+/* ============================================
+   CodeCal 平台标签样式
+   复古风格
+   ============================================ */
+
+/* 基础平台标签 */
+.platform-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm, 6px);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+  white-space: nowrap;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Codeforces - 蓝色 */
+.platform-tag.codeforces,
+.event-platform.codeforces {
+  background: #3b82f6;
+}
+
+/* LeetCode - 橙色 */
+.platform-tag.leetcode,
+.event-platform.leetcode {
+  background: #f97316;
+}
+
+/* NowCoder - 青色 */
+.platform-tag.nowcoder,
+.event-platform.nowcoder {
+  background: #06b6d4;
+}
+
+/* 洛谷 - 绿色 */
+.platform-tag.luogu,
+.event-platform.luogu {
+  background: #22c55e;
+}
+
+/* AtCoder - 紫色 */
+.platform-tag.atcoder,
+.event-platform.atcoder {
+  background: #a855f7;
+}
+
+/* 弹窗中的平台图标背景色 */
+.modal-icon.codeforces { background: rgba(59, 130, 246, 0.2); }
+.modal-icon.leetcode { background: rgba(249, 115, 22, 0.2); }
+.modal-icon.nowcoder { background: rgba(6, 182, 212, 0.2); }
+.modal-icon.luogu { background: rgba(34, 197, 94, 0.2); }
+.modal-icon.atcoder { background: rgba(168, 85, 247, 0.2); }
+
+/* 小尺寸标签 */
+.platform-tag-sm {
+  padding: 2px 6px;
+  font-size: 0.65rem;
+}
+
+/* 大尺寸标签 */
+.platform-tag-lg {
+  padding: 6px 14px;
+  font-size: 0.85rem;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .platform-tag {
+    padding: 3px 8px;
+    font-size: 0.7rem;
+  }
+}
