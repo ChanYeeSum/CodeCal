@@ -188,6 +188,9 @@ body {
 .view-switcher {
   display: flex;
   gap: 12px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-link {
@@ -897,6 +900,8 @@ body {
     order: 3;
     width: 100%;
     justify-content: center;
+    position: static;
+    transform: none;
   }
 
   .nav-link {

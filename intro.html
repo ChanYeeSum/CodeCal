@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeCal - 编程竞赛日历</title>
+  <link rel="icon" type="image/png" href="icons/icon.png">
+
+  <!-- 字体 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="platform-tag.css">
+  <style>
+    .intro-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 60px;
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    .hero-title {
+      font-size: 4rem;
+      font-weight: 800;
+      color: var(--text-color);
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+      text-shadow: 4px 4px 0px var(--accent-color);
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      color: var(--secondary-text);
+      font-weight: 500;
+    }
+
+    .section {
+      margin-bottom: 50px;
+      animation: fadeInUp 0.6s ease-out;
+      animation-fill-mode: both;
+    }
+
+    .section:nth-child(2) { animation-delay: 0.1s; }
+    .section:nth-child(3) { animation-delay: 0.2s; }
+    .section:nth-child(4) { animation-delay: 0.3s; }
+    .section:nth-child(5) { animation-delay: 0.4s; }
+    .section:nth-child(6) { animation-delay: 0.5s; }
+
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--text-color);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 3px solid var(--border-color);
+      display: inline-block;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .feature-card {
+      background: var(--card-background);
+      border: 3px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 5px 5px 0px var(--border-color);
+      transition: all 0.2s ease;
+    }
+
+    .feature-card:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 8px 8px 0px var(--border-color);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+    }
+
+    .feature-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-color);
+      margin-bottom: 8px;
+    }
+
+    .feature-desc {
+      color: var(--secondary-text);
+      line-height: 1.6;
+    }
+
+    .platform-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .platform-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px;
+      background: var(--card-background);
+      border: 2px solid var(--border-color);
+      border-radius: 8px;
+      box-shadow: 3px 3px 0px var(--border-color);
+      transition: all 0.2s ease;
+      text-decoration: none;
+      color: var(--text-color);
+    }
+
+    .platform-item:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 5px 5px 0px var(--border-color);
+    }
+
+    .platform-logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+    }
+
+    .platform-name {
+      font-weight: 600;
+      flex: 1;
+    }
+
+    .platform-arrow {
+      color: var(--secondary-text);
+    }
+
+    .view-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .view-card {
+      background: var(--card-background);
+      border: 3px solid var(--border-color);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 5px 5px 0px var(--border-color);
+      transition: all 0.2s ease;
+    }
+
+    .view-card:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 8px 8px 0px var(--border-color);
+    }
+
+    .view-card-header {
+      padding: 20px 24px;
+      border-bottom: 3px solid var(--border-color);
+      background: var(--accent-color);
+    }
+
+    .view-card-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    .view-card-body {
+      padding: 24px;
+    }
+
+    .view-card-desc {
+      color: var(--secondary-text);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .view-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      border: 2px solid var(--border-color);
+      box-shadow: 3px 3px 0px var(--border-color);
+      transition: all 0.2s ease;
+    }
+
+    .view-card-link:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 5px 5px 0px var(--border-color);
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .tech-tag {
+      padding: 8px 16px;
+      background: var(--card-background);
+      border: 2px solid var(--border-color);
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: 3px 3px 0px var(--border-color);
+    }
+
+    .author-section {
+      text-align: center;
+      padding: 40px;
+      background: var(--card-background);
+      border: 3px solid var(--border-color);
+      border-radius: 12px;
+      box-shadow: 5px 5px 0px var(--border-color);
+    }
+
+    .author-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid var(--border-color);
+      box-shadow: 4px 4px 0px var(--border-color);
+      margin-bottom: 16px;
+    }
+
+    .author-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-color);
+      margin-bottom: 8px;
+    }
+
+    .author-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .author-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      border: 2px solid var(--border-color);
+      box-shadow: 3px 3px 0px var(--border-color);
+      transition: all 0.2s ease;
+    }
+
+    .author-link:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 5px 5px 0px var(--border-color);
+    }
+
+    .repo-link {
+      background: #24292e;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      background: var(--accent-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      border: 3px solid var(--border-color);
+      box-shadow: 5px 5px 0px var(--border-color);
+      transition: all 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 8px 8px 0px var(--border-color);
+    }
+
+    .nav-btn.secondary {
+      background: var(--card-background);
+      color: var(--text-color);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.1rem;
+      }
+
+      .section-title {
+        font-size: 1.4rem;
+      }
+
+      .nav-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" class="container">
+    <button class="theme-toggle" @click="toggleTheme" :title="theme === 'dark' ? '切换到亮色模式' : '切换到暗色模式'">
+      {{ theme === 'dark' ? '🌞' : '🌙' }}
+    </button>
+
+    <div class="intro-container">
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1 class="hero-title">CodeCal</h1>
+        <p class="hero-subtitle">现代化的编程竞赛日历，追踪各大平台比赛信息</p>
+      </section>
+
+      <!-- Navigation Buttons -->
+      <div class="nav-buttons section">
+        <a href="index.html" class="nav-btn">
+          <span>📋</span> 列表视图
+        </a>
+        <a href="calendar-modern.html" class="nav-btn">
+          <span>📅</span> 日历视图
+        </a>
+        <a href="https://github.com/ChanYeeSum/CodeCal" target="_blank" class="nav-btn secondary">
+          <span>⭐</span> GitHub 仓库
+        </a>
+      </div>
+
+      <!-- Features Section -->
+      <section class="section">
+        <h2 class="section-title">✨ 特色功能</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <h3 class="feature-title">新粗野主义设计</h3>
+            <p class="feature-desc">独特的硬边框阴影设计风格，现代感与复古感并存，支持明暗主题切换。</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3 class="feature-title">响应式布局</h3>
+            <p class="feature-desc">完美适配各种设备，从桌面端到移动端都能获得最佳体验。</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3 class="feature-title">平台筛选</h3>
+            <p class="feature-desc">支持按平台快速筛选比赛，一键查看特定平台的比赛信息。</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📋</div>
+            <h3 class="feature-title">一键复制</h3>
+            <p class="feature-desc">快速复制比赛信息，包含比赛名称、时间、平台等完整信息。</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📧</div>
+            <h3 class="feature-title">邮件提醒</h3>
+            <p class="feature-desc">支持 GitHub Actions 自动发送每日比赛信息邮件，不错过任何比赛。</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3 class="feature-title">实时更新</h3>
+            <p class="feature-desc">比赛数据每 15 分钟自动更新，确保信息准确及时。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Views Section -->
+      <section class="section">
+        <h2 class="section-title">🖼️ 双视图展示</h2>
+        <div class="view-cards">
+          <div class="view-card">
+            <div class="view-card-header">
+              <h3 class="view-card-title">📋 列表视图</h3>
+            </div>
+            <div class="view-card-body">
+              <p class="view-card-desc">简洁清晰的比赛概览，以卡片列表形式展示所有比赛信息，支持按平台筛选，适合快速浏览。</p>
+              <a href="index.html" class="view-card-link">查看列表视图 →</a>
+            </div>
+          </div>
+          <div class="view-card">
+            <div class="view-card-header">
+              <h3 class="view-card-title">📅 日历视图</h3>
+            </div>
+            <div class="view-card-body">
+              <p class="view-card-desc">直观的时间安排，以日历形式展示比赛时间，支持周/日/月视图切换，适合规划比赛日程。</p>
+              <a href="calendar-modern.html" class="view-card-link">查看日历视图 →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Platforms Section -->
+      <section class="section">
+        <h2 class="section-title">📊 支持平台</h2>
+        <div class="platform-grid">
+          <a href="https://codeforces.com" target="_blank" class="platform-item">
+            <img src="icons/codeforces.png" alt="Codeforces" class="platform-logo">
+            <span class="platform-name">Codeforces</span>
+            <span class="platform-arrow">→</span>
+          </a>
+          <a href="https://atcoder.jp" target="_blank" class="platform-item">
+            <img src="icons/atcoder.png" alt="AtCoder" class="platform-logo">
+            <span class="platform-name">AtCoder</span>
+            <span class="platform-arrow">→</span>
+          </a>
+          <a href="https://leetcode.com" target="_blank" class="platform-item">
+            <img src="icons/leetcode.png" alt="LeetCode" class="platform-logo">
+            <span class="platform-name">LeetCode</span>
+            <span class="platform-arrow">→</span>
+          </a>
+          <a href="https://www.nowcoder.com" target="_blank" class="platform-item">
+            <img src="icons/nowcoder.png" alt="牛客" class="platform-logo">
+            <span class="platform-name">牛客</span>
+            <span class="platform-arrow">→</span>
+          </a>
+          <a href="https://www.luogu.com.cn" target="_blank" class="platform-item">
+            <img src="icons/luogu.png" alt="洛谷" class="platform-logo">
+            <span class="platform-name">洛谷</span>
+            <span class="platform-arrow">→</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Tech Stack Section -->
+      <section class="section">
+        <h2 class="section-title">🛠️ 技术栈</h2>
+        <div class="tech-stack">
+          <span class="tech-tag">Vue 3</span>
+          <span class="tech-tag">FullCalendar</span>
+          <span class="tech-tag">CSS Variables</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">GitHub Actions</span>
+          <span class="tech-tag">SMTP</span>
+        </div>
+      </section>
+
+      <!-- Author Section -->
+      <section class="section">
+        <h2 class="section-title">👨‍💻 作者信息</h2>
+        <div class="author-section">
+          <img src="https://avatars.githubusercontent.com/u/ChanYeeSum" alt="ChanYeeSum" class="author-avatar" onerror="this.src='icons/icon.png'">
+          <h3 class="author-name">ChanYeeSum</h3>
+          <p class="feature-desc">热爱编程，热衷于开源项目开发</p>
+          <div class="author-links">
+            <a href="https://github.com/ChanYeeSum/CodeCal" target="_blank" class="author-link repo-link">
+              <span>📦</span> GitHub 仓库
+            </a>
+            <a href="https://github.com/ChanYeeSum" target="_blank" class="author-link">
+              <span>👤</span> 作者主页
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer" style="margin-top: 40px;">
+        <p>© {{ currentYear }} ChanYeeSum. All rights reserved.</p>
+        <p style="margin-top: 8px;">
+          <a href="https://github.com/ChanYeeSum/CodeCal" target="_blank" style="color: var(--link-color); text-decoration: none;">GitHub</a>
+          ·
+          <a href="https://github.com/ChanYeeSum" target="_blank" style="color: var(--link-color); text-decoration: none;">作者</a>
+        </p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp } = Vue;
+    createApp({
+      data() {
+        return {
+          theme: localStorage.getItem('theme') || 'light',
+          currentYear: new Date().getFullYear()
+        };
+      },
+      created() {
+        document.documentElement.setAttribute('data-theme', this.theme);
+      },
+      methods: {
+        toggleTheme() {
+          this.theme = this.theme === 'light' ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', this.theme);
+          localStorage.setItem('theme', this.theme);
+        }
+      }
+    }).mount('#app');
+  </script>
+</body>
+</html>
