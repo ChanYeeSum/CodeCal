@@ -26,7 +26,7 @@
 
         <nav class="view-switcher">
             <a href="index.html" class="nav-link active">列表视图</a>
-            <a href="calendar.html" class="nav-link">日历视图</a>
+            <a href="calendar-modern.html" class="nav-link">日历视图</a>
         </nav>
 
         <div class="filters">
@@ -54,6 +54,10 @@
         </div>
         
         <div id="toast-container"></div>
+
+        <footer class="footer">
+            <p>© {{ currentYear }} ChanYeeSum. All rights reserved.</p>
+        </footer>
     </div>
 
     <script>
@@ -65,7 +69,8 @@
                     selectedPlatform: 'all',
                     platforms: ['all', 'Codeforces', 'LeetCode', 'NowCoder', 'luogu', 'AtCoder'],
                     updateTime: '',
-                    theme: localStorage.getItem('theme') || 'light'
+                    theme: localStorage.getItem('theme') || 'light',
+                    currentYear: new Date().getFullYear()
                 }
             },
             created() {
@@ -88,7 +93,7 @@
             },
             methods: {
                 copyContestInfo(contest) {
-                    const text = `${contest.name}\n开始时间：${contest.start_time}\n平台：${contest.platform}\n\n© 2025 ChanYeeSum. All rights reserved.`;
+                    const text = `${contest.name}\n开始时间：${contest.start_time}\n平台：${contest.platform}\n\n© ${this.currentYear} ChanYeeSum. All rights reserved.`;
                     navigator.clipboard.writeText(text)
                         .then(() => showToast('已复制比赛信息并添加版权声明'))
                         .catch(err => console.error('复制失败:', err));
@@ -120,9 +125,6 @@
             }
         }).mount('#app')
     </script>
-    <footer class="footer">
-        <p>© 2025 ChanYeeSum. All rights reserved.</p>
-    </footer>
 </body>
 
 </html>

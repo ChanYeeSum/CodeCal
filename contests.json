@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-11 12:57:01",
+  "last_updated": "2026-03-11 14:07:51",
   "contests": [
     {
       "platform": "AtCoder",
@@ -252,13 +252,6 @@
       "start_time": "2026-02-25 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://www.luogu.com.cn/contest/305773"
-    },
-    {
-      "platform": "luogu",
-      "name": "「DBOI」Round -1",
-      "start_time": "2026-02-24 13:00:00",
-      "duration": "5小时30分钟",
-      "url": "https://www.luogu.com.cn/contest/273961"
     }
   ]
 }
