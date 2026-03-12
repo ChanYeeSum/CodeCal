@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-12 13:03:37",
+  "last_updated": "2026-03-12 14:10:06",
   "contests": [
     {
       "platform": "AtCoder",
@@ -252,13 +252,6 @@
       "start_time": "2026-02-26 14:00:00",
       "duration": "4小时30分钟",
       "url": "https://www.luogu.com.cn/contest/311071"
-    },
-    {
-      "platform": "luogu",
-      "name": "【LGR-269-Div.2】洛谷 2 月月赛 VI & IXOI Round 1",
-      "start_time": "2026-02-25 14:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/305773"
     }
   ]
 }
