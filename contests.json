@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-12 07:49:38",
+  "last_updated": "2026-03-12 11:16:53",
   "contests": [
     {
       "platform": "AtCoder",
@@ -35,6 +35,13 @@
       "start_time": "2026-03-22 20:00:00",
       "duration": "2小时30分钟",
       "url": "https://atcoder.jp/contests/arc216"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "第二十二届西南科技大学ACM程序设计竞赛（同步赛）",
+      "start_time": "2026-03-22 12:30:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/129380?from=acm_calendar"
     },
     {
       "platform": "LeetCode",
