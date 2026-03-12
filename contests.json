@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-12 18:06:56",
+  "last_updated": "2026-03-12 19:06:11",
   "contests": [
     {
       "platform": "AtCoder",
@@ -94,7 +94,7 @@
     },
     {
       "platform": "luogu",
-      "name": "【MX-J25】梦熊 J 组 · Cfz Round 8（同步赛）",
+      "name": "【MX-J25】梦熊 J 组 · 及普赛 & Cfz Round 8（同步赛）",
       "start_time": "2026-03-15 14:00:00",
       "duration": "3小时30分钟",
       "url": "https://www.luogu.com.cn/contest/314346"
