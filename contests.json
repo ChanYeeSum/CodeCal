@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-12 14:10:06",
+  "last_updated": "2026-03-12 15:28:05",
   "contests": [
     {
       "platform": "AtCoder",
@@ -66,6 +66,13 @@
     },
     {
       "platform": "NowCoder",
+      "name": "2026年山东大学（威海）程序设计新星赛（同步赛）",
+      "start_time": "2026-03-21 13:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/129766?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
       "name": "牛客小白月赛130",
       "start_time": "2026-03-20 19:00:00",
       "duration": "2小时0分钟",
@@ -84,6 +91,13 @@
       "start_time": "2026-03-15 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/129582?from=acm_calendar"
+    },
+    {
+      "platform": "luogu",
+      "name": "【MX-J25】梦熊 J 组 · Cfz Round 8（同步赛）",
+      "start_time": "2026-03-15 14:00:00",
+      "duration": "3小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/314346"
     },
     {
       "platform": "NowCoder",
@@ -133,6 +147,13 @@
       "start_time": "2026-03-14 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://atcoder.jp/contests/ahc062"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "云南大学&middot;昆明理工大学程序设计竞赛（同步赛）",
+      "start_time": "2026-03-14 13:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/129981?from=acm_calendar"
     },
     {
       "platform": "NowCoder",
