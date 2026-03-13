@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-14 01:06:03",
+  "last_updated": "2026-03-14 01:59:58",
   "contests": [
     {
       "platform": "AtCoder",
@@ -91,6 +91,13 @@
       "start_time": "2026-03-21 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc450"
+    },
+    {
+      "platform": "luogu",
+      "name": "【LGR-274-Div.2】洛谷 3 月月赛 II & 『LBA-OI』Round 3",
+      "start_time": "2026-03-21 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/293373"
     },
     {
       "platform": "NowCoder",
@@ -269,17 +276,17 @@
     },
     {
       "platform": "luogu",
-      "name": "【LGR-273-Div.1】洛谷 3 月月赛 I & NtF Round 3",
-      "start_time": "2026-03-01 14:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/309087"
-    },
-    {
-      "platform": "luogu",
       "name": "【LGR-273-Div.2】洛谷 3 月月赛 I & NtF Round 3",
       "start_time": "2026-03-01 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://www.luogu.com.cn/contest/309086"
+    },
+    {
+      "platform": "luogu",
+      "name": "【LGR-273-Div.1】洛谷 3 月月赛 I & NtF Round 3",
+      "start_time": "2026-03-01 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/309087"
     },
     {
       "platform": "LeetCode",
