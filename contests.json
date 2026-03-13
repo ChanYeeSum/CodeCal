@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-13 16:02:48",
+  "last_updated": "2026-03-13 17:06:09",
   "contests": [
     {
       "platform": "AtCoder",
@@ -35,6 +35,13 @@
       "start_time": "2026-03-28 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc451"
+    },
+    {
+      "platform": "luogu",
+      "name": "【LGR-276-Div.3】洛谷蓝桥杯省赛模拟赛 2026",
+      "start_time": "2026-03-28 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/314564"
     },
     {
       "platform": "AtCoder",
