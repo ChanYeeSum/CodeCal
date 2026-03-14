@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-14 23:51:10",
+  "last_updated": "2026-03-15 00:56:50",
   "contests": [
     {
       "platform": "AtCoder",
@@ -168,13 +168,6 @@
       "start_time": "2026-03-15 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-493"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1086 (Div. 2)",
-      "start_time": "2026-03-14 22:35:00",
-      "duration": "2小时0分钟",
-      "url": "https://codeforces.com/contest/2208"
     },
     {
       "platform": "LeetCode",
