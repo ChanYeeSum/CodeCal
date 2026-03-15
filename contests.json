@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-15 13:50:06",
+  "last_updated": "2026-03-15 15:27:54",
   "contests": [
     {
       "platform": "AtCoder",
@@ -301,13 +301,6 @@
       "start_time": "2026-02-28 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-177"
-    },
-    {
-      "platform": "luogu",
-      "name": "【LGR-270-Div.2】洛谷 2 月月赛 V & MYCOI-R1",
-      "start_time": "2026-02-28 14:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/245434"
     }
   ]
 }
