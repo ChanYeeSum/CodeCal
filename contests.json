@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-16 07:53:24",
+  "last_updated": "2026-03-16 11:43:13",
   "contests": [
     {
       "platform": "AtCoder",
@@ -114,6 +114,13 @@
       "url": "https://ac.nowcoder.com/acm/contest/130226?from=acm_calendar"
     },
     {
+      "platform": "NowCoder",
+      "name": "2026 年中国传媒大学程序设计大赛（同步赛）",
+      "start_time": "2026-03-21 14:00:00",
+      "duration": "3小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/130418?from=acm_calendar"
+    },
+    {
       "platform": "luogu",
       "name": "【LGR-274-Div.2】洛谷 3 月月赛 II & 『LBA-OI』Round 3",
       "start_time": "2026-03-21 14:00:00",
@@ -157,7 +164,7 @@
     },
     {
       "platform": "luogu",
-      "name": "【MX-J25】梦熊 J 组 · 及普赛 & Cfz Round 8（同步赛）",
+      "name": "【MX-J28】梦熊 J 组 · 及普赛 & Cfz Round 8（同步赛）",
       "start_time": "2026-03-15 14:00:00",
       "duration": "3小时30分钟",
       "url": "https://www.luogu.com.cn/contest/314346"
@@ -294,13 +301,6 @@
       "start_time": "2026-03-01 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://www.luogu.com.cn/contest/309087"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 491",
-      "start_time": "2026-03-01 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-491"
     }
   ]
 }
