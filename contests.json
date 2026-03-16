@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-16 11:43:13",
+  "last_updated": "2026-03-16 14:05:59",
   "contests": [
     {
       "platform": "AtCoder",
@@ -63,6 +63,13 @@
       "start_time": "2026-03-28 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://www.luogu.com.cn/contest/314564"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客练习赛150",
+      "start_time": "2026-03-27 19:00:00",
+      "duration": "2小时30分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/130426?from=acm_calendar"
     },
     {
       "platform": "AtCoder",
@@ -287,20 +294,6 @@
       "start_time": "2026-03-01 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/128678?from=acm_calendar"
-    },
-    {
-      "platform": "luogu",
-      "name": "【LGR-273-Div.2】洛谷 3 月月赛 I & NtF Round 3",
-      "start_time": "2026-03-01 14:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/309086"
-    },
-    {
-      "platform": "luogu",
-      "name": "【LGR-273-Div.1】洛谷 3 月月赛 I & NtF Round 3",
-      "start_time": "2026-03-01 14:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/309087"
     }
   ]
 }
