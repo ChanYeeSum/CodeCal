@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-17 07:52:19",
+  "last_updated": "2026-03-17 11:18:17",
   "contests": [
     {
       "platform": "AtCoder",
@@ -273,13 +273,6 @@
       "start_time": "2026-03-02 13:00:00",
       "duration": "5小时0分钟",
       "url": "https://www.luogu.com.cn/contest/312041"
-    },
-    {
-      "platform": "luogu",
-      "name": "2026 省选赛前模板赛",
-      "start_time": "2026-03-02 08:00:00",
-      "duration": "149小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/312809"
     }
   ]
 }
