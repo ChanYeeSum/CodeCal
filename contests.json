@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-18 16:04:45",
+  "last_updated": "2026-03-18 17:27:32",
   "contests": [
     {
       "platform": "AtCoder",
@@ -91,6 +91,13 @@
       "start_time": "2026-03-22 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/130107?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2026 年广东工业大学程序设计竞赛（同步赛）",
+      "start_time": "2026-03-22 13:30:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/130542?from=acm_calendar"
     },
     {
       "platform": "NowCoder",
