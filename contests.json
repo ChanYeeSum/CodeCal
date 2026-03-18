@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-18 21:58:14",
+  "last_updated": "2026-03-18 23:47:20",
   "contests": [
     {
       "platform": "AtCoder",
@@ -70,6 +70,13 @@
       "start_time": "2026-03-28 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://www.luogu.com.cn/contest/314564"
+    },
+    {
+      "platform": "luogu",
+      "name": "【LGR-(-28)】2026 年洛谷愚人节比赛",
+      "start_time": "2026-03-28 09:00:00",
+      "duration": "33小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/301325"
     },
     {
       "platform": "NowCoder",
