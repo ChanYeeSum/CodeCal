@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-19 14:34:18",
+  "last_updated": "2026-03-19 16:02:28",
   "contests": [
     {
       "platform": "AtCoder",
@@ -119,6 +119,13 @@
       "start_time": "2026-03-22 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-494"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "华中师范大学菜鸟杯程序设计竞赛（同步赛）",
+      "start_time": "2026-03-22 10:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/130618?from=acm_calendar"
     },
     {
       "platform": "Codeforces",
