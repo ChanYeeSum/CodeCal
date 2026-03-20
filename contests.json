@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20 18:04:57",
+  "last_updated": "2026-03-20 19:04:13",
   "contests": [
     {
       "platform": "AtCoder",
@@ -42,6 +42,13 @@
       "start_time": "2026-03-29 20:00:00",
       "duration": "3小时0分钟",
       "url": "https://atcoder.jp/contests/agc077"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客周赛 Round 137",
+      "start_time": "2026-03-29 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/130843?from=acm_calendar"
     },
     {
       "platform": "NowCoder",
