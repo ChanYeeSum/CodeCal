@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20 13:03:24",
+  "last_updated": "2026-03-20 14:11:17",
   "contests": [
     {
       "platform": "AtCoder",
@@ -14,6 +14,13 @@
       "start_time": "2026-04-04 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc452"
+    },
+    {
+      "platform": "luogu",
+      "name": "o.OI Round -1",
+      "start_time": "2026-04-04 14:00:00",
+      "duration": "1小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/296386"
     },
     {
       "platform": "AtCoder",
