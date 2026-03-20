@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20 19:52:57",
+  "last_updated": "2026-03-20 21:39:44",
   "contests": [
     {
       "platform": "AtCoder",
@@ -210,6 +210,13 @@
       "start_time": "2026-03-21 13:00:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/129766?from=acm_calendar"
+    },
+    {
+      "platform": "luogu",
+      "name": "AOIのApril Fools Contest 2026",
+      "start_time": "2026-03-21 00:00:00",
+      "duration": "407小时59分钟",
+      "url": "https://www.luogu.com.cn/contest/315100"
     },
     {
       "platform": "NowCoder",
