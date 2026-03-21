@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-21 11:07:03",
+  "last_updated": "2026-03-21 12:51:56",
   "contests": [
     {
       "platform": "AtCoder",
@@ -105,6 +105,13 @@
       "start_time": "2026-03-27 19:00:00",
       "duration": "2小时30分钟",
       "url": "https://ac.nowcoder.com/acm/contest/130426?from=acm_calendar"
+    },
+    {
+      "platform": "luogu",
+      "name": "【LGR-278-Div.4】洛谷入门赛 #45",
+      "start_time": "2026-03-27 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/316038"
     },
     {
       "platform": "AtCoder",
