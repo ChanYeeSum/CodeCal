@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-21 23:48:46",
+  "last_updated": "2026-03-22 00:54:49",
   "contests": [
     {
       "platform": "AtCoder",
@@ -175,13 +175,6 @@
       "start_time": "2026-03-22 09:00:00",
       "duration": "750小时0分钟",
       "url": "https://www.luogu.com.cn/contest/314899"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1087 (Div. 2)",
-      "start_time": "2026-03-21 22:35:00",
-      "duration": "2小时0分钟",
-      "url": "https://codeforces.com/contest/2209"
     },
     {
       "platform": "NowCoder",
