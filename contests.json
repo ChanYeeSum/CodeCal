@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22 07:48:11",
+  "last_updated": "2026-03-22 11:25:13",
   "contests": [
     {
       "platform": "AtCoder",
@@ -7,6 +7,13 @@
       "start_time": "2026-04-11 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc453"
+    },
+    {
+      "platform": "luogu",
+      "name": "【LGR-277-Div.2】洛谷 4 月月赛 I &『LBA-OI』Round 1",
+      "start_time": "2026-04-05 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/278013"
     },
     {
       "platform": "AtCoder",
@@ -165,7 +172,7 @@
     {
       "platform": "NowCoder",
       "name": "华中师范大学菜鸟杯程序设计竞赛（同步赛）",
-      "start_time": "2026-03-22 10:00:00",
+      "start_time": "2026-03-22 10:15:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/130618?from=acm_calendar"
     },
@@ -175,6 +182,13 @@
       "start_time": "2026-03-22 09:00:00",
       "duration": "750小时0分钟",
       "url": "https://www.luogu.com.cn/contest/314899"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "AtCoder Beginner Contest 450",
+      "start_time": "2026-03-21 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc450"
     },
     {
       "platform": "NowCoder",
