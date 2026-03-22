@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22 19:47:01",
+  "last_updated": "2026-03-22 21:26:26",
   "contests": [
     {
       "platform": "AtCoder",
@@ -126,13 +126,6 @@
       "start_time": "2026-03-27 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://www.luogu.com.cn/contest/316038"
-    },
-    {
-      "platform": "AtCoder",
-      "name": "AtCoder Regular Contest++ 216",
-      "start_time": "2026-03-22 20:00:00",
-      "duration": "2小时30分钟",
-      "url": "https://atcoder.jp/contests/arc216"
     },
     {
       "platform": "NowCoder",
@@ -329,13 +322,6 @@
       "start_time": "2026-03-08 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-492"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "AtCoder Beginner Contest 448",
-      "start_time": "2026-03-07 20:00:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/abc448"
     }
   ]
 }
