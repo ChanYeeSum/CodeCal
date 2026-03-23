@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-23 17:36:36",
+  "last_updated": "2026-03-23 19:23:27",
   "contests": [
     {
       "platform": "AtCoder",
@@ -7,6 +7,13 @@
       "start_time": "2026-04-11 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc453"
+    },
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Regular Contest 217",
+      "start_time": "2026-04-05 20:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://atcoder.jp/contests/arc217"
     },
     {
       "platform": "luogu",
@@ -322,13 +329,6 @@
       "start_time": "2026-03-13 19:00:00",
       "duration": "2小时30分钟",
       "url": "https://ac.nowcoder.com/acm/contest/129232?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客周赛 Round 134",
-      "start_time": "2026-03-08 19:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/129231?from=acm_calendar"
     }
   ]
 }
