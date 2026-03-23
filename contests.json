@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-23 07:51:56",
+  "last_updated": "2026-03-23 11:29:40",
   "contests": [
     {
       "platform": "AtCoder",
@@ -129,6 +129,13 @@
     },
     {
       "platform": "NowCoder",
+      "name": "AtCoder Regular Contest++ 216",
+      "start_time": "2026-03-22 20:00:00",
+      "duration": "2小时30分钟",
+      "url": "https://atcoder.jp/contests/arc216"
+    },
+    {
+      "platform": "NowCoder",
       "name": "牛客周赛 Round 136",
       "start_time": "2026-03-22 19:00:00",
       "duration": "2小时0分钟",
@@ -226,13 +233,6 @@
       "url": "https://ac.nowcoder.com/acm/contest/129766?from=acm_calendar"
     },
     {
-      "platform": "luogu",
-      "name": "AOIのApril Fools Contest 2026",
-      "start_time": "2026-03-21 00:00:00",
-      "duration": "407小时59分钟",
-      "url": "https://www.luogu.com.cn/contest/315100"
-    },
-    {
       "platform": "NowCoder",
       "name": "牛客小白月赛130",
       "start_time": "2026-03-20 19:00:00",
@@ -315,13 +315,6 @@
       "start_time": "2026-03-08 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/129231?from=acm_calendar"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 492",
-      "start_time": "2026-03-08 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-492"
     }
   ]
 }
