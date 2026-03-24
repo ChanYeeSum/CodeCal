@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-24 13:10:50",
+  "last_updated": "2026-03-24 14:39:01",
   "contests": [
     {
       "platform": "AtCoder",
@@ -58,13 +58,6 @@
       "url": "https://atcoder.jp/contests/ahc063"
     },
     {
-      "platform": "Codeforces",
-      "name": "Codeforces Round (Div. 2)",
-      "start_time": "2026-03-29 22:35:00",
-      "duration": "2小时15分钟",
-      "url": "https://codeforces.com/contest/2210"
-    },
-    {
       "platform": "AtCoder",
       "name": "AtCoder Grand Contest 077",
       "start_time": "2026-03-29 20:00:00",
@@ -98,13 +91,6 @@
       "start_time": "2026-03-29 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-495"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1088 (Div. 1 + Div. 2)",
-      "start_time": "2026-03-28 22:35:00",
-      "duration": "2小时30分钟",
-      "url": "https://codeforces.com/contest/2211"
     },
     {
       "platform": "LeetCode",
