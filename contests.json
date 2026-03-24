@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-03-24 11:19:09",
+  "last_updated": "2026-03-24 13:10:50",
   "contests": [
+    {
+      "platform": "AtCoder",
+      "name": "Keysight Technologies Programming Contest（AtCoder Beginner Contest 454）",
+      "start_time": "2026-04-18 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc454"
+    },
     {
       "platform": "AtCoder",
       "name": "AtCoder Beginner Contest 453",
