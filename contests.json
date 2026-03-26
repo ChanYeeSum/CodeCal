@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-03-26 19:27:20",
+  "last_updated": "2026-03-26 20:08:21",
   "contests": [
+    {
+      "platform": "AtCoder",
+      "name": "Ｓｋｙ Inc, Programming Contest 2026 (AtCoder Beginner Contest 455)",
+      "start_time": "2026-04-25 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc455"
+    },
     {
       "platform": "AtCoder",
       "name": "Keysight Technologies Programming Contest（AtCoder Beginner Contest 454）",
