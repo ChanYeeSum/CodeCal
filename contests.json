@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-28 11:21:11",
+  "last_updated": "2026-03-28 13:09:46",
   "contests": [
     {
       "platform": "AtCoder",
@@ -130,7 +130,7 @@
     {
       "platform": "NowCoder",
       "name": "广州大学第二十届ACM大学生程序设计竞赛（同步赛）",
-      "start_time": "2026-03-28 13:00:00",
+      "start_time": "2026-03-28 13:30:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/130737?from=acm_calendar"
     },
