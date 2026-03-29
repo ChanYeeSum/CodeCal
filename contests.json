@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-29 23:54:10",
+  "last_updated": "2026-03-30 01:01:16",
   "contests": [
     {
       "platform": "AtCoder",
@@ -70,13 +70,6 @@
       "start_time": "2026-04-01 22:35:00",
       "duration": "2小时0分钟",
       "url": "https://codeforces.com/contest/2214"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1089 (Div. 2)",
-      "start_time": "2026-03-29 22:35:00",
-      "duration": "2小时15分钟",
-      "url": "https://codeforces.com/contest/2210"
     },
     {
       "platform": "NowCoder",
