@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-29 07:55:07",
+  "last_updated": "2026-03-29 11:43:29",
   "contests": [
     {
       "platform": "AtCoder",
@@ -79,6 +79,13 @@
       "url": "https://codeforces.com/contest/2210"
     },
     {
+      "platform": "NowCoder",
+      "name": "Codeforces Round 1089 (Div. 2)",
+      "start_time": "2026-03-29 22:35:00",
+      "duration": "2小时15分钟",
+      "url": "https://codeforces.com/contest/2210"
+    },
+    {
       "platform": "AtCoder",
       "name": "AtCoder Grand Contest 077",
       "start_time": "2026-03-29 20:00:00",
@@ -107,11 +114,25 @@
       "url": "https://leetcode.com/contest/weekly-contest-495"
     },
     {
+      "platform": "NowCoder",
+      "name": "Nebius Round 2 (Codeforces Round 1088, Div. 1 + Div. 2)",
+      "start_time": "2026-03-28 22:45:00",
+      "duration": "2小时30分钟",
+      "url": "https://codeforces.com/contest/2211"
+    },
+    {
       "platform": "LeetCode",
       "name": "Biweekly Contest 179",
       "start_time": "2026-03-28 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-179"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "AtCoder Beginner Contest 451",
+      "start_time": "2026-03-28 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc451"
     },
     {
       "platform": "NowCoder",
@@ -185,6 +206,13 @@
     },
     {
       "platform": "NowCoder",
+      "name": "Codeforces Round 1087 (Div. 2)",
+      "start_time": "2026-03-21 22:35:00",
+      "duration": "2小时0分钟",
+      "url": "https://codeforces.com/contest/2209"
+    },
+    {
+      "platform": "NowCoder",
       "name": "AtCoder Beginner Contest 450",
       "start_time": "2026-03-21 20:00:00",
       "duration": "1小时40分钟",
@@ -227,6 +255,13 @@
     },
     {
       "platform": "NowCoder",
+      "name": "Educational Codeforces Round 188 (Rated for Div. 2)",
+      "start_time": "2026-03-16 22:35:00",
+      "duration": "2小时15分钟",
+      "url": "https://codeforces.com/contest/2204"
+    },
+    {
+      "platform": "NowCoder",
       "name": "牛客周赛 Round 135",
       "start_time": "2026-03-15 19:00:00",
       "duration": "2小时0分钟",
@@ -245,6 +280,13 @@
       "start_time": "2026-03-15 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-493"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "Codeforces Round 1086 (Div. 2)",
+      "start_time": "2026-03-14 22:35:00",
+      "duration": "2小时0分钟",
+      "url": "https://codeforces.com/contest/2208"
     },
     {
       "platform": "LeetCode",
