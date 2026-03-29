@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-29 21:34:17",
+  "last_updated": "2026-03-29 23:00:00",
   "contests": [
     {
       "platform": "AtCoder",
@@ -273,20 +273,6 @@
       "start_time": "2026-03-15 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-493"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "Codeforces Round 1086 (Div. 2)",
-      "start_time": "2026-03-14 22:35:00",
-      "duration": "2小时0分钟",
-      "url": "https://codeforces.com/contest/2208"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Biweekly Contest 178",
-      "start_time": "2026-03-14 22:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/biweekly-contest-178"
     }
   ]
 }
