@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-30 07:56:39",
+  "last_updated": "2026-03-30 11:47:07",
   "contests": [
     {
       "platform": "AtCoder",
@@ -77,6 +77,13 @@
       "start_time": "2026-03-29 22:35:00",
       "duration": "2小时15分钟",
       "url": "https://codeforces.com/contest/2210"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "AtCoder Grand Contest 077",
+      "start_time": "2026-03-29 20:00:00",
+      "duration": "3小时0分钟",
+      "url": "https://atcoder.jp/contests/agc077"
     },
     {
       "platform": "NowCoder",
@@ -259,13 +266,6 @@
       "start_time": "2026-03-15 13:00:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/129122?from=acm_calendar"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 493",
-      "start_time": "2026-03-15 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-493"
     }
   ]
 }
