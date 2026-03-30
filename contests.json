@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-30 11:47:07",
+  "last_updated": "2026-03-30 14:14:54",
   "contests": [
     {
       "platform": "AtCoder",
@@ -259,13 +259,6 @@
       "start_time": "2026-03-15 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/129582?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "【小羊肖恩】小羊杯 Round 3",
-      "start_time": "2026-03-15 13:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/129122?from=acm_calendar"
     }
   ]
 }
