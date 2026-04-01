@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-01 23:52:35",
+  "last_updated": "2026-04-02 01:29:14",
   "contests": [
     {
       "platform": "AtCoder",
@@ -119,13 +119,6 @@
       "start_time": "2026-04-03 18:00:00",
       "duration": "240小时0分钟",
       "url": "https://atcoder.jp/contests/ahc063"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "April Fools Day Contest 2026",
-      "start_time": "2026-04-01 22:35:00",
-      "duration": "2小时0分钟",
-      "url": "https://codeforces.com/contest/2214"
     },
     {
       "platform": "NowCoder",
