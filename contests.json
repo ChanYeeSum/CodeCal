@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-02 17:34:38",
+  "last_updated": "2026-04-02 19:24:24",
   "contests": [
     {
       "platform": "AtCoder",
@@ -21,6 +21,13 @@
       "start_time": "2026-04-18 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc454"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客练习赛151",
+      "start_time": "2026-04-17 19:00:00",
+      "duration": "2小时30分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/132152?from=acm_calendar"
     },
     {
       "platform": "NowCoder",
@@ -98,6 +105,13 @@
       "start_time": "2026-04-05 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-496"
+    },
+    {
+      "platform": "Codeforces",
+      "name": "Codeforces Round (Div. 4)",
+      "start_time": "2026-04-04 22:35:00",
+      "duration": "2小时15分钟",
+      "url": "https://codeforces.com/contest/2218"
     },
     {
       "platform": "AtCoder",
