@@ -15,8 +15,8 @@
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
   <!-- FullCalendar -->
-  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/locales/zh-cn.global.min.js"></script>
+  <script src="https://unpkg.com/fullcalendar@6.1.8/index.global.min.js"></script>
+  <script src="https://unpkg.com/fullcalendar@6.1.8/locales/zh-cn.global.min.js"></script>
 
   <!-- 样式 -->
   <link rel="stylesheet" href="calendar-modern.css">
@@ -240,7 +240,7 @@
 
           this.calendar = new FullCalendar.Calendar(calendarEl, {
             locale: 'zh-cn',
-            initialView: 'timeGridWeek',
+            initialView: 'dayGridMonth',
             headerToolbar: {
               left: 'prev,next today',
               center: 'title',
