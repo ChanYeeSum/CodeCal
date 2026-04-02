@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-02 07:56:46",
+  "last_updated": "2026-04-02 11:31:35",
   "contests": [
     {
       "platform": "AtCoder",
@@ -49,6 +49,13 @@
       "start_time": "2026-04-11 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc453"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2026年浙江工业大学之江学院程序设计竞赛",
+      "start_time": "2026-04-11 13:00:00",
+      "duration": "3小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/132100?from=acm_calendar"
     },
     {
       "platform": "NowCoder",
