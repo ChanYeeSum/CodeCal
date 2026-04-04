@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-04 23:55:14",
+  "last_updated": "2026-04-05 01:01:50",
   "contests": [
     {
       "platform": "AtCoder",
@@ -112,13 +112,6 @@
       "start_time": "2026-04-05 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-496"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1090 (Div. 4)",
-      "start_time": "2026-04-04 22:35:00",
-      "duration": "2小时15分钟",
-      "url": "https://codeforces.com/contest/2218"
     },
     {
       "platform": "NowCoder",
