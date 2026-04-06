@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-06 07:57:21",
+  "last_updated": "2026-04-06 11:46:09",
   "contests": [
     {
       "platform": "AtCoder",
@@ -101,6 +101,13 @@
     },
     {
       "platform": "NowCoder",
+      "name": "AtCoder Regular Contest 217",
+      "start_time": "2026-04-05 20:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://atcoder.jp/contests/arc217"
+    },
+    {
+      "platform": "NowCoder",
       "name": "牛客周赛 Round 138",
       "start_time": "2026-04-05 19:00:00",
       "duration": "2小时0分钟",
@@ -154,13 +161,6 @@
       "start_time": "2026-03-28 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-179"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 494",
-      "start_time": "2026-03-22 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-494"
     }
   ]
 }
