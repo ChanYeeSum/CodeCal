@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-07 23:55:07",
+  "last_updated": "2026-04-08 01:32:41",
   "contests": [
     {
       "platform": "AtCoder",
@@ -86,13 +86,6 @@
       "url": "https://leetcode.com/contest/biweekly-contest-180"
     },
     {
-      "platform": "Codeforces",
-      "name": "Midnight Code Cup 2026 Qualification Round",
-      "start_time": "2026-04-11 20:00:00",
-      "duration": "3小时0分钟",
-      "url": "https://codeforces.com/contest/2186"
-    },
-    {
       "platform": "AtCoder",
       "name": "AtCoder Beginner Contest 453",
       "start_time": "2026-04-11 20:00:00",
@@ -112,13 +105,6 @@
       "start_time": "2026-04-10 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/131416?from=acm_calendar"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1091 (Div. 2) and CodeCraft 26",
-      "start_time": "2026-04-07 22:35:00",
-      "duration": "2小时15分钟",
-      "url": "https://codeforces.com/contest/2217"
     },
     {
       "platform": "NowCoder",
