@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-07 19:29:12",
+  "last_updated": "2026-04-07 20:09:28",
   "contests": [
     {
       "platform": "AtCoder",
@@ -84,6 +84,13 @@
       "start_time": "2026-04-11 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-180"
+    },
+    {
+      "platform": "Codeforces",
+      "name": "Midnight Code Cup 2026 Qualification Round",
+      "start_time": "2026-04-11 20:00:00",
+      "duration": "3小时0分钟",
+      "url": "https://codeforces.com/contest/2186"
     },
     {
       "platform": "AtCoder",
