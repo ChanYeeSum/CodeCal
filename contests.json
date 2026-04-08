@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-08 23:56:21",
+  "last_updated": "2026-04-09 01:39:42",
   "contests": [
     {
       "platform": "AtCoder",
@@ -31,14 +31,14 @@
     },
     {
       "platform": "Codeforces",
-      "name": "Codeforces Round (Div. 1)",
+      "name": "Codeforces Round 1093 (Div. 1)",
       "start_time": "2026-04-13 22:35:00",
       "duration": "2小时0分钟",
       "url": "https://codeforces.com/contest/2219"
     },
     {
       "platform": "Codeforces",
-      "name": "Codeforces Round (Div. 2)",
+      "name": "Codeforces Round 1093 (Div. 2)",
       "start_time": "2026-04-13 22:35:00",
       "duration": "2小时0分钟",
       "url": "https://codeforces.com/contest/2220"
@@ -52,14 +52,14 @@
     },
     {
       "platform": "Codeforces",
-      "name": "Codeforces Round (Div. 1)",
+      "name": "Codeforces Round 1092 (Div. 1)",
       "start_time": "2026-04-12 13:35:00",
       "duration": "3小时0分钟",
       "url": "https://codeforces.com/contest/2215"
     },
     {
       "platform": "Codeforces",
-      "name": "Codeforces Round (Div. 2)",
+      "name": "Codeforces Round 1092 (Div. 2)",
       "start_time": "2026-04-12 13:35:00",
       "duration": "3小时0分钟",
       "url": "https://codeforces.com/contest/2216"
