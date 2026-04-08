@@ -366,7 +366,7 @@ class ContestFetcher:
         url = "https://www.luogu.com.cn/contest/list"
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Cookie': '_uid=0',  # 添加一个空的用户ID cookie以避免重定向
+            'Cookie': '_uid=0',
             'Accept': 'text/html,application/xhtml+xml,application/xml'
         }
         
@@ -374,28 +374,19 @@ class ContestFetcher:
             response = requests.get(url, headers=headers)
             response.raise_for_status()
             
-            # 洛谷页面使用了特殊的数据加载方式，尝试从页面提取JSON数据
-            json_data_match = re.search(r'window\.__INITIAL_STATE__=(.+?);</script>', response.text)
-            if not json_data_match:
-                # 尝试另一种可能的格式
-                json_data_match = re.search(r'decodeURIComponent\("(.+?)"\)', response.text)
-                if not json_data_match:
-                    print("Could not find contest data in Luogu page")
-                    return []
-                    
-                # 解码URL编码的JSON数据
-                json_str = urllib.parse.unquote(json_data_match.group(1))
-            else:
-                json_str = json_data_match.group(1)
-                
+            # 洛谷新版页面使用 lentille-context 标签存储数据
+            soup = BeautifulSoup(response.text, 'html.parser')
+            script_tag = soup.find('script', id='lentille-context')
+            
+            if not script_tag:
+                print("Could not find lentille-context in Luogu page")
+                return []
+            
             try:
-                json_data = json.loads(json_str)
-                contests = json_data.get('contests', {}).get('result', [])
-                if not contests:
-                    # 尝试其他可能的数据结构
-                    contests = json_data.get('currentData', {}).get('contests', {}).get('result', [])
-            except json.JSONDecodeError:
-                print("Failed to parse Luogu contest JSON data")
+                json_data = json.loads(script_tag.string)
+                contests = json_data.get('data', {}).get('contests', {}).get('result', [])
+            except json.JSONDecodeError as e:
+                print(f"Failed to parse Luogu contest JSON data: {e}")
                 return []
             
             # 获取前15天到现在一个月后的时间
@@ -414,7 +405,7 @@ class ContestFetcher:
                     if not start_time or not end_time:
                         continue
                         
-                    # 洛谷的时间戳通常是秒级的
+                    # 洛谷的时间戳是秒级的
                     if start_time >= now_timestamp and start_time <= one_month_later_timestamp:
                         contest_time = datetime.datetime.fromtimestamp(start_time, self.timezone)
                         duration_seconds = end_time - start_time
@@ -431,60 +422,6 @@ class ContestFetcher:
                 except Exception as e:
                     print(f"Error processing Luogu contest: {e}")
                     continue
-            
-            # 如果从JSON数据中无法获取比赛信息，尝试解析HTML
-            if not future_contests:
-                soup = BeautifulSoup(response.text, 'html.parser')
-                contest_items = soup.select('.am-g.lg-table-bg0, .am-g.lg-table-bg1')
-                
-                for item in contest_items:
-                    try:
-                        # 检查是否是未来的比赛
-                        status_elem = item.select_one('.lg-lg-table-status')
-                        if not status_elem or '已结束' in status_elem.text:
-                            continue
-                        
-                        # 获取比赛名称
-                        title_elem = item.select_one('a[href^="/contest/"]')
-                        if not title_elem:
-                            continue
-                        
-                        title = title_elem.text.strip()
-                        contest_id = title_elem['href'].split('/')[-1]
-                        
-                        # 获取比赛时间信息
-                        time_elems = item.select('.lg-inline-up')
-                        if len(time_elems) < 2:
-                            continue
-                        
-                        start_time_text = time_elems[0].text.strip()
-                        end_time_text = time_elems[1].text.strip()
-                        
-                        try:
-                            # 解析时间，格式可能为 "2023-10-21 19:00:00"
-                            contest_time = datetime.datetime.strptime(start_time_text, "%Y-%m-%d %H:%M:%S")
-                            end_time = datetime.datetime.strptime(end_time_text, "%Y-%m-%d %H:%M:%S")
-                            
-                            # 计算持续时间
-                            duration_seconds = (end_time - contest_time).total_seconds()
-                            hours = int(duration_seconds // 3600)
-                            minutes = int((duration_seconds % 3600) // 60)
-                            
-                            # 如果比赛时间在未来一个月内
-                            if contest_time >= now and contest_time <= one_month_later:
-                                future_contests.append({
-                                    'platform': 'luogu',
-                                    'name': title,
-                                    'start_time': contest_time.strftime('%Y-%m-%d %H:%M:%S'),
-                                    'duration': f"{hours}小时{minutes}分钟",
-                                    'url': f"https://www.luogu.com.cn/contest/{contest_id}"
-                                })
-                        except Exception as e:
-                            print(f"Error parsing Luogu contest time: {e}")
-                            continue
-                    except Exception as e:
-                        print(f"Error processing Luogu contest item: {e}")
-                        continue
             
             print(f"Found {len(future_contests)} future Luogu contests")
             return future_contests
