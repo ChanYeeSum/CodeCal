@@ -82,22 +82,112 @@ function updateTitleTime() {
     }
 }
 
+// PV/UV 统计功能
+function initPageStats() {
+    const STORAGE_KEY = 'codecal_stats';
+    const VISITOR_ID_KEY = 'codecal_visitor_id';
+    
+    // 获取今日日期字符串 (YYYY-MM-DD)
+    const getTodayStr = () => {
+        const now = new Date();
+        return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+    };
+    
+    // 生成唯一访客ID
+    const generateVisitorId = () => {
+        return 'uv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    };
+    
+    // 获取或创建访客ID (UV统计)
+    let visitorId = localStorage.getItem(VISITOR_ID_KEY);
+    if (!visitorId) {
+        visitorId = generateVisitorId();
+        localStorage.setItem(VISITOR_ID_KEY, visitorId);
+    }
+    
+    // 获取统计数据
+    const today = getTodayStr();
+    let stats = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {
+        totalPV: 0,
+        totalUV: [],
+        dailyStats: {}
+    };
+    
+    // 更新PV (页面浏览量 - 每次访问都+1)
+    stats.totalPV++;
+    
+    // 更新UV (独立访客 - 去重)
+    if (!stats.totalUV.includes(visitorId)) {
+        stats.totalUV.push(visitorId);
+    }
+    
+    // 更新每日统计
+    if (!stats.dailyStats[today]) {
+        stats.dailyStats[today] = { pv: 0, uv: [] };
+    }
+    stats.dailyStats[today].pv++;
+    if (!stats.dailyStats[today].uv.includes(visitorId)) {
+        stats.dailyStats[today].uv.push(visitorId);
+    }
+    
+    // 清理超过30天的旧数据
+    const thirtyDaysAgo = new Date();
+    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+    Object.keys(stats.dailyStats).forEach(dateStr => {
+        const date = new Date(dateStr);
+        if (date < thirtyDaysAgo) {
+            delete stats.dailyStats[dateStr];
+        }
+    });
+    
+    // 保存统计数据
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(stats));
+    
+    return {
+        totalPV: stats.totalPV,
+        totalUV: stats.totalUV.length,
+        todayPV: stats.dailyStats[today]?.pv || 0,
+        todayUV: stats.dailyStats[today]?.uv.length || 0
+    };
+}
+
 // 页面加载后立即显示时间，并每秒更新一次
 window.onload = function() {
     updateTitleTime(); // 立即执行一次
     setInterval(updateTitleTime, 1000); // 每秒更新
     
-    // 访问统计功能
+    // 初始化PV/UV统计
+    const pageStats = initPageStats();
+    console.log('页面统计:', pageStats);
+    
+    // 访问统计功能 (保留兼容性)
     let visitCount = localStorage.getItem('visitCount') || 0;
     visitCount++;
     localStorage.setItem('visitCount', visitCount);
-    document.getElementById('visitCount').textContent = visitCount;
+    const visitCountEl = document.getElementById('visitCount');
+    if (visitCountEl) {
+        visitCountEl.textContent = visitCount;
+    }
+    
+    // 更新PV/UV显示元素
+    const pvEl = document.getElementById('pagePV');
+    const uvEl = document.getElementById('pageUV');
+    const todayPvEl = document.getElementById('todayPV');
+    const todayUvEl = document.getElementById('todayUV');
+    
+    if (pvEl) pvEl.textContent = pageStats.totalPV;
+    if (uvEl) uvEl.textContent = pageStats.totalUV;
+    if (todayPvEl) todayPvEl.textContent = pageStats.todayPV;
+    if (todayUvEl) todayUvEl.textContent = pageStats.todayUV;
 };
 
-document.getElementById('shareBtn').addEventListener('click', function() {
-  if (navigator.share) {
-    sharePage();
-  } else {
-    alert('当前浏览器不支持分享功能，请手动复制链接');
-  }
-});
+const shareBtn = document.getElementById('shareBtn');
+if (shareBtn) {
+  shareBtn.addEventListener('click', function() {
+    if (navigator.share) {
+      sharePage();
+    } else {
+      alert('当前浏览器不支持分享功能，请手动复制链接');
+    }
+  });
+}
