@@ -91,13 +91,19 @@ window.onload = function() {
     let visitCount = localStorage.getItem('visitCount') || 0;
     visitCount++;
     localStorage.setItem('visitCount', visitCount);
-    document.getElementById('visitCount').textContent = visitCount;
+    const visitCountEl = document.getElementById('visitCount');
+    if (visitCountEl) {
+        visitCountEl.textContent = visitCount;
+    }
 };
 
-document.getElementById('shareBtn').addEventListener('click', function() {
-  if (navigator.share) {
-    sharePage();
-  } else {
-    alert('当前浏览器不支持分享功能，请手动复制链接');
-  }
-});
+const shareBtn = document.getElementById('shareBtn');
+if (shareBtn) {
+  shareBtn.addEventListener('click', function() {
+    if (navigator.share) {
+      sharePage();
+    } else {
+      alert('当前浏览器不支持分享功能，请手动复制链接');
+    }
+  });
+}
