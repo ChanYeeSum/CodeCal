@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-10 11:47:08",
+  "last_updated": "2026-04-10 14:15:30",
   "contests": [
     {
       "platform": "AtCoder",
@@ -21,6 +21,13 @@
       "start_time": "2026-04-23 22:35:00",
       "duration": "2小时0分钟",
       "url": "https://codeforces.com/contest/2213"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客周赛 Round 140",
+      "start_time": "2026-04-19 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/132940?from=acm_calendar"
     },
     {
       "platform": "AtCoder",
