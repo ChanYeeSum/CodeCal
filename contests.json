@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-10 08:01:43",
+  "last_updated": "2026-04-10 11:47:08",
   "contests": [
     {
       "platform": "AtCoder",
@@ -84,6 +84,13 @@
       "start_time": "2026-04-12 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-497"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2026年深圳大学-腾讯云程序设计竞赛",
+      "start_time": "2026-04-12 10:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/133026?from=acm_calendar"
     },
     {
       "platform": "LeetCode",
