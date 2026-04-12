@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-12 07:58:44",
+  "last_updated": "2026-04-12 11:50:49",
   "contests": [
     {
       "platform": "AtCoder",
@@ -94,14 +94,14 @@
     },
     {
       "platform": "Codeforces",
-      "name": "Codeforces Round 1092 (Div. 1, Based on THUPC 2026 — Finals)",
+      "name": "Codeforces Round 1092 (Unrated, Div. 1, Based on THUPC 2026 — Finals)",
       "start_time": "2026-04-12 13:35:00",
       "duration": "3小时0分钟",
       "url": "https://codeforces.com/contest/2215"
     },
     {
       "platform": "Codeforces",
-      "name": "Codeforces Round 1092 (Div. 2, Based on THUPC 2026 — Finals)",
+      "name": "Codeforces Round 1092 (Unrated, Div. 2, Based on THUPC 2026 — Finals)",
       "start_time": "2026-04-12 13:35:00",
       "duration": "3小时0分钟",
       "url": "https://codeforces.com/contest/2216"
@@ -133,6 +133,13 @@
       "start_time": "2026-04-11 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-180"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "AtCoder Beginner Contest 453",
+      "start_time": "2026-04-11 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc453"
     },
     {
       "platform": "NowCoder",
