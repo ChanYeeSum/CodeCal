@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-16 08:06:15",
+  "last_updated": "2026-04-16 11:53:49",
   "contests": [
     {
       "platform": "AtCoder",
@@ -49,6 +49,13 @@
       "start_time": "2026-04-25 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc455"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "华中地区高校第十九届程序设计邀请赛（同步赛）",
+      "start_time": "2026-04-25 11:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/133504?from=acm_calendar"
     },
     {
       "platform": "Codeforces",
