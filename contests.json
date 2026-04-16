@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-16 14:18:46",
+  "last_updated": "2026-04-16 16:12:25",
   "contests": [
     {
       "platform": "AtCoder",
@@ -28,6 +28,13 @@
       "start_time": "2026-05-02 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc456"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客周赛 Round 141",
+      "start_time": "2026-04-26 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/133523?from=acm_calendar"
     },
     {
       "platform": "AtCoder",
