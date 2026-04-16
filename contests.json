@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-16 16:12:25",
+  "last_updated": "2026-04-16 17:55:21",
   "contests": [
     {
       "platform": "AtCoder",
@@ -56,6 +56,13 @@
       "start_time": "2026-04-25 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc455"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2026年ICPC新疆维吾尔自治区大学生程序设计竞赛",
+      "start_time": "2026-04-25 12:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/133536?from=acm_calendar"
     },
     {
       "platform": "NowCoder",
