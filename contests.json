@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-18 18:07:28",
+  "last_updated": "2026-04-18 19:07:40",
   "contests": [
     {
       "platform": "AtCoder",
@@ -245,13 +245,6 @@
       "start_time": "2026-04-04 10:30:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/130427?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客挑战赛87",
-      "start_time": "2026-04-03 19:00:00",
-      "duration": "3小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/130844?from=acm_calendar"
     }
   ]
 }
