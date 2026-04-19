@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19 21:39:21",
+  "last_updated": "2026-04-19 23:06:14",
   "contests": [
     {
       "platform": "AtCoder",
@@ -13,7 +13,7 @@
       "name": "Next DP Contest",
       "start_time": "2026-05-05 12:00:00",
       "duration": "5小时0分钟",
-      "url": "https://atcoder.jp/contests/ndpc2026"
+      "url": "https://atcoder.jp/contests/ndpc"
     },
     {
       "platform": "AtCoder",
