@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19 08:00:28",
+  "last_updated": "2026-04-19 11:55:15",
   "contests": [
     {
       "platform": "AtCoder",
@@ -49,6 +49,13 @@
       "start_time": "2026-04-26 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://atcoder.jp/contests/ahc064"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 499",
+      "start_time": "2026-04-26 10:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/weekly-contest-499"
     },
     {
       "platform": "Codeforces",
@@ -119,6 +126,13 @@
       "start_time": "2026-04-19 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-498"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "キーサイト・テクノロジープログラミングコンテスト（AtCoder Beginner Contest 454）",
+      "start_time": "2026-04-18 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc454"
     },
     {
       "platform": "NowCoder",
@@ -231,13 +245,6 @@
       "start_time": "2026-04-04 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc452"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "华中农业大学第十五届程序设计竞赛（同步赛）",
-      "start_time": "2026-04-04 10:30:00",
-      "duration": "5小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/130427?from=acm_calendar"
     }
   ]
 }
