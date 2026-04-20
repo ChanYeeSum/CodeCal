@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-20 17:25:08",
+  "last_updated": "2026-04-20 19:04:12",
   "contests": [
     {
       "platform": "AtCoder",
@@ -73,7 +73,7 @@
     },
     {
       "platform": "Codeforces",
-      "name": "Codeforces Round (Div. 1 + Div. 2)",
+      "name": "Spectral::Cup 2026 Round 1 (Codeforces Round 1094, Div. 1 + Div. 2)",
       "start_time": "2026-04-25 22:35:00",
       "duration": "2小时30分钟",
       "url": "https://codeforces.com/contest/2222"
@@ -112,13 +112,6 @@
       "start_time": "2026-04-24 19:00:00",
       "duration": "2小时30分钟",
       "url": "https://ac.nowcoder.com/acm/contest/133522?from=acm_calendar"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round (Div. 2)",
-      "start_time": "2026-04-23 22:35:00",
-      "duration": "2小时0分钟",
-      "url": "https://codeforces.com/contest/2213"
     },
     {
       "platform": "Codeforces",
@@ -238,13 +231,6 @@
       "start_time": "2026-04-05 20:00:00",
       "duration": "2小时0分钟",
       "url": "https://atcoder.jp/contests/arc217"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客周赛 Round 138",
-      "start_time": "2026-04-05 19:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/131111?from=acm_calendar"
     }
   ]
 }
