@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-20 14:31:30",
+  "last_updated": "2026-04-20 17:25:08",
   "contests": [
     {
       "platform": "AtCoder",
@@ -44,11 +44,25 @@
       "url": "https://ac.nowcoder.com/acm/contest/133523?from=acm_calendar"
     },
     {
+      "platform": "NowCoder",
+      "name": "第九届大学生程序设计竞赛南昌大学校赛（重现赛）",
+      "start_time": "2026-04-26 14:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/133810?from=acm_calendar"
+    },
+    {
       "platform": "AtCoder",
       "name": "JR WEST and ALGO ARTIS Programming Contest  (AtCoder Heuristic Contest 064)",
       "start_time": "2026-04-26 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://atcoder.jp/contests/ahc064"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "湖北经济学院第五届&ldquo;WA杯&rdquo;程序设计竞赛（同步赛）",
+      "start_time": "2026-04-26 12:30:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/133805?from=acm_calendar"
     },
     {
       "platform": "LeetCode",
