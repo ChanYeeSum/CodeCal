@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-22 14:18:56",
+  "last_updated": "2026-04-22 16:15:10",
   "contests": [
     {
       "platform": "AtCoder",
@@ -91,6 +91,13 @@
       "start_time": "2026-04-26 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-499"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "第一届津冀联合高校大学生程序设计竞赛（同步赛）",
+      "start_time": "2026-04-26 10:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/133955?from=acm_calendar"
     },
     {
       "platform": "Codeforces",
