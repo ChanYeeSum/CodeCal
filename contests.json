@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-04-22 08:01:18",
+  "last_updated": "2026-04-22 11:47:38",
   "contests": [
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Heuristic Contest 065",
+      "start_time": "2026-05-16 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://atcoder.jp/contests/ahc065"
+    },
     {
       "platform": "AtCoder",
       "name": "Polaris.AI Programming Contest 2026（AtCoder Beginner Contest 457）",
