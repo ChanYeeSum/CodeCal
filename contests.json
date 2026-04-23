@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-23 14:23:36",
+  "last_updated": "2026-04-23 16:19:24",
   "contests": [
     {
       "platform": "AtCoder",
@@ -91,6 +91,13 @@
       "start_time": "2026-04-26 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://atcoder.jp/contests/ahc064"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "魔法杯 Round 1",
+      "start_time": "2026-04-26 12:30:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/133770?from=acm_calendar"
     },
     {
       "platform": "NowCoder",
