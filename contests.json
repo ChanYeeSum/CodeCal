@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-24 14:25:29",
+  "last_updated": "2026-04-24 16:31:02",
   "contests": [
     {
       "platform": "AtCoder",
@@ -101,7 +101,7 @@
     },
     {
       "platform": "NowCoder",
-      "name": "湖北经济学院第五届&ldquo;WA杯&rdquo;程序设计竞赛（同步赛）",
+      "name": "湖北经济学院第五届“WA杯”程序设计竞赛（同步赛）",
       "start_time": "2026-04-26 12:30:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/133805?from=acm_calendar"
