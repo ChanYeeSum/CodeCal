@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-26 08:02:56",
+  "last_updated": "2026-04-26 12:02:11",
   "contests": [
     {
       "platform": "AtCoder",
@@ -133,6 +133,13 @@
       "start_time": "2026-04-25 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-181"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "Ｓｋｙ株式会社プログラミングコンテスト2026（AtCoder Beginner Contest 455）",
+      "start_time": "2026-04-25 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc455"
     },
     {
       "platform": "NowCoder",
