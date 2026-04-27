@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-27 12:07:04",
+  "last_updated": "2026-04-27 15:14:46",
   "contests": [
     {
       "platform": "AtCoder",
@@ -252,27 +252,6 @@
       "start_time": "2026-04-12 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/131539?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "Codeforces Round 1092 (Unrated, Div. 1, Based on THUPC 2026 — Finals)",
-      "start_time": "2026-04-12 13:35:00",
-      "duration": "3小时0分钟",
-      "url": "https://codeforces.com/contest/2215"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "Codeforces Round 1092 (Unrated, Div. 2, Based on THUPC 2026 — Finals)",
-      "start_time": "2026-04-12 13:35:00",
-      "duration": "3小时0分钟",
-      "url": "https://codeforces.com/contest/2216"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "北华大学第十三届大学生程序设计竞赛(同步赛)",
-      "start_time": "2026-04-12 13:30:00",
-      "duration": "5小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/130859?from=acm_calendar"
     }
   ]
 }
