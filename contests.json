@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-28 23:56:49",
+  "last_updated": "2026-04-29 02:04:55",
   "contests": [
     {
       "platform": "AtCoder",
@@ -87,7 +87,7 @@
     },
     {
       "platform": "Codeforces",
-      "name": "Codeforces Round (Div. 3)",
+      "name": "Codeforces Round 1096 (Div. 3)",
       "start_time": "2026-04-30 22:35:00",
       "duration": "2小时30分钟",
       "url": "https://codeforces.com/contest/2227"
@@ -98,13 +98,6 @@
       "start_time": "2026-04-30 22:35:00",
       "duration": "2小时30分钟",
       "url": "https://codeforces.com/contest/2227"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1095 (Div. 2)",
-      "start_time": "2026-04-28 22:35:00",
-      "duration": "2小时15分钟",
-      "url": "https://codeforces.com/contest/2226"
     },
     {
       "platform": "NowCoder",
