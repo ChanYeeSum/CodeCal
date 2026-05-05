@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-05 09:10:36",
+  "last_updated": "2026-05-05 12:41:40",
   "contests": [
     {
       "platform": "AtCoder",
@@ -126,13 +126,6 @@
       "start_time": "2026-05-05 12:00:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/133509?from=acm_calendar"
-    },
-    {
-      "platform": "AtCoder",
-      "name": "Next DP Contest",
-      "start_time": "2026-05-05 12:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://atcoder.jp/contests/ndpc"
     },
     {
       "platform": "NowCoder",
