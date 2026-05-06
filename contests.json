@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-06 12:12:33",
+  "last_updated": "2026-05-06 15:15:50",
   "contests": [
     {
       "platform": "AtCoder",
@@ -56,6 +56,13 @@
       "start_time": "2026-05-10 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/134529?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2026年中南民族大学程序设计竞赛初赛（同步赛）",
+      "start_time": "2026-05-10 19:00:00",
+      "duration": "3小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/134758?from=acm_calendar"
     },
     {
       "platform": "NowCoder",
