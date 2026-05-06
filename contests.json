@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-06 15:15:50",
+  "last_updated": "2026-05-06 17:41:55",
   "contests": [
     {
       "platform": "AtCoder",
@@ -98,20 +98,6 @@
       "start_time": "2026-05-08 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/134527?from=acm_calendar"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1097 (Div. 1,  Based on Zhili Cup 2026)",
-      "start_time": "2026-05-06 14:05:00",
-      "duration": "2小时30分钟",
-      "url": "https://codeforces.com/contest/2223"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1097 (Div. 2,  Based on Zhili Cup 2026)",
-      "start_time": "2026-05-06 14:05:00",
-      "duration": "2小时30分钟",
-      "url": "https://codeforces.com/contest/2224"
     },
     {
       "platform": "NowCoder",
