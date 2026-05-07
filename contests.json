@@ -1,10 +1,17 @@
 {
-  "last_updated": "2026-05-07 18:39:46",
+  "last_updated": "2026-05-07 21:15:02",
   "contests": [
     {
       "platform": "AtCoder",
+      "name": "AtCoder Beginner Contest 461",
+      "start_time": "2026-06-06 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc461"
+    },
+    {
+      "platform": "AtCoder",
       "name": "AtCoder Regular Contest++ 221",
-      "start_time": "2026-05-31 19:00:00",
+      "start_time": "2026-05-31 20:00:00",
       "duration": "2小时30分钟",
       "url": "https://atcoder.jp/contests/arc221"
     },
@@ -21,6 +28,13 @@
       "start_time": "2026-05-23 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc459"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客练习赛153",
+      "start_time": "2026-05-22 19:00:00",
+      "duration": "2小时30分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/134820?from=acm_calendar"
     },
     {
       "platform": "Codeforces",
