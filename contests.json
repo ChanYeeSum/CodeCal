@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07 12:56:30",
+  "last_updated": "2026-05-07 16:02:41",
   "contests": [
     {
       "platform": "AtCoder",
@@ -7,6 +7,13 @@
       "start_time": "2026-05-31 20:00:00",
       "duration": "2小时30分钟",
       "url": "https://atcoder.jp/contests/arc221"
+    },
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Heuristic Contest 066",
+      "start_time": "2026-05-29 18:00:00",
+      "duration": "240小时0分钟",
+      "url": "https://atcoder.jp/contests/ahc066"
     },
     {
       "platform": "AtCoder",
