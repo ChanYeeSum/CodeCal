@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08 12:36:37",
+  "last_updated": "2026-05-08 15:05:38",
   "contests": [
     {
       "platform": "AtCoder",
@@ -54,7 +54,7 @@
       "platform": "AtCoder",
       "name": "AtCoder Regular Contest++ 220",
       "start_time": "2026-05-17 20:00:00",
-      "duration": "2小时0分钟",
+      "duration": "2小时30分钟",
       "url": "https://atcoder.jp/contests/arc220"
     },
     {
