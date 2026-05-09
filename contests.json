@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-09 14:31:43",
+  "last_updated": "2026-05-09 16:58:32",
   "contests": [
     {
       "platform": "AtCoder",
@@ -35,6 +35,13 @@
       "start_time": "2026-05-23 22:35:00",
       "duration": "3小时0分钟",
       "url": "https://codeforces.com/contest/2229"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Biweekly Contest 183",
+      "start_time": "2026-05-23 22:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/biweekly-contest-183"
     },
     {
       "platform": "AtCoder",
@@ -84,6 +91,13 @@
       "start_time": "2026-05-17 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/134957?from=acm_calendar"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 502",
+      "start_time": "2026-05-17 10:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/weekly-contest-502"
     },
     {
       "platform": "Codeforces",
