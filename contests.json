@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10 20:10:22",
+  "last_updated": "2026-05-10 21:59:50",
   "contests": [
     {
       "platform": "AtCoder",
@@ -14,6 +14,13 @@
       "start_time": "2026-05-31 20:00:00",
       "duration": "2小时30分钟",
       "url": "https://atcoder.jp/contests/arc221"
+    },
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Beginner Contest 460",
+      "start_time": "2026-05-30 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc460"
     },
     {
       "platform": "AtCoder",
@@ -112,6 +119,13 @@
       "start_time": "2026-05-16 22:35:00",
       "duration": "2小时15分钟",
       "url": "https://codeforces.com/contest/2228"
+    },
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Beginner Contest 458",
+      "start_time": "2026-05-16 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc458"
     },
     {
       "platform": "AtCoder",
