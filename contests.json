@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11 09:23:22",
+  "last_updated": "2026-05-11 13:33:08",
   "contests": [
     {
       "platform": "AtCoder",
@@ -35,6 +35,13 @@
       "start_time": "2026-05-24 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/134981?from=acm_calendar"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 503",
+      "start_time": "2026-05-24 10:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/weekly-contest-503"
     },
     {
       "platform": "NowCoder",
@@ -147,6 +154,13 @@
       "start_time": "2026-05-12 17:30:00",
       "duration": "2小时30分钟",
       "url": "https://ac.nowcoder.com/acm/contest/132781?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "AtCoder Regular Contest-- 219",
+      "start_time": "2026-05-10 20:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://atcoder.jp/contests/arc219"
     },
     {
       "platform": "NowCoder",
@@ -280,13 +294,6 @@
       "start_time": "2026-05-01 12:00:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/133439?from=acm_calendar"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 499",
-      "start_time": "2026-04-26 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-499"
     }
   ]
 }
