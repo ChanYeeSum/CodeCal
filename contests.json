@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-05-13 15:37:59",
+  "last_updated": "2026-05-13 19:06:46",
   "contests": [
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Beginner Contest 461",
+      "start_time": "2026-06-06 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc461"
+    },
     {
       "platform": "AtCoder",
       "name": "AtCoder Regular Contest++ 221",
