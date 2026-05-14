@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-14 16:07:33",
+  "last_updated": "2026-05-14 18:42:45",
   "contests": [
     {
       "platform": "AtCoder",
@@ -140,6 +140,13 @@
       "start_time": "2026-05-16 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc458"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2026年临沂大学程序设计挑战赛",
+      "start_time": "2026-05-16 14:30:00",
+      "duration": "3小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/135368?from=acm_calendar"
     },
     {
       "platform": "AtCoder",
