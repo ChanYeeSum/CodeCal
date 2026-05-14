@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-14 13:07:53",
+  "last_updated": "2026-05-14 16:07:33",
   "contests": [
     {
       "platform": "AtCoder",
@@ -95,7 +95,7 @@
     {
       "platform": "NowCoder",
       "name": "2026年北京印刷学院程序设计竞赛（同步赛）",
-      "start_time": "2026-05-20 14:00:00",
+      "start_time": "2026-05-20 18:00:00",
       "duration": "4小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/134905?from=acm_calendar"
     },
