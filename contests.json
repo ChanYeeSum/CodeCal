@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-05-15 18:57:57",
+  "last_updated": "2026-05-15 21:12:57",
   "contests": [
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Regular Contest 222",
+      "start_time": "2026-06-14 20:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://atcoder.jp/contests/arc222"
+    },
     {
       "platform": "AtCoder",
       "name": "CodeQUEEN 2026 -qual- (AtCoder Beginner Contest 462)",
