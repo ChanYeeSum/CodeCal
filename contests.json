@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-16 09:17:27",
+  "last_updated": "2026-05-16 12:53:06",
   "contests": [
     {
       "platform": "AtCoder",
@@ -336,13 +336,6 @@
       "start_time": "2026-05-02 12:00:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/133506?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "2026牛客五一集训派对day1",
-      "start_time": "2026-05-01 12:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/133439?from=acm_calendar"
     }
   ]
 }
