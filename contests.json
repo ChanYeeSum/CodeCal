@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-16 12:53:06",
+  "last_updated": "2026-05-16 15:30:24",
   "contests": [
     {
       "platform": "AtCoder",
@@ -182,13 +182,6 @@
       "start_time": "2026-05-16 14:30:00",
       "duration": "3小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/135368?from=acm_calendar"
-    },
-    {
-      "platform": "AtCoder",
-      "name": "AtCoder Heuristic Contest 065",
-      "start_time": "2026-05-16 14:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://atcoder.jp/contests/ahc065"
     },
     {
       "platform": "NowCoder",
