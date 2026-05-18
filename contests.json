@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-18 12:49:43",
+  "last_updated": "2026-05-18 16:56:25",
   "contests": [
     {
       "platform": "AtCoder",
@@ -287,13 +287,6 @@
       "start_time": "2026-05-03 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/133790?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "第十二届苏州科技大学程序设计竞赛（重现赛）",
-      "start_time": "2026-05-03 13:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/133939?from=acm_calendar"
     }
   ]
 }
