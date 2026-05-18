@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-18 20:50:14",
+  "last_updated": "2026-05-19 00:38:14",
   "contests": [
     {
       "platform": "AtCoder",
@@ -133,13 +133,6 @@
       "start_time": "2026-05-20 18:00:00",
       "duration": "4小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/134905?from=acm_calendar"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Educational Codeforces Round 190 (Rated for Div. 2)",
-      "start_time": "2026-05-18 22:35:00",
-      "duration": "2小时0分钟",
-      "url": "https://codeforces.com/contest/2230"
     },
     {
       "platform": "NowCoder",
