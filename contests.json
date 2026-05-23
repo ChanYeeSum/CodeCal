@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-23 18:52:40",
+  "last_updated": "2026-05-23 20:11:39",
   "contests": [
     {
       "platform": "AtCoder",
@@ -112,13 +112,6 @@
       "start_time": "2026-05-23 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-183"
-    },
-    {
-      "platform": "AtCoder",
-      "name": "Tokio Marine & Nichido Fire Insurance Programming Contest 2026  (AtCoder Beginner Contest 459)",
-      "start_time": "2026-05-23 20:00:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/abc459"
     },
     {
       "platform": "NowCoder",
@@ -238,13 +231,6 @@
       "start_time": "2026-05-09 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc457"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客小白月赛132",
-      "start_time": "2026-05-08 19:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/134527?from=acm_calendar"
     }
   ]
 }
