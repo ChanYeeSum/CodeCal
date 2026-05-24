@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24 19:48:48",
+  "last_updated": "2026-05-24 22:07:07",
   "contests": [
     {
       "platform": "AtCoder",
@@ -238,13 +238,6 @@
       "start_time": "2026-05-09 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-182"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "Polaris.AI プログラミングコンテスト 2026（AtCoder Beginner Contest 457）",
-      "start_time": "2026-05-09 20:00:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/abc457"
     }
   ]
 }
