@@ -10,6 +10,7 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link rel="stylesheet" href="calendar.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="platform-tag.css">
 </head>
 
 <body>
@@ -17,16 +18,43 @@
         <div class="header">
             <h1>订阅日历</h1>
             <div class="header-actions">
-                <button class="action-btn secondary" onclick="location.href='index.html'">
-                    返回首页
-                </button>
+                <div class="theme-dropdown">
+                    <button class="theme-toggle" @click="showThemeMenu = !showThemeMenu" :title="getThemeTitle">
+                        {{ getThemeIcon }}
+                    </button>
+                    <div class="theme-menu" v-if="showThemeMenu">
+                        <div class="theme-option" :class="{ active: themeMode === 'system' }" @click="setThemeMode('system')">
+                            <span class="theme-option-icon">系</span> 系统设置
+                        </div>
+                        <div class="theme-option" :class="{ active: themeMode === 'light' }" @click="setThemeMode('light')">
+                            <span class="theme-option-icon">明</span> 浅色模式
+                        </div>
+                        <div class="theme-option" :class="{ active: themeMode === 'dark' }" @click="setThemeMode('dark')">
+                            <span class="theme-option-icon">暗</span> 深色模式
+                        </div>
+                        <div class="theme-option" :class="{ active: themeMode === 'auto' }" @click="setThemeMode('auto')">
+                            <span class="theme-option-icon">自</span> 自动切换
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <nav class="view-switcher">
+            <a href="index.html" class="nav-link">列表视图</a>
+            <a href="calendar-modern.html" class="nav-link">日历视图</a>
+            <a href="subscribe.html" class="nav-link active">订阅日历</a>
+        </nav>
 
         <div class="subscribe-container">
             <div class="subscribe-info">
                 <h2>📅 导出比赛到日历</h2>
                 <p>选择要订阅的平台和比赛，生成 .ics 日历文件</p>
+            </div>
+
+            <div class="date-range-info" v-if="filterSummaryText || selectedSummaryText">
+                <div>{{ filterSummaryText }}</div>
+                <div v-if="selectedSummaryText" class="subscribe-selection-summary">{{ selectedSummaryText }}</div>
             </div>
 
             <div class="search-box">
@@ -44,6 +72,27 @@
                         <input type="checkbox" :checked="selectedPlatforms.includes(platform)" @change="togglePlatform(platform)">
                         <span :class="['platform-dot', platform.toLowerCase()]"></span>
                         <span>{{ platform }}</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">选择日期</div>
+                <div class="date-filters">
+                    <button class="filter-btn" :class="{ active: dateFilter === 'today' }" @click="setDateFilter('today')">今天</button>
+                    <button class="filter-btn" :class="{ active: dateFilter === 'week' }" @click="setDateFilter('week')">本周</button>
+                    <button class="filter-btn" :class="{ active: dateFilter === 'month' }" @click="setDateFilter('month')">本月</button>
+                    <button class="filter-btn" :class="{ active: dateFilter === 'all' }" @click="setDateFilter('all')">全部</button>
+                    <button class="filter-btn" :class="{ active: dateFilter === 'custom' }" @click="setDateFilter('custom')">自定义</button>
+                </div>
+                <div class="date-range-picker" v-if="dateFilter === 'custom'">
+                    <label class="date-input-group">
+                        <span>从</span>
+                        <input type="date" v-model="dateFrom" class="date-input" :max="dateTo || undefined">
+                    </label>
+                    <label class="date-input-group">
+                        <span>至</span>
+                        <input type="date" v-model="dateTo" class="date-input" :min="dateFrom || undefined">
                     </label>
                 </div>
             </div>
@@ -102,10 +151,34 @@
                     searchText: '',
                     selectedPlatforms: ['all'],
                     selectedContests: [],
-                    currentYear: new Date().getFullYear()
+                    currentYear: new Date().getFullYear(),
+                    theme: localStorage.getItem('theme') || 'light',
+                    themeMode: localStorage.getItem('themeMode') || 'system',
+                    showThemeMenu: false,
+                    dateFilter: 'all',
+                    dateFrom: '',
+                    dateTo: ''
                 }
             },
             computed: {
+                getThemeIcon() {
+                    if (this.themeMode === 'system') {
+                        return '系';
+                    } else if (this.themeMode === 'auto') {
+                        const hour = new Date().getHours();
+                        return (hour >= 6 && hour < 18) ? '明' : '暗';
+                    }
+                    return this.theme === 'dark' ? '暗' : '明';
+                },
+                getThemeTitle() {
+                    const titles = {
+                        system: '跟随系统设置',
+                        light: '浅色模式',
+                        dark: '深色模式',
+                        auto: '自动切换（随时间）'
+                    };
+                    return titles[this.themeMode] || '切换主题';
+                },
                 allPlatforms() {
                     return [...new Set(this.contests.map(c => c.platform))].sort();
                 },
@@ -121,14 +194,165 @@
                         result = result.filter(c => c.name.toLowerCase().includes(search));
                     }
 
+                    const now = new Date();
+                    const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+                    if (this.dateFilter === 'today') {
+                        const todayEnd = new Date(todayStart.getTime() + 24 * 60 * 60 * 1000);
+                        result = result.filter(c => {
+                            const d = new Date(c.start_time);
+                            return d >= todayStart && d < todayEnd;
+                        });
+                    } else if (this.dateFilter === 'week') {
+                        const weekEnd = new Date(todayStart.getTime() + 7 * 24 * 60 * 60 * 1000);
+                        result = result.filter(c => {
+                            const d = new Date(c.start_time);
+                            return d >= todayStart && d < weekEnd;
+                        });
+                    } else if (this.dateFilter === 'month') {
+                        const monthEnd = new Date(todayStart.getTime() + 30 * 24 * 60 * 60 * 1000);
+                        result = result.filter(c => {
+                            const d = new Date(c.start_time);
+                            return d >= todayStart && d < monthEnd;
+                        });
+                    } else if (this.dateFilter === 'custom') {
+                        if (this.dateFrom) {
+                            const from = new Date(this.dateFrom + 'T00:00:00');
+                            result = result.filter(c => new Date(c.start_time) >= from);
+                        }
+                        if (this.dateTo) {
+                            const to = new Date(this.dateTo + 'T23:59:59');
+                            result = result.filter(c => new Date(c.start_time) <= to);
+                        }
+                    }
+
                     return result.sort((a, b) => new Date(a.start_time) - new Date(b.start_time));
+                },
+                filterSummaryText() {
+                    if (this.filteredContests.length === 0) {
+                        return '当前筛选结果为空';
+                    }
+
+                    const platformText = this.selectedPlatforms.includes('all')
+                        ? '所有平台'
+                        : [...this.selectedPlatforms].sort().join(' + ');
+                    const dateRangeText = this.getContestDateRangeText(this.filteredContests);
+                    const dateLabel = this.dateFilter === 'all' ? '' :
+                        this.dateFilter === 'today' ? '今天 · ' :
+                        this.dateFilter === 'week' ? '本周 · ' :
+                        this.dateFilter === 'month' ? '本月 · ' :
+                        '自定义 · ';
+
+                    return `${dateLabel}${platformText} · ${dateRangeText} · 共 ${this.filteredContests.length} 场比赛`;
+                },
+                selectedSummaryText() {
+                    if (this.selectedContests.length === 0) {
+                        return '';
+                    }
+
+                    const selectedContests = this.getSelectedContestItems();
+                    const platformList = [...new Set(selectedContests.map(contest => contest.platform))].sort();
+                    const platformText = platformList.length === this.allPlatforms.length
+                        ? '覆盖当前全部平台'
+                        : `已选平台：${platformList.join(' + ')}`;
+                    const dateRangeText = this.getContestDateRangeText(selectedContests);
+
+                    return `已选 ${selectedContests.length} 场 · ${platformText} · ${dateRangeText}`;
                 },
                 isAllSelected() {
                     return this.filteredContests.length > 0 && 
                            this.filteredContests.every(c => this.selectedContests.includes(c.url));
                 }
             },
+            watch: {
+                themeMode: {
+                    handler() {
+                        localStorage.setItem('themeMode', this.themeMode);
+                        this.applyTheme();
+                    }
+                }
+            },
             methods: {
+                getSelectedContestItems() {
+                    return this.contests
+                        .filter(contest => this.selectedContests.includes(contest.url))
+                        .sort((a, b) => new Date(a.start_time) - new Date(b.start_time));
+                },
+                getContestDateRange(contests) {
+                    if (!contests.length) {
+                        return null;
+                    }
+
+                    const timestamps = contests.map(contest => new Date(contest.start_time).getTime());
+                    return {
+                        start: new Date(Math.min(...timestamps)),
+                        end: new Date(Math.max(...timestamps))
+                    };
+                },
+                getContestDateRangeText(contests) {
+                    const dateRange = this.getContestDateRange(contests);
+                    if (!dateRange) {
+                        return '暂无日期范围';
+                    }
+
+                    const startText = this.formatDateForDisplay(dateRange.start);
+                    const endText = this.formatDateForDisplay(dateRange.end);
+                    return startText === endText ? startText : `${startText} ~ ${endText}`;
+                },
+                formatDateForDisplay(date) {
+                    return `${date.getFullYear()}/${String(date.getMonth() + 1).padStart(2, '0')}/${String(date.getDate()).padStart(2, '0')}`;
+                },
+                formatDateForFilename(date) {
+                    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+                },
+                sanitizeFilenamePart(text) {
+                    return text
+                        .toLowerCase()
+                        .replace(/\s+/g, '-')
+                        .replace(/[\\/:*?"<>|]+/g, '-')
+                        .replace(/[^a-z0-9\u4e00-\u9fa5-]+/gi, '-')
+                        .replace(/-+/g, '-')
+                        .replace(/^-|-$/g, '');
+                },
+                buildExportFilename(contests) {
+                    const platformList = [...new Set(contests.map(contest => contest.platform))].sort();
+                    const dateRange = this.getContestDateRange(contests);
+                    const platformSegment = this.selectedPlatforms.includes('all') && platformList.length === this.allPlatforms.length
+                        ? 'all-platforms'
+                        : platformList.map(platform => this.sanitizeFilenamePart(platform)).join('+');
+                    const dateSegment = dateRange.start.getTime() === dateRange.end.getTime()
+                        ? this.formatDateForFilename(dateRange.start)
+                        : `${this.formatDateForFilename(dateRange.start)}_to_${this.formatDateForFilename(dateRange.end)}`;
+
+                    return `code-cal_${platformSegment}_${dateSegment}_${contests.length}-contests.ics`;
+                },
+                setDateFilter(filter) {
+                    this.dateFilter = filter;
+                    if (filter !== 'custom') {
+                        this.dateFrom = '';
+                        this.dateTo = '';
+                    }
+                },
+                setThemeMode(mode) {
+                    this.themeMode = mode;
+                    this.showThemeMenu = false;
+                },
+                applyTheme() {
+                    let effectiveTheme = this.theme;
+
+                    if (this.themeMode === 'system') {
+                        effectiveTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                    } else if (this.themeMode === 'auto') {
+                        const hour = new Date().getHours();
+                        effectiveTheme = (hour >= 6 && hour < 18) ? 'light' : 'dark';
+                    } else {
+                        effectiveTheme = this.themeMode;
+                    }
+
+                    this.theme = effectiveTheme;
+                    document.documentElement.setAttribute('data-theme', effectiveTheme);
+                    localStorage.setItem('theme', effectiveTheme);
+                },
                 togglePlatform(platform) {
                     if (platform === 'all') {
                         this.selectedPlatforms = ['all'];
@@ -161,13 +385,13 @@
                     }
                 },
                 exportSelected() {
-                    const selectedContests = this.contests.filter(c => this.selectedContests.includes(c.url));
+                    const selectedContests = this.getSelectedContestItems();
                     const icsContent = this.generateICS(selectedContests);
                     const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
                     const url = URL.createObjectURL(blob);
                     const link = document.createElement('a');
                     link.href = url;
-                    link.download = 'code-cal-contests.ics';
+                    link.download = this.buildExportFilename(selectedContests);
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
@@ -229,6 +453,14 @@
                         console.error('Error fetching contests:', error);
                     }
                 }
+            },
+            created() {
+                this.applyTheme();
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                    if (this.themeMode === 'system') {
+                        this.applyTheme();
+                    }
+                });
             },
             mounted() {
                 this.fetchContests();
