@@ -465,7 +465,7 @@ body {
 }
 
 .subscribe-info p {
-    color: var(--text-secondary);
+    color: var(--secondary-text);
     margin: 0;
 }
 
@@ -478,10 +478,11 @@ body {
     padding: 14px 18px;
     border: 2px solid var(--border-color);
     border-radius: 8px;
-    background: var(--background);
+    background: var(--card-background);
     color: var(--text-color);
     font-size: 1rem;
     box-sizing: border-box;
+    box-shadow: 3px 3px 0px var(--border-color);
 }
 
 .search-input:focus {
@@ -513,13 +514,15 @@ body {
     border: 2px solid var(--border-color);
     border-radius: 20px;
     cursor: pointer;
-    background: var(--background);
+    background: var(--card-background);
     color: var(--text-color);
     transition: all 0.2s;
+    box-shadow: 3px 3px 0px var(--border-color);
 }
 
 .platform-checkbox:hover {
-    border-color: var(--accent-color);
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0px var(--border-color);
 }
 
 .platform-checkbox.active {
@@ -557,7 +560,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 12px 16px;
-    background: var(--bg-secondary);
+    background: var(--card-background);
     border-bottom: 2px solid var(--border-color);
     font-weight: 600;
 }
@@ -587,7 +590,7 @@ body {
 }
 
 .contest-item:hover {
-    background: var(--bg-secondary);
+    background: rgba(255, 77, 109, 0.08);
 }
 
 .contest-checkbox input {
@@ -611,11 +614,11 @@ body {
     gap: 12px;
     align-items: center;
     font-size: 0.85em;
-    color: var(--text-secondary);
+    color: var(--secondary-text);
 }
 
 .contest-time {
-    color: var(--text-secondary);
+    color: var(--secondary-text);
 }
 
 .empty-state {
@@ -629,8 +632,14 @@ body {
 }
 
 .empty-text {
-    color: var(--text-secondary);
+    color: var(--secondary-text);
     font-size: 1.1em;
+}
+
+.subscribe-selection-summary {
+    margin-top: 8px;
+    font-size: 0.92em;
+    color: var(--secondary-text);
 }
 
 .export-section {
