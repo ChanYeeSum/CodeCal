@@ -60,19 +60,11 @@
               v-for="platform in platforms"
               :key="platform.id"
               :class="['platform-filter-btn', { active: selectedPlatform === platform.id }]"
-              @click="selectedPlatform = platform.id"
+              @click="selectPlatform(platform.id)"
             >
               <span class="platform-dot" :style="{ background: platform.color }"></span>
               {{ platform.name }}
             </button>
-          </div>
-        </div>
-
-        <!-- 数据概览 -->
-        <div class="data-summary" v-if="dateRangeText">
-          <div class="sidebar-title">数据概览</div>
-          <div class="summary-content">
-            {{ dateRangeText }}
           </div>
         </div>
 
@@ -424,6 +416,13 @@
               backgroundColor: this.getPlatformColor(contest.platform),
               borderColor: 'transparent'
             })));
+          }
+        },
+
+        selectPlatform(platformId) {
+          this.selectedPlatform = platformId;
+          if (this.dateRangeText) {
+            this.showToast(this.dateRangeText);
           }
         },
 

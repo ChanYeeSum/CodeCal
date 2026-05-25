@@ -97,19 +97,7 @@ body {
     padding: 10px;
 }
 
-.date-range-info {
-    text-align: center;
-    padding: 12px 20px;
-    margin-bottom: 20px;
-    background: var(--card-background);
-    border: 2px solid var(--border-color);
-    border-radius: 8px;
-    font-size: 0.95em;
-    color: var(--text-color);
-    box-shadow: 3px 3px 0px var(--border-color);
-}
-
- .filter-btn {
+.filter-btn {
     padding: 12px 24px;
     border: 2px solid var(--border-color);
     border-radius: 8px;

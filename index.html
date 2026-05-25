@@ -40,13 +40,9 @@
 
         <div class="filters">
             <button v-for="platform in platforms" :key="platform"
-                :class="['filter-btn', { active: selectedPlatform === platform }]" @click="selectedPlatform = platform">
+                :class="['filter-btn', { active: selectedPlatform === platform }]" @click="selectPlatform(platform)">
                 {{ platform === 'all' ? '全部' : platform }}
             </button>
-        </div>
-
-        <div class="date-range-info" v-if="dateRangeText">
-            {{ dateRangeText }}
         </div>
 
         <div class="contest-grid">
@@ -131,12 +127,17 @@
                 this.fetchContests()
             },
             methods: {
+                selectPlatform(platform) {
+                    this.selectedPlatform = platform;
+                    if (this.dateRangeText) {
+                        showToast(this.dateRangeText);
+                    }
+                },
                 copyContestInfo(contest) {
                     const text = `${contest.name}\n开始时间：${contest.start_time}\n平台：${contest.platform}\n\n© ${this.currentYear} ChanYeeSum. All rights reserved.`;
                     navigator.clipboard.writeText(text)
                         .then(() => showToast('已复制比赛信息并添加版权声明'))
                         .catch(err => console.error('复制失败:', err));
-                    const container = document.getElementById('toast-container');
                 },
                 toggleTheme() {
                     this.theme = this.theme === 'light' ? 'dark' : 'light';
