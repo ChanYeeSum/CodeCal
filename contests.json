@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26 05:44:15",
+  "last_updated": "2026-05-26 07:39:23",
   "contests": [
     {
       "platform": "AtCoder",
@@ -21,6 +21,13 @@
       "start_time": "2026-06-13 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc462"
+    },
+    {
+      "platform": "Codeforces",
+      "name": "Educational Codeforces Round 191 (Rated for Div. 2)",
+      "start_time": "2026-06-09 22:35:00",
+      "duration": "2小时0分钟",
+      "url": "https://codeforces.com/contest/2233"
     },
     {
       "platform": "LeetCode",
