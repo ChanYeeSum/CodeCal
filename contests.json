@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-25 09:30:53",
+  "last_updated": "2026-05-25 14:51:39",
   "contests": [
     {
       "platform": "AtCoder",
@@ -37,6 +37,20 @@
       "url": "https://atcoder.jp/contests/abc461"
     },
     {
+      "platform": "luogu",
+      "name": "AFOI 2025 & AFO OI Round 1",
+      "start_time": "2026-06-06 13:00:00",
+      "duration": "4小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/305608"
+    },
+    {
+      "platform": "luogu",
+      "name": "[Xzy OI] Round 1 & ccb(?)",
+      "start_time": "2026-06-06 08:30:00",
+      "duration": "3小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/312073"
+    },
+    {
       "platform": "AtCoder",
       "name": "AtCoder Regular Contest++ 221",
       "start_time": "2026-05-31 20:00:00",
@@ -49,6 +63,13 @@
       "start_time": "2026-05-31 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/135882?from=acm_calendar"
+    },
+    {
+      "platform": "luogu",
+      "name": "2024 年“金山杯”华中地区高校第十八届程序设计邀请赛重现赛",
+      "start_time": "2026-05-31 13:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/326649"
     },
     {
       "platform": "LeetCode",
@@ -72,11 +93,25 @@
       "url": "https://atcoder.jp/contests/abc460"
     },
     {
+      "platform": "luogu",
+      "name": "【LGR-285-Div.2】洛谷蓝桥杯国赛模拟赛 2026",
+      "start_time": "2026-05-30 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/326698"
+    },
+    {
       "platform": "NowCoder",
       "name": "第二十三届宁波大学程序设计竞赛（同步赛）",
       "start_time": "2026-05-30 13:30:00",
       "duration": "4小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/134896?from=acm_calendar"
+    },
+    {
+      "platform": "luogu",
+      "name": "【MX-J30】梦熊 J 组 · H₂O赛 & FDOI Round 1",
+      "start_time": "2026-05-30 09:00:00",
+      "duration": "3小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/327902"
     },
     {
       "platform": "NowCoder",
@@ -98,6 +133,13 @@
       "start_time": "2026-05-24 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/134981?from=acm_calendar"
+    },
+    {
+      "platform": "luogu",
+      "name": "Algo Beat Contest 008 &「WWOI」Round 3",
+      "start_time": "2026-05-24 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/324945"
     },
     {
       "platform": "LeetCode",
@@ -128,6 +170,13 @@
       "url": "https://atcoder.jp/contests/abc459"
     },
     {
+      "platform": "luogu",
+      "name": "中山大学 2025 年程序设计竞赛校赛（重现赛）",
+      "start_time": "2026-05-23 13:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/323927"
+    },
+    {
       "platform": "NowCoder",
       "name": "2026年中南民族大学程序设计竞赛决赛（同步赛）",
       "start_time": "2026-05-23 12:00:00",
@@ -140,6 +189,13 @@
       "start_time": "2026-05-22 19:00:00",
       "duration": "2小时30分钟",
       "url": "https://ac.nowcoder.com/acm/contest/134820?from=acm_calendar"
+    },
+    {
+      "platform": "luogu",
+      "name": "【LGR-284-Div.4】洛谷入门赛 #47",
+      "start_time": "2026-05-22 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/326688"
     },
     {
       "platform": "NowCoder",
@@ -163,6 +219,13 @@
       "url": "https://ac.nowcoder.com/acm/contest/134957?from=acm_calendar"
     },
     {
+      "platform": "luogu",
+      "name": "『LYROI』Round 1",
+      "start_time": "2026-05-17 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/304379"
+    },
+    {
       "platform": "LeetCode",
       "name": "Weekly Contest 502",
       "start_time": "2026-05-17 10:30:00",
@@ -182,6 +245,20 @@
       "start_time": "2026-05-16 14:30:00",
       "duration": "3小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/135368?from=acm_calendar"
+    },
+    {
+      "platform": "luogu",
+      "name": "【MX-S14】梦熊 S 组 · 羽毛赛 & KWOI Round 2（同步赛）",
+      "start_time": "2026-05-16 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/326643"
+    },
+    {
+      "platform": "luogu",
+      "name": "「Spring OI」Round 1 & 春日清新赛",
+      "start_time": "2026-05-16 08:30:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/318187"
     },
     {
       "platform": "NowCoder",
@@ -217,20 +294,6 @@
       "start_time": "2026-05-10 19:00:00",
       "duration": "3小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/134758?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "2026深圳职业技术大学程序设计竞赛（同步赛）",
-      "start_time": "2026-05-10 14:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/133848?from=acm_calendar"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 501",
-      "start_time": "2026-05-10 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-501"
     }
   ]
 }

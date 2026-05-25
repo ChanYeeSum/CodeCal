@@ -56,7 +56,7 @@ body {
     position: relative;
 }
 
-.header h1 {
+.header h1,.header h2{
     font-size: 3em;
     font-weight: 800;
     color: var(--header-text-color);
@@ -97,7 +97,19 @@ body {
     padding: 10px;
 }
 
- .filter-btn {
+.date-range-info {
+    text-align: center;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    background: var(--card-background);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.95em;
+    color: var(--text-color);
+    box-shadow: 3px 3px 0px var(--border-color);
+}
+
+.filter-btn {
     padding: 12px 24px;
     border: 2px solid var(--border-color);
     border-radius: 8px;
@@ -204,6 +216,115 @@ body {
     font-size: 0.9em;
     padding: 10px;
     border-top: 1px solid var(--border-color);
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.stat-label {
+    font-size: 0.85em;
+    color: var(--secondary-text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-value {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--header-text-color);
+    text-shadow: 2px 2px 0px var(--header-shadow-color);
+}
+
+/* 历史记录图表 */
+.history-chart {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.chart-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chart-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--header-text-color);
+}
+
+.chart-bars {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    height: 150px;
+    padding: 10px 0;
+}
+
+.chart-bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    min-width: 40px;
+}
+
+.chart-bar {
+    width: 30px;
+    background: linear-gradient(180deg, var(--header-shadow-color) 0%, var(--primary-color) 100%);
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    transition: height 0.3s ease, background 0.3s ease;
+    min-height: 4px;
+}
+
+.chart-bar:hover {
+    background: linear-gradient(180deg, #ff6b6b 0%, #ee5a24 100%);
+}
+
+.chart-bar.bar-empty {
+    background: var(--border-color);
+}
+
+.bar-value {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.85em;
+    font-weight: 600;
+    color: var(--header-text-color);
+    white-space: nowrap;
+}
+
+.chart-label {
+    font-size: 0.8em;
+    color: var(--secondary-text);
+    text-align: center;
+}
+
+.chart-weekday {
+    font-size: 0.7em;
+    color: var(--secondary-text);
+    opacity: 0.7;
 }
 
  /* 新增模态框样式 */
