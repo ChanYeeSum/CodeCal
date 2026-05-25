@@ -263,12 +263,12 @@ body {
 }
 
 .data-summary {
-  margin-bottom: 24px;
-  padding: 16px;
   background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: 20px;
   border: 2px solid var(--border-color);
-  border-radius: var(--radius-md);
-  box-shadow: 3px 3px 0px var(--border-color);
+  box-shadow: 5px 5px 0px var(--border-color);
+  margin-bottom: 24px;
 }
 
 .summary-content {
