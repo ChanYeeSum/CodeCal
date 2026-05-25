@@ -76,9 +76,9 @@ function updateTitleTime() {
     
     // 更新网页标题和页面头部显示
     // document.title = `当前日期${dateString} 时间${timeString}`;
-    const headerTitle = document.querySelector('.header h1');
+    const headerTitle = document.querySelector('.header h2');
     if (headerTitle) {
-        headerTitle.textContent = `编程竞赛日历 \n - 当前时间 ${dateString} ${timeString}`;
+        headerTitle.textContent = `${dateString} ${timeString}`;
     }
 }
 
