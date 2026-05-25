@@ -130,12 +130,12 @@ function initPageStats() {
         stats.dailyStats[today].uv.push(visitorId);
     }
     
-    // 清理超过30天的旧数据
-    const thirtyDaysAgo = new Date();
-    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+    // 清理超过90天的旧数据（保留更长的历史记录）
+    const ninetyDaysAgo = new Date();
+    ninetyDaysAgo.setDate(ninetyDaysAgo.getDate() - 90);
     Object.keys(stats.dailyStats).forEach(dateStr => {
         const date = new Date(dateStr);
-        if (date < thirtyDaysAgo) {
+        if (date < ninetyDaysAgo) {
             delete stats.dailyStats[dateStr];
         }
     });
@@ -143,12 +143,87 @@ function initPageStats() {
     // 保存统计数据
     localStorage.setItem(STORAGE_KEY, JSON.stringify(stats));
     
+    // 获取最近7天的历史记录
+    const getRecentHistory = () => {
+        const history = [];
+        const days = ['日', '一', '二', '三', '四', '五', '六'];
+        
+        for (let i = 6; i >= 0; i--) {
+            const date = new Date();
+            date.setDate(date.getDate() - i);
+            const dateStr = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+            const dayOfWeek = days[date.getDay()];
+            
+            history.push({
+                date: dateStr,
+                dateLabel: i === 0 ? '今天' : i === 1 ? '昨天' : `${date.getMonth() + 1}/${date.getDate()}`,
+                dayOfWeek: dayOfWeek,
+                pv: stats.dailyStats[dateStr]?.pv || 0,
+                uv: (stats.dailyStats[dateStr]?.uv?.length || 0)
+            });
+        }
+        return history;
+    };
+    
+    // 计算本周统计
+    const getWeeklyStats = () => {
+        const history = getRecentHistory();
+        return history.reduce((acc, day) => ({
+            pv: acc.pv + day.pv,
+            uv: acc.uv + day.uv
+        }), { pv: 0, uv: 0 });
+    };
+    
+    const weeklyStats = getWeeklyStats();
+    const recentHistory = getRecentHistory();
+    
     return {
         totalPV: stats.totalPV,
         totalUV: stats.totalUV.length,
         todayPV: stats.dailyStats[today]?.pv || 0,
-        todayUV: stats.dailyStats[today]?.uv.length || 0
+        todayUV: stats.dailyStats[today]?.uv.length || 0,
+        weeklyPV: weeklyStats.pv,
+        weeklyUV: weeklyStats.uv,
+        recentHistory: recentHistory
     };
+}
+
+// 渲染历史记录图表
+function renderHistoryChart(history) {
+    const chartEl = document.getElementById('historyChart');
+    if (!chartEl) return;
+    
+    const maxPv = Math.max(...history.map(d => d.pv), 1);
+    
+    let html = `
+        <div class="history-chart">
+            <div class="chart-header">
+                <span class="chart-title">📊 近7天访问趋势</span>
+            </div>
+            <div class="chart-bars">
+    `;
+    
+    history.forEach(day => {
+        const height = maxPv > 0 ? (day.pv / maxPv) * 100 : 0;
+        const barClass = day.pv === 0 ? 'bar-empty' : '';
+        
+        html += `
+            <div class="chart-bar-wrapper">
+                <div class="chart-bar ${barClass}" style="height: ${height}%" title="${day.dateLabel} (周${day.dayOfWeek}): ${day.pv}次访问">
+                    <span class="bar-value">${day.pv}</span>
+                </div>
+                <div class="chart-label">${day.dateLabel}</div>
+                <div class="chart-weekday">周${day.dayOfWeek}</div>
+            </div>
+        `;
+    });
+    
+    html += `
+            </div>
+        </div>
+    `;
+    
+    chartEl.innerHTML = html;
 }
 
 // 页面加载后立即显示时间，并每秒更新一次
@@ -174,11 +249,18 @@ window.onload = function() {
     const uvEl = document.getElementById('pageUV');
     const todayPvEl = document.getElementById('todayPV');
     const todayUvEl = document.getElementById('todayUV');
+    const weeklyPvEl = document.getElementById('weeklyPV');
+    const weeklyUvEl = document.getElementById('weeklyUV');
     
     if (pvEl) pvEl.textContent = pageStats.totalPV;
     if (uvEl) uvEl.textContent = pageStats.totalUV;
     if (todayPvEl) todayPvEl.textContent = pageStats.todayPV;
     if (todayUvEl) todayUvEl.textContent = pageStats.todayUV;
+    if (weeklyPvEl) weeklyPvEl.textContent = pageStats.weeklyPV;
+    if (weeklyUvEl) weeklyUvEl.textContent = pageStats.weeklyUV;
+    
+    // 渲染历史记录图表
+    renderHistoryChart(pageStats.recentHistory);
 };
 
 const shareBtn = document.getElementById('shareBtn');

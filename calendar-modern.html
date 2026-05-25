@@ -28,8 +28,8 @@
     <!-- 顶部导航栏 -->
     <header class="top-bar">
       <div class="top-left">
-        <button class="sidebar-btn" @click="sidebarExpanded = !sidebarExpanded">
-          {{ sidebarExpanded ? "◀" : "▶" }}
+        <button class="sidebar-btn" @click="sidebarExpanded = !sidebarExpanded" :title="sidebarExpanded ? '介个系收起侧边栏的按钮喔！' : '介个系展开侧边栏的按钮喔！'">
+          {{ sidebarExpanded ? "收" : "展" }}
         </button>
         <div class="logo">
           <span class="logo-text">编程竞赛日历</span>
@@ -168,7 +168,7 @@
           theme: localStorage.getItem('theme') || 'light',
           selectedPlatform: 'all',
           selectedContest: null,
-          sidebarExpanded: false,
+          sidebarExpanded: window.innerWidth > 1024,
           currentYear: new Date().getFullYear(),
           platforms: [
             { id: 'all', name: '全部平台', color: '#4f46e5' },
@@ -177,35 +177,70 @@
             { id: 'NowCoder', name: '牛客', color: '#06b6d4' },
             { id: 'luogu', name: '洛谷', color: '#22c55e' },
             { id: 'AtCoder', name: 'AtCoder', color: '#a855f7' }
-          ]
+          ],
+          filteredContestsCache: null,
+          filteredContestsCacheKey: null,
+          upcomingContestsCache: null,
+          upcomingContestsCacheKey: null
         };
       },
       computed: {
         filteredContests() {
-          if (this.selectedPlatform === 'all') {
-            return this.contests;
+          const cacheKey = `${this.selectedPlatform}-${this.contests.length}`;
+          if (this.filteredContestsCacheKey === cacheKey && this.filteredContestsCache) {
+            return this.filteredContestsCache;
           }
-          return this.contests.filter(contest => contest.platform === this.selectedPlatform);
+          
+          let result;
+          if (this.selectedPlatform === 'all') {
+            result = this.contests;
+          } else {
+            result = this.contests.filter(contest => contest.platform === this.selectedPlatform);
+          }
+          
+          this.filteredContestsCache = result;
+          this.filteredContestsCacheKey = cacheKey;
+          return result;
         },
         upcomingContests() {
-          const now = new Date();
-          return this.filteredContests
-            .filter(contest => new Date(contest.start_time) > now)
-            .sort((a, b) => new Date(a.start_time) - new Date(b.start_time))
-            .slice(0, 5);
+          const cacheKey = `${this.filteredContestsCacheKey}-${Date.now()}`;
+          if (this.upcomingContestsCacheKey === cacheKey && this.upcomingContestsCache) {
+            return this.upcomingContestsCache;
+          }
+          
+          const now = Date.now();
+          const result = this.filteredContests
+            .map(contest => ({
+              ...contest,
+              _date: new Date(contest.start_time).getTime()
+            }))
+            .filter(contest => contest._date > now)
+            .sort((a, b) => a._date - b._date)
+            .slice(0, 5)
+            .map(({ _date, ...contest }) => contest);
+          
+          this.upcomingContestsCache = result;
+          this.upcomingContestsCacheKey = cacheKey;
+          return result;
         }
       },
       watch: {
         selectedPlatform() {
+          this.filteredContestsCache = null;
+          this.filteredContestsCacheKey = null;
+          this.upcomingContestsCache = null;
+          this.upcomingContestsCacheKey = null;
           this.refreshCalendar();
         },
         sidebarExpanded() {
-          // 延迟执行以确保过渡动画完成后再更新尺寸
-          setTimeout(() => {
+          if (this.updateSizeTimer) {
+            clearTimeout(this.updateSizeTimer);
+          }
+          this.updateSizeTimer = setTimeout(() => {
             if (this.calendar) {
               this.calendar.updateSize();
             }
-          }, 400);
+          }, 200);
         }
       },
       created() {
@@ -215,6 +250,14 @@
         this.fetchContests().then(() => {
           this.initCalendar();
         });
+      },
+      beforeUnmount() {
+        if (this.updateSizeTimer) {
+          clearTimeout(this.updateSizeTimer);
+        }
+        if (this.handleResize) {
+          window.removeEventListener('resize', this.handleResize);
+        }
       },
       methods: {
         async fetchContests() {
