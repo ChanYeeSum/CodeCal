@@ -30,7 +30,7 @@
             <h1>编程竞赛日历</h1>
             <div class="header-actions">
                 <button class="action-btn" @click="exportCalendar" title="导出日历 (.ics)">
-                    📅 订阅日历
+                     订阅日历
                 </button>
                 <div class="theme-dropdown">
                     <button class="theme-toggle" @click="showThemeMenu = !showThemeMenu" :title="getThemeTitle">
@@ -133,25 +133,7 @@
                         auto: '自动切换（随时间）'
                     };
                     return titles[this.themeMode] || '切换主题';
-                }
-            },
-            watch: {
-                themeMode: {
-                    handler() {
-                        localStorage.setItem('themeMode', this.themeMode);
-                        this.applyTheme();
-                    }
-                }
-            },
-            created() {
-                this.applyTheme();
-                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-                    if (this.themeMode === 'system') {
-                        this.applyTheme();
-                    }
-                });
-            },
-            computed: {
+                },
                 filteredContests() {
                     if (this.selectedPlatform === 'all') {
                         return this.contests.sort((a, b) => new Date(b.start_time) - new Date(a.start_time))
@@ -182,6 +164,22 @@
                     return `${platformText} · ${formatDate(earliest)} ~ ${formatDate(latest)} · 共 ${this.filteredContests.length} 场比赛`;
                 }
                 
+            },
+            watch: {
+                themeMode: {
+                    handler() {
+                        localStorage.setItem('themeMode', this.themeMode);
+                        this.applyTheme();
+                    }
+                }
+            },
+            created() {
+                this.applyTheme();
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                    if (this.themeMode === 'system') {
+                        this.applyTheme();
+                    }
+                });
             },
             mounted() {
                 this.fetchContests()
