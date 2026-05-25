@@ -262,6 +262,21 @@ body {
   margin-bottom: 16px;
 }
 
+.data-summary {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: 3px 3px 0px var(--border-color);
+}
+
+.summary-content {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
 .platform-list {
   display: flex;
   flex-direction: column;

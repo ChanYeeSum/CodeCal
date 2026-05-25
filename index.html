@@ -45,6 +45,10 @@
             </button>
         </div>
 
+        <div class="date-range-info" v-if="dateRangeText">
+            {{ dateRangeText }}
+        </div>
+
         <div class="contest-grid">
             <div v-for="contest in filteredContests.slice().reverse()" :key="contest.url" class="contest-card">
                 <div :class="['platform-tag', contest.platform.toLowerCase()]">
