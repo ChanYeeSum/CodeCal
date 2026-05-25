@@ -101,7 +101,7 @@ body {
 }
 
 .theme-toggle {
-    padding: 8px;
+    padding: 0;
     border: 2px solid var(--border-color);
     border-radius: 50%;
     width: 40px;
@@ -109,13 +109,24 @@ body {
     cursor: pointer;
     background-color: var(--card-background);
     box-shadow: 3px 3px 0px var(--border-color);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+    line-height: 1;
     transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    text-shadow: 2px 2px 0px var(--header-shadow-color);
+    letter-spacing: 0;
 }
 
 .theme-toggle:hover {
     transform: translate(-2px, -2px);
     box-shadow: 5px 5px 0px var(--border-color);
+    color: white;
+    background-color: var(--accent-color);
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
 }
 
 .theme-menu {
@@ -145,15 +156,17 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     border: 2px solid var(--border-color);
     border-radius: 50%;
     font-size: 0.75rem;
-    font-weight: 700;
+    font-weight: 800;
     flex-shrink: 0;
     background: var(--card-background);
     color: var(--text-color);
+    text-shadow: 1.5px 1.5px 0px var(--header-shadow-color);
+    line-height: 1;
 }
 
 .theme-option:hover {
