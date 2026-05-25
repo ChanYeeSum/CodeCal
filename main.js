@@ -226,6 +226,65 @@ function renderHistoryChart(history) {
     chartEl.innerHTML = html;
 }
 
+// 在控制台显示字符图表
+function printConsoleStats(stats) {
+    const border = '═'.repeat(50);
+    const thinBorder = '─'.repeat(50);
+    
+    console.log('\n');
+    console.log('╔' + border + '╗');
+    console.log('║          📊 CodeCal 访问统计控制台          ║');
+    console.log('╠' + thinBorder + '╣');
+    
+    // 统计数据
+    console.log('║  总访问量 (PV)  : ' + String(stats.totalPV).padStart(12) + ' 次  ║');
+    console.log('║  独立访客 (UV)  : ' + String(stats.totalUV).padStart(12) + ' 人  ║');
+    console.log('║  今日访问      : ' + String(stats.todayPV).padStart(12) + ' 次  ║');
+    console.log('║  本周访问      : ' + String(stats.weeklyPV).padStart(12) + ' 次  ║');
+    console.log('╠' + thinBorder + '╣');
+    
+    // 字符图表
+    console.log('║           近7天访问趋势图表                  ║');
+    console.log('╠' + thinBorder + '╣');
+    
+    const maxPv = Math.max(...stats.recentHistory.map(d => d.pv), 1);
+    const chartHeight = 8;
+    
+    for (let row = chartHeight; row >= 0; row--) {
+        let line = '║  ';
+        stats.recentHistory.forEach(day => {
+            const height = (day.pv / maxPv) * chartHeight;
+            if (row <= height) {
+                line += '█▓▒░'[Math.floor((1 - row / height) * 4)] || '█';
+            } else {
+                line += ' ';
+            }
+            line += ' ';
+        });
+        
+        // Y轴刻度
+        const label = row === chartHeight ? String(maxPv).padStart(3) :
+                      row === Math.floor(chartHeight/2) ? String(Math.floor(maxPv/2)).padStart(3) :
+                      row === 0 ? '  0' : '   ';
+        
+        line += ' ' + label + ' ║';
+        console.log(line);
+    }
+    
+    console.log('╠' + thinBorder + '╣');
+    
+    // X轴标签
+    let labels = '║  ';
+    stats.recentHistory.forEach(day => {
+        labels += day.dateLabel.padEnd(4).substring(0, 4);
+    });
+    labels += '      ║';
+    console.log(labels);
+    
+    console.log('╚' + border + '╝');
+    console.log('\n');
+}
+
 // 页面加载后立即显示时间，并每秒更新一次
 window.onload = function() {
     updateTitleTime(); // 立即执行一次
@@ -233,34 +292,9 @@ window.onload = function() {
     
     // 初始化PV/UV统计
     const pageStats = initPageStats();
-    console.log('页面统计:', pageStats);
     
-    // 访问统计功能 (保留兼容性)
-    let visitCount = localStorage.getItem('visitCount') || 0;
-    visitCount++;
-    localStorage.setItem('visitCount', visitCount);
-    const visitCountEl = document.getElementById('visitCount');
-    if (visitCountEl) {
-        visitCountEl.textContent = visitCount;
-    }
-    
-    // 更新PV/UV显示元素
-    const pvEl = document.getElementById('pagePV');
-    const uvEl = document.getElementById('pageUV');
-    const todayPvEl = document.getElementById('todayPV');
-    const todayUvEl = document.getElementById('todayUV');
-    const weeklyPvEl = document.getElementById('weeklyPV');
-    const weeklyUvEl = document.getElementById('weeklyUV');
-    
-    if (pvEl) pvEl.textContent = pageStats.totalPV;
-    if (uvEl) uvEl.textContent = pageStats.totalUV;
-    if (todayPvEl) todayPvEl.textContent = pageStats.todayPV;
-    if (todayUvEl) todayUvEl.textContent = pageStats.todayUV;
-    if (weeklyPvEl) weeklyPvEl.textContent = pageStats.weeklyPV;
-    if (weeklyUvEl) weeklyUvEl.textContent = pageStats.weeklyUV;
-    
-    // 渲染历史记录图表
-    renderHistoryChart(pageStats.recentHistory);
+    // 在控制台显示统计数据和字符图表
+    printConsoleStats(pageStats);
 };
 
 const shareBtn = document.getElementById('shareBtn');
