@@ -273,3 +273,39 @@ if (shareBtn) {
     }
   });
 }
+
+// 不蒜子计数器 - 备选统计方案（仅控制台显示）
+function initBusuanzi() {
+    const script = document.createElement('script');
+    script.src = 'https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js';
+    script.async = true;
+    script.onload = function() {
+        // 不蒜子加载成功后，在控制台显示统计信息
+        const checkStats = setInterval(() => {
+            const pv = window.busuanziValueSitePV;
+            const uv = window.busuanziValueSiteUV;
+            
+            if (pv !== undefined || uv !== undefined) {
+                clearInterval(checkStats);
+                console.log('========================================');
+                console.log('🌐 不蒜子统计数据 (Busuanzi Counter)');
+                console.log('----------------------------------------');
+                console.log(`访问量 (PV): ${pv || '加载中...'}`);
+                console.log(`访客数 (UV): ${uv || '加载中...'}`);
+                console.log('========================================');
+            }
+        }, 500);
+        
+        // 5秒后停止检查
+        setTimeout(() => {
+            clearInterval(checkStats);
+        }, 5000);
+    };
+    script.onerror = function() {
+        console.log('⚠️ 不蒜子计数器加载失败，使用本地统计方案');
+    };
+    document.head.appendChild(script);
+}
+
+// 初始化不蒜子计数器
+initBusuanzi();
