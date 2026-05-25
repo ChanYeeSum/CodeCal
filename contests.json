@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "last_updated": "2026-05-25 09:45:45",
-=======
-  "last_updated": "2026-05-25 09:30:53",
->>>>>>> refs/remotes/origin/main
   "contests": [
     {
       "platform": "AtCoder",
