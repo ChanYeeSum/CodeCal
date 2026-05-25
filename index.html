@@ -45,6 +45,10 @@
             </button>
         </div>
 
+        <div class="date-range-info" v-if="dateRangeText">
+            📅 {{ dateRangeText }}
+        </div>
+
         <div class="contest-grid">
             <div v-for="contest in filteredContests.slice().reverse()" :key="contest.url" class="contest-card">
                 <div :class="['platform-tag', contest.platform.toLowerCase()]">
@@ -100,6 +104,27 @@
                         contest.platform === this.selectedPlatform
                     ).sort((a, b) => new Date(b.start_time) - new Date(a.start_time))
                 },
+                dateRangeText() {
+                    if (this.filteredContests.length === 0) {
+                        return '暂无比赛数据';
+                    }
+                    
+                    const dates = this.filteredContests.map(c => new Date(c.start_time));
+                    const earliest = new Date(Math.min(...dates));
+                    const latest = new Date(Math.max(...dates));
+                    
+                    const formatDate = (d) => {
+                        return `${d.getFullYear()}/${(d.getMonth() + 1).toString().padStart(2, '0')}/${d.getDate().toString().padStart(2, '0')}`;
+                    };
+                    
+                    const platformText = this.selectedPlatform === 'all' ? '所有平台' : this.selectedPlatform;
+                    
+                    if (earliest.getTime() === latest.getTime()) {
+                        return `${platformText} · ${formatDate(earliest)} · 共 ${this.filteredContests.length} 场比赛`;
+                    }
+                    
+                    return `${platformText} · ${formatDate(earliest)} ~ ${formatDate(latest)} · 共 ${this.filteredContests.length} 场比赛`;
+                }
                 
             },
             mounted() {
