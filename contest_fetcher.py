@@ -222,9 +222,9 @@ class ContestFetcher:
             # 解析JSON响应
             calendar_data = response.json().get('data', [])
             
-            # 获取前15天到现在一个月后的时间
+            # 获取现在到未来 90 天的时间范围
             now = datetime.datetime.now(self.timezone) - datetime.timedelta(days = 15)
-            one_month_later = now + datetime.timedelta(days=30)
+            three_months_later = now + datetime.timedelta(days=90)
             
             future_contests = []
             
@@ -237,7 +237,7 @@ class ContestFetcher:
                     if not start_time_str or not end_time_str:
                         continue
                     
-                    # 将时间戳转换为带时区的datetime对象
+                    # 将时间戳转换为带时区的 datetime 对象
                     contest_time = datetime.datetime.fromtimestamp(int(start_time_str) / 1000, self.timezone)
                     end_time = datetime.datetime.fromtimestamp(int(end_time_str) / 1000, self.timezone)
                     
@@ -246,8 +246,8 @@ class ContestFetcher:
                     hours = int(duration_seconds // 3600)
                     minutes = int((duration_seconds % 3600) // 60)
                     
-                    # 如果比赛时间在未来一个月内
-                    if contest_time >= now and contest_time <= one_month_later:
+                    # 如果比赛时间在未来 90 天内
+                    if contest_time >= now and contest_time <= three_months_later:
                         future_contests.append({
                             'platform': 'NowCoder',
                             'name': contest.get('contestName', 'Unknown Contest'),
