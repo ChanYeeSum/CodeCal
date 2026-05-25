@@ -76,6 +76,27 @@
                 </div>
             </div>
 
+            <div class="filter-section">
+                <div class="filter-title">选择日期</div>
+                <div class="date-filters">
+                    <button class="filter-btn" :class="{ active: dateFilter === 'today' }" @click="setDateFilter('today')">今天</button>
+                    <button class="filter-btn" :class="{ active: dateFilter === 'week' }" @click="setDateFilter('week')">本周</button>
+                    <button class="filter-btn" :class="{ active: dateFilter === 'month' }" @click="setDateFilter('month')">本月</button>
+                    <button class="filter-btn" :class="{ active: dateFilter === 'all' }" @click="setDateFilter('all')">全部</button>
+                    <button class="filter-btn" :class="{ active: dateFilter === 'custom' }" @click="setDateFilter('custom')">自定义</button>
+                </div>
+                <div class="date-range-picker" v-if="dateFilter === 'custom'">
+                    <label class="date-input-group">
+                        <span>从</span>
+                        <input type="date" v-model="dateFrom" class="date-input" :max="dateTo || undefined">
+                    </label>
+                    <label class="date-input-group">
+                        <span>至</span>
+                        <input type="date" v-model="dateTo" class="date-input" :min="dateFrom || undefined">
+                    </label>
+                </div>
+            </div>
+
             <div class="contest-list" v-if="filteredContests.length > 0">
                 <div class="contest-list-header">
                     <span>共 {{ filteredContests.length }} 场比赛</span>
@@ -133,7 +154,10 @@
                     currentYear: new Date().getFullYear(),
                     theme: localStorage.getItem('theme') || 'light',
                     themeMode: localStorage.getItem('themeMode') || 'system',
-                    showThemeMenu: false
+                    showThemeMenu: false,
+                    dateFilter: 'all',
+                    dateFrom: '',
+                    dateTo: ''
                 }
             },
             computed: {
@@ -170,6 +194,38 @@
                         result = result.filter(c => c.name.toLowerCase().includes(search));
                     }
 
+                    const now = new Date();
+                    const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+                    if (this.dateFilter === 'today') {
+                        const todayEnd = new Date(todayStart.getTime() + 24 * 60 * 60 * 1000);
+                        result = result.filter(c => {
+                            const d = new Date(c.start_time);
+                            return d >= todayStart && d < todayEnd;
+                        });
+                    } else if (this.dateFilter === 'week') {
+                        const weekEnd = new Date(todayStart.getTime() + 7 * 24 * 60 * 60 * 1000);
+                        result = result.filter(c => {
+                            const d = new Date(c.start_time);
+                            return d >= todayStart && d < weekEnd;
+                        });
+                    } else if (this.dateFilter === 'month') {
+                        const monthEnd = new Date(todayStart.getTime() + 30 * 24 * 60 * 60 * 1000);
+                        result = result.filter(c => {
+                            const d = new Date(c.start_time);
+                            return d >= todayStart && d < monthEnd;
+                        });
+                    } else if (this.dateFilter === 'custom') {
+                        if (this.dateFrom) {
+                            const from = new Date(this.dateFrom + 'T00:00:00');
+                            result = result.filter(c => new Date(c.start_time) >= from);
+                        }
+                        if (this.dateTo) {
+                            const to = new Date(this.dateTo + 'T23:59:59');
+                            result = result.filter(c => new Date(c.start_time) <= to);
+                        }
+                    }
+
                     return result.sort((a, b) => new Date(a.start_time) - new Date(b.start_time));
                 },
                 filterSummaryText() {
@@ -181,8 +237,13 @@
                         ? '所有平台'
                         : [...this.selectedPlatforms].sort().join(' + ');
                     const dateRangeText = this.getContestDateRangeText(this.filteredContests);
+                    const dateLabel = this.dateFilter === 'all' ? '' :
+                        this.dateFilter === 'today' ? '今天 · ' :
+                        this.dateFilter === 'week' ? '本周 · ' :
+                        this.dateFilter === 'month' ? '本月 · ' :
+                        '自定义 · ';
 
-                    return `${platformText} · ${dateRangeText} · 共 ${this.filteredContests.length} 场比赛`;
+                    return `${dateLabel}${platformText} · ${dateRangeText} · 共 ${this.filteredContests.length} 场比赛`;
                 },
                 selectedSummaryText() {
                     if (this.selectedContests.length === 0) {
@@ -264,6 +325,13 @@
                         : `${this.formatDateForFilename(dateRange.start)}_to_${this.formatDateForFilename(dateRange.end)}`;
 
                     return `code-cal_${platformSegment}_${dateSegment}_${contests.length}-contests.ics`;
+                },
+                setDateFilter(filter) {
+                    this.dateFilter = filter;
+                    if (filter !== 'custom') {
+                        this.dateFrom = '';
+                        this.dateTo = '';
+                    }
                 },
                 setThemeMode(mode) {
                     this.themeMode = mode;
