@@ -24,16 +24,16 @@
                     </button>
                     <div class="theme-menu" v-if="showThemeMenu">
                         <div class="theme-option" :class="{ active: themeMode === 'system' }" @click="setThemeMode('system')">
-                            💻 系统设置
+                            <span class="theme-option-icon">系</span> 系统设置
                         </div>
                         <div class="theme-option" :class="{ active: themeMode === 'light' }" @click="setThemeMode('light')">
-                            ☀️ 浅色模式
+                            <span class="theme-option-icon">明</span> 浅色模式
                         </div>
                         <div class="theme-option" :class="{ active: themeMode === 'dark' }" @click="setThemeMode('dark')">
-                            🌙 深色模式
+                            <span class="theme-option-icon">暗</span> 深色模式
                         </div>
                         <div class="theme-option" :class="{ active: themeMode === 'auto' }" @click="setThemeMode('auto')">
-                            🕐 自动切换（随时间）
+                            <span class="theme-option-icon">自</span> 自动切换
                         </div>
                     </div>
                 </div>
@@ -163,12 +163,12 @@
             computed: {
                 getThemeIcon() {
                     if (this.themeMode === 'system') {
-                        return '💻';
+                        return '系';
                     } else if (this.themeMode === 'auto') {
                         const hour = new Date().getHours();
-                        return (hour >= 6 && hour < 18) ? '☀️' : '🌙';
+                        return (hour >= 6 && hour < 18) ? '明' : '暗';
                     }
-                    return this.theme === 'dark' ? '🌙' : '☀️';
+                    return this.theme === 'dark' ? '暗' : '明';
                 },
                 getThemeTitle() {
                     const titles = {
