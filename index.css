@@ -443,6 +443,228 @@ body {
     text-decoration: underline;
 }
 
+.subscribe-container {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 30px;
+    background: var(--card-background);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 5px 5px 0px var(--border-color);
+}
+
+.subscribe-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.subscribe-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.subscribe-info p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.search-box {
+    margin-bottom: 25px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--background);
+    color: var(--text-color);
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.filter-section {
+    margin-bottom: 25px;
+}
+
+.filter-title {
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-color);
+}
+
+.platform-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.platform-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    cursor: pointer;
+    background: var(--background);
+    color: var(--text-color);
+    transition: all 0.2s;
+}
+
+.platform-checkbox:hover {
+    border-color: var(--accent-color);
+}
+
+.platform-checkbox.active {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+}
+
+.platform-checkbox input {
+    display: none;
+}
+
+.platform-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--platform-color, #666);
+}
+
+.platform-dot.codeforces { background: #3b82f6; }
+.platform-dot.leetcode { background: #f97316; }
+.platform-dot.nowcoder { background: #06b6d4; }
+.platform-dot.luogu { background: #22c55e; }
+.platform-dot.atcoder { background: #a855f7; }
+
+.contest-list {
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.contest-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: var(--bg-secondary);
+    border-bottom: 2px solid var(--border-color);
+    font-weight: 600;
+}
+
+.select-all {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.select-all input {
+    cursor: pointer;
+}
+
+.contest-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border-color);
+    transition: background 0.2s;
+}
+
+.contest-item:last-child {
+    border-bottom: none;
+}
+
+.contest-item:hover {
+    background: var(--bg-secondary);
+}
+
+.contest-checkbox input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.contest-info {
+    flex: 1;
+}
+
+.contest-item .contest-name {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--text-color);
+}
+
+.contest-meta {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 0.85em;
+    color: var(--text-secondary);
+}
+
+.contest-time {
+    color: var(--text-secondary);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.empty-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.empty-text {
+    color: var(--text-secondary);
+    font-size: 1.1em;
+}
+
+.export-section {
+    text-align: center;
+}
+
+.export-btn {
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--accent-color);
+    color: white;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px var(--border-color);
+    transition: all 0.2s;
+}
+
+.export-btn:hover:not(:disabled) {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px var(--border-color);
+}
+
+.export-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.action-btn.secondary {
+    background: var(--card-background);
+    color: var(--text-color);
+}
+
  @media (max-width: 768px) {
    .footer {
      padding: 15px 0;
