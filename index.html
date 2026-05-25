@@ -139,9 +139,9 @@
                     }
                 },
                 copyContestInfo(contest) {
-                    const text = `${contest.name}\n开始时间：${contest.start_time}\n平台：${contest.platform}\n\n© ${this.currentYear} ChanYeeSum. All rights reserved.`;
+                    const text = `${contest.name}\n开始时间：${contest.start_time}\n平台：${contest.platform}\n比赛链接：${contest.url}\n来源：https://chanyeesum.github.io/CodeCal/index.html\n\n© ${this.currentYear} ChanYeeSum. All rights reserved.`;
                     navigator.clipboard.writeText(text)
-                        .then(() => showToast('已复制比赛信息并添加版权声明'))
+                        .then(() => showToast('已复制比赛信息'))
                         .catch(err => console.error('复制失败:', err));
                 },
                 toggleTheme() {
