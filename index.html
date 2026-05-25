@@ -26,17 +26,38 @@
         }
     </script>
     <div id="app" class="container">
-        <button class="theme-toggle" @click="toggleTheme" :title="theme === 'dark' ? '切换到亮色模式' : '切换到暗色模式'">
-            {{ theme === 'dark' ? '🌞' : '🌙' }}
-        </button>
         <div class="header">
             <h1>编程竞赛日历</h1>
-            <h2>当前时间</h2>
+            <div class="header-actions">
+                <button class="action-btn" @click="exportCalendar" title="导出日历 (.ics)">
+                    📅 订阅日历
+                </button>
+                <div class="theme-dropdown">
+                    <button class="theme-toggle" @click="showThemeMenu = !showThemeMenu" :title="getThemeTitle">
+                        {{ getThemeIcon }}
+                    </button>
+                    <div class="theme-menu" v-if="showThemeMenu">
+                        <div class="theme-option" :class="{ active: themeMode === 'system' }" @click="setThemeMode('system')">
+                            💻 系统设置
+                        </div>
+                        <div class="theme-option" :class="{ active: themeMode === 'light' }" @click="setThemeMode('light')">
+                            ☀️ 浅色模式
+                        </div>
+                        <div class="theme-option" :class="{ active: themeMode === 'dark' }" @click="setThemeMode('dark')">
+                            🌙 深色模式
+                        </div>
+                        <div class="theme-option" :class="{ active: themeMode === 'auto' }" @click="setThemeMode('auto')">
+                            🕐 自动切换（随时间）
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <nav class="view-switcher">
             <a href="index.html" class="nav-link active">列表视图</a>
             <a href="calendar-modern.html" class="nav-link">日历视图</a>
+            <a href="subscribe.html" class="nav-link">订阅日历</a>
         </nav>
 
         <div class="filters">
@@ -89,12 +110,46 @@
                     platforms: ['all', 'Codeforces', 'LeetCode', 'NowCoder', 'luogu', 'AtCoder'],
                     updateTime: '',
                     theme: localStorage.getItem('theme') || 'light',
+                    themeMode: localStorage.getItem('themeMode') || 'system',
+                    showThemeMenu: false,
                     currentYear: new Date().getFullYear()
                 }
             },
+            computed: {
+                getThemeIcon() {
+                    if (this.themeMode === 'system') {
+                        return '💻';
+                    } else if (this.themeMode === 'auto') {
+                        const hour = new Date().getHours();
+                        return (hour >= 6 && hour < 18) ? '☀️' : '🌙';
+                    }
+                    return this.theme === 'dark' ? '🌙' : '☀️';
+                },
+                getThemeTitle() {
+                    const titles = {
+                        system: '跟随系统设置',
+                        light: '浅色模式',
+                        dark: '深色模式',
+                        auto: '自动切换（随时间）'
+                    };
+                    return titles[this.themeMode] || '切换主题';
+                }
+            },
+            watch: {
+                themeMode: {
+                    handler() {
+                        localStorage.setItem('themeMode', this.themeMode);
+                        this.applyTheme();
+                    }
+                }
+            },
             created() {
-                document.documentElement.setAttribute('data-theme', this.theme);
-               
+                this.applyTheme();
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                    if (this.themeMode === 'system') {
+                        this.applyTheme();
+                    }
+                });
             },
             computed: {
                 filteredContests() {
@@ -139,15 +194,84 @@
                     }
                 },
                 copyContestInfo(contest) {
-                    const text = `${contest.name}\n开始时间：${contest.start_time}\n平台：${contest.platform}\n\n© ${this.currentYear} ChanYeeSum. All rights reserved.`;
+                    const text = `${contest.name}\n开始时间：${contest.start_time}\n平台：${contest.platform}\n比赛链接：${contest.url}\n \n \n 来源：https://chanyeesum.github.io/CodeCal/index.html\n© ${this.currentYear} ChanYeeSum. All rights reserved.`;
                     navigator.clipboard.writeText(text)
-                        .then(() => showToast('已复制比赛信息并添加版权声明'))
+                        .then(() => showToast('已复制比赛信息'))
                         .catch(err => console.error('复制失败:', err));
                 },
-                toggleTheme() {
-                    this.theme = this.theme === 'light' ? 'dark' : 'light';
-                    document.documentElement.setAttribute('data-theme', this.theme);
-                    localStorage.setItem('theme', this.theme);
+                setThemeMode(mode) {
+                    this.themeMode = mode;
+                    this.showThemeMenu = false;
+                },
+                applyTheme() {
+                    let effectiveTheme = this.theme;
+                    
+                    if (this.themeMode === 'system') {
+                        effectiveTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                    } else if (this.themeMode === 'auto') {
+                        const hour = new Date().getHours();
+                        effectiveTheme = (hour >= 6 && hour < 18) ? 'light' : 'dark';
+                    } else {
+                        effectiveTheme = this.themeMode;
+                    }
+                    
+                    this.theme = effectiveTheme;
+                    document.documentElement.setAttribute('data-theme', effectiveTheme);
+                    localStorage.setItem('theme', effectiveTheme);
+                },
+                exportCalendar() {
+                    const icsContent = this.generateICS();
+                    const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = 'contests-calendar.ics';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    URL.revokeObjectURL(url);
+                    showToast('日历文件已下载');
+                },
+                generateICS() {
+                    const lines = [
+                        'BEGIN:VCALENDAR',
+                        'VERSION:2.0',
+                        'PRODID:-//CodeCal//Contest Calendar//ZH-CN',
+                        'CALSCALE:GREGORIAN',
+                        'METHOD:PUBLISH',
+                        'X-WR-CALNAME:编程竞赛日历',
+                        'X-WR-TIMEZONE:Asia/Shanghai'
+                    ];
+                    
+                    this.contests.forEach(contest => {
+                        const startDate = new Date(contest.start_time.replace(/-/g, '/'));
+                        const endDate = new Date(startDate.getTime() + this.parseDuration(contest.duration));
+                        const uid = contest.url.replace(/[^a-zA-Z0-9]/g, '_') + '@codecal';
+                        
+                        lines.push('BEGIN:VEVENT');
+                        lines.push(`UID:${uid}`);
+                        lines.push(`DTSTAMP:${this.formatICSDate(new Date())}`);
+                        lines.push(`DTSTART:${this.formatICSDate(startDate)}`);
+                        lines.push(`DTEND:${this.formatICSDate(endDate)}`);
+                        lines.push(`SUMMARY:${contest.name}`);
+                        lines.push(`DESCRIPTION:平台：${contest.platform}\\n比赛链接：${contest.url}`);
+                        lines.push(`URL:${contest.url}`);
+                        lines.push('END:VEVENT');
+                    });
+                    
+                    lines.push('END:VCALENDAR');
+                    return lines.join('\r\n');
+                },
+                parseDuration(duration) {
+                    const hours = duration.match(/(\d+)小时/);
+                    const minutes = duration.match(/(\d+)分钟/);
+                    let ms = 0;
+                    if (hours) ms += parseInt(hours[1]) * 60 * 60 * 1000;
+                    if (minutes) ms += parseInt(minutes[1]) * 60 * 1000;
+                    return ms || 2 * 60 * 60 * 1000;
+                },
+                formatICSDate(date) {
+                    return date.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
                 },
                 async fetchContests() {
                     try {

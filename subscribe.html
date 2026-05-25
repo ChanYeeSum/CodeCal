@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="icon" type="image/png" href="icons/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>订阅日历 - CodeCal</title>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="app" class="container">
+        <div class="header">
+            <h1>订阅日历</h1>
+            <div class="header-actions">
+                <button class="action-btn secondary" onclick="location.href='index.html'">
+                    返回首页
+                </button>
+            </div>
+        </div>
+
+        <div class="subscribe-container">
+            <div class="subscribe-info">
+                <h2>📅 导出比赛到日历</h2>
+                <p>选择要订阅的平台和比赛，生成 .ics 日历文件</p>
+            </div>
+
+            <div class="search-box">
+                <input type="text" v-model="searchText" placeholder="搜索比赛名称..." class="search-input">
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">选择平台</div>
+                <div class="platform-filters">
+                    <label class="platform-checkbox" :class="{ active: selectedPlatforms.includes('all') }">
+                        <input type="checkbox" :checked="selectedPlatforms.includes('all')" @change="togglePlatform('all')">
+                        <span>全部平台</span>
+                    </label>
+                    <label class="platform-checkbox" v-for="platform in allPlatforms" :key="platform" :class="{ active: selectedPlatforms.includes(platform) }">
+                        <input type="checkbox" :checked="selectedPlatforms.includes(platform)" @change="togglePlatform(platform)">
+                        <span :class="['platform-dot', platform.toLowerCase()]"></span>
+                        <span>{{ platform }}</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="contest-list" v-if="filteredContests.length > 0">
+                <div class="contest-list-header">
+                    <span>共 {{ filteredContests.length }} 场比赛</span>
+                    <label class="select-all">
+                        <input type="checkbox" :checked="isAllSelected" @change="toggleSelectAll">
+                        <span>全选</span>
+                    </label>
+                </div>
+                <div class="contest-item" v-for="contest in filteredContests" :key="contest.url">
+                    <label class="contest-checkbox">
+                        <input type="checkbox" :checked="selectedContests.includes(contest.url)" @change="toggleContest(contest.url)">
+                    </label>
+                    <div class="contest-info">
+                        <div class="contest-name">{{ contest.name }}</div>
+                        <div class="contest-meta">
+                            <span :class="['platform-tag', contest.platform.toLowerCase()]">{{ contest.platform }}</span>
+                            <span class="contest-time">{{ contest.start_time }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="empty-state" v-else>
+                <div class="empty-icon">📭</div>
+                <div class="empty-text">没有找到匹配的比赛</div>
+            </div>
+
+            <div class="export-section">
+                <button class="export-btn" @click="exportSelected" :disabled="selectedContests.length === 0">
+                    📥 导出 {{ selectedContests.length }} 场到日历 (.ics)
+                </button>
+            </div>
+        </div>
+
+        <div id="toast-container"></div>
+
+        <footer class="footer">
+            <p>© {{ currentYear }} ChanYeeSum. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="https://github.com/ChanYeeSum/CodeCal" target="_blank" style="color: var(--link-color, #4f46e5); text-decoration: none;">GitHub</a>
+                ·
+                <a href="https://github.com/ChanYeeSum" target="_blank" style="color: var(--link-color, #4f46e5); text-decoration: none;">作者</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+        createApp({
+            data() {
+                return {
+                    contests: [],
+                    searchText: '',
+                    selectedPlatforms: ['all'],
+                    selectedContests: [],
+                    currentYear: new Date().getFullYear()
+                }
+            },
+            computed: {
+                allPlatforms() {
+                    return [...new Set(this.contests.map(c => c.platform))].sort();
+                },
+                filteredContests() {
+                    let result = this.contests;
+
+                    if (!this.selectedPlatforms.includes('all') && this.selectedPlatforms.length > 0) {
+                        result = result.filter(c => this.selectedPlatforms.includes(c.platform));
+                    }
+
+                    if (this.searchText.trim()) {
+                        const search = this.searchText.toLowerCase();
+                        result = result.filter(c => c.name.toLowerCase().includes(search));
+                    }
+
+                    return result.sort((a, b) => new Date(a.start_time) - new Date(b.start_time));
+                },
+                isAllSelected() {
+                    return this.filteredContests.length > 0 && 
+                           this.filteredContests.every(c => this.selectedContests.includes(c.url));
+                }
+            },
+            methods: {
+                togglePlatform(platform) {
+                    if (platform === 'all') {
+                        this.selectedPlatforms = ['all'];
+                    } else {
+                        const index = this.selectedPlatforms.indexOf(platform);
+                        if (index > -1) {
+                            this.selectedPlatforms.splice(index, 1);
+                        } else {
+                            this.selectedPlatforms.push(platform);
+                        }
+                        this.selectedPlatforms = this.selectedPlatforms.filter(p => p !== 'all');
+                        if (this.selectedPlatforms.length === 0) {
+                            this.selectedPlatforms = ['all'];
+                        }
+                    }
+                },
+                toggleContest(url) {
+                    const index = this.selectedContests.indexOf(url);
+                    if (index > -1) {
+                        this.selectedContests.splice(index, 1);
+                    } else {
+                        this.selectedContests.push(url);
+                    }
+                },
+                toggleSelectAll() {
+                    if (this.isAllSelected) {
+                        this.selectedContests = [];
+                    } else {
+                        this.selectedContests = this.filteredContests.map(c => c.url);
+                    }
+                },
+                exportSelected() {
+                    const selectedContests = this.contests.filter(c => this.selectedContests.includes(c.url));
+                    const icsContent = this.generateICS(selectedContests);
+                    const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = 'code-cal-contests.ics';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    URL.revokeObjectURL(url);
+                    showToast(`已导出 ${selectedContests.length} 场比赛到日历文件`);
+                },
+                generateICS(contests) {
+                    const lines = [
+                        'BEGIN:VCALENDAR',
+                        'VERSION:2.0',
+                        'PRODID:-//CodeCal//Contest Calendar//ZH-CN',
+                        'CALSCALE:GREGORIAN',
+                        'METHOD:PUBLISH',
+                        'X-WR-CALNAME:CodeCal编程竞赛',
+                        'X-WR-TIMEZONE:Asia/Shanghai'
+                    ];
+
+                    contests.forEach(contest => {
+                        const startDate = new Date(contest.start_time.replace(/-/g, '/'));
+                        const endDate = new Date(startDate.getTime() + this.parseDuration(contest.duration));
+                        const uid = contest.url.replace(/[^a-zA-Z0-9]/g, '_') + '@codecal';
+
+                        lines.push('BEGIN:VEVENT');
+                        lines.push(`UID:${uid}`);
+                        lines.push(`DTSTAMP:${this.formatICSDate(new Date())}`);
+                        lines.push(`DTSTART:${this.formatICSDate(startDate)}`);
+                        lines.push(`DTEND:${this.formatICSDate(endDate)}`);
+                        lines.push(`SUMMARY:${contest.name}`);
+                        lines.push(`DESCRIPTION:平台：${contest.platform}\\n比赛链接：${contest.url}`);
+                        lines.push(`URL:${contest.url}`);
+                        lines.push('END:VEVENT');
+                    });
+
+                    lines.push('END:VCALENDAR');
+                    return lines.join('\r\n');
+                },
+                parseDuration(duration) {
+                    const hours = duration.match(/(\d+)小时/);
+                    const minutes = duration.match(/(\d+)分钟/);
+                    let ms = 0;
+                    if (hours) ms += parseInt(hours[1]) * 60 * 60 * 1000;
+                    if (minutes) ms += parseInt(minutes[1]) * 60 * 1000;
+                    return ms || 2 * 60 * 60 * 1000;
+                },
+                formatICSDate(date) {
+                    return date.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+                },
+                async fetchContests() {
+                    try {
+                        const response = await fetch('contests.json');
+                        const data = await response.json();
+                        const today = new Date();
+                        today.setHours(0, 0, 0, 0);
+                        this.contests = data.contests.filter(contest => {
+                            const contestDate = new Date(contest.start_time);
+                            return contestDate >= today;
+                        });
+                    } catch (error) {
+                        console.error('Error fetching contests:', error);
+                    }
+                }
+            },
+            mounted() {
+                this.fetchContests();
+            }
+        }).mount('#app');
+    </script>
+</body>
+
+</html>
