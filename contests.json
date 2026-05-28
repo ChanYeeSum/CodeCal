@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-05-28 18:37:32",
+  "last_updated": "2026-05-28 22:50:04",
   "contests": [
+    {
+      "platform": "AtCoder",
+      "name": "第七回日本最強プログラマー学生選手権～Advance～ -予選- （AtCoder Beginner Contest 464）",
+      "start_time": "2026-06-27 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc464"
+    },
     {
       "platform": "AtCoder",
       "name": "AtCoder Beginner Contest 463",
