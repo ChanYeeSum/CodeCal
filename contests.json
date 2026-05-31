@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31 07:33:30",
+  "last_updated": "2026-05-31 13:02:21",
   "contests": [
     {
       "platform": "AtCoder",
@@ -112,6 +112,13 @@
       "start_time": "2026-05-31 09:00:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/136164?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "AtCoder Beginner Contest 460",
+      "start_time": "2026-05-30 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc460"
     },
     {
       "platform": "NowCoder",
@@ -273,13 +280,6 @@
       "start_time": "2026-05-16 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://www.luogu.com.cn/contest/326643"
-    },
-    {
-      "platform": "luogu",
-      "name": "「Spring OI」Round 1 & 春日清新赛",
-      "start_time": "2026-05-16 08:30:00",
-      "duration": "4小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/318187"
     }
   ]
 }
