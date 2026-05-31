@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31 16:25:49",
+  "last_updated": "2026-05-31 18:30:41",
   "contests": [
     {
       "platform": "AtCoder",
@@ -42,6 +42,13 @@
       "start_time": "2026-06-07 22:35:00",
       "duration": "2小时15分钟",
       "url": "https://codeforces.com/contest/2234"
+    },
+    {
+      "platform": "luogu",
+      "name": "【MX-X29】梦熊 X 组 · 欧尼恩赛 2 & FeOI Round 6（同步赛）",
+      "start_time": "2026-06-07 14:00:00",
+      "duration": "4小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/329969"
     },
     {
       "platform": "LeetCode",
