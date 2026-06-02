@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-02 17:48:26",
+  "last_updated": "2026-06-02 22:35:40",
   "contests": [
     {
       "platform": "AtCoder",
@@ -73,7 +73,7 @@
     },
     {
       "platform": "NowCoder",
-      "name": "第七届武汉纺织大学ACM程序设计竞赛",
+      "name": "第七届武汉纺织大学ACM程序设计竞赛(同步赛）",
       "start_time": "2026-06-07 13:00:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/136171?from=acm_calendar"
