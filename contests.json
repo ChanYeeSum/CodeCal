@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-03 08:10:59",
+  "last_updated": "2026-06-03 13:26:18",
   "contests": [
     {
       "platform": "AtCoder",
@@ -28,6 +28,13 @@
       "start_time": "2026-06-14 20:00:00",
       "duration": "2小时0分钟",
       "url": "https://atcoder.jp/contests/arc222"
+    },
+    {
+      "platform": "luogu",
+      "name": "2026年“胜意杯”华中地区高校第十九届程序设计邀请赛重现赛",
+      "start_time": "2026-06-14 13:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/330579"
     },
     {
       "platform": "LeetCode",
