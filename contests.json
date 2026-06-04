@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-04 08:13:18",
+  "last_updated": "2026-06-04 13:21:42",
   "contests": [
     {
       "platform": "AtCoder",
@@ -21,6 +21,13 @@
       "start_time": "2026-06-20 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc463"
+    },
+    {
+      "platform": "luogu",
+      "name": "「LAOI」Round 18",
+      "start_time": "2026-06-19 13:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/265057"
     },
     {
       "platform": "AtCoder",
