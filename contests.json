@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-04 13:21:42",
+  "last_updated": "2026-06-04 17:10:40",
   "contests": [
     {
       "platform": "AtCoder",
@@ -49,6 +49,13 @@
       "start_time": "2026-06-14 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-506"
+    },
+    {
+      "platform": "luogu",
+      "name": "Conclusion Masters #4: LAOI-R13",
+      "start_time": "2026-06-14 08:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/201628"
     },
     {
       "platform": "AtCoder",
