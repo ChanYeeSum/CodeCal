@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-05 09:36:51",
+  "last_updated": "2026-06-05 14:48:30",
   "contests": [
     {
       "platform": "AtCoder",
@@ -16,6 +16,13 @@
       "url": "https://atcoder.jp/contests/abc464"
     },
     {
+      "platform": "NowCoder",
+      "name": "牛客周赛 Round 149",
+      "start_time": "2026-06-21 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/136720?from=acm_calendar"
+    },
+    {
       "platform": "AtCoder",
       "name": "AtCoder Heuristic Contest 067",
       "start_time": "2026-06-21 18:00:00",
@@ -30,6 +37,13 @@
       "url": "https://atcoder.jp/contests/abc463"
     },
     {
+      "platform": "NowCoder",
+      "name": "牛客练习赛155",
+      "start_time": "2026-06-19 19:00:00",
+      "duration": "2小时30分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/136719?from=acm_calendar"
+    },
+    {
       "platform": "luogu",
       "name": "「LAOI」Round 18",
       "start_time": "2026-06-19 13:00:00",
@@ -42,6 +56,13 @@
       "start_time": "2026-06-14 20:00:00",
       "duration": "2小时0分钟",
       "url": "https://atcoder.jp/contests/arc222"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客周赛 Round 148",
+      "start_time": "2026-06-14 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/136707?from=acm_calendar"
     },
     {
       "platform": "luogu",
@@ -84,6 +105,13 @@
       "start_time": "2026-06-13 13:00:00",
       "duration": "5小时0分钟",
       "url": "https://www.luogu.com.cn/contest/330692"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客挑战赛89",
+      "start_time": "2026-06-12 19:00:00",
+      "duration": "3小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/136706?from=acm_calendar"
     },
     {
       "platform": "Codeforces",
@@ -161,6 +189,13 @@
       "start_time": "2026-06-05 19:00:00",
       "duration": "2小时30分钟",
       "url": "https://ac.nowcoder.com/acm/contest/135884?from=acm_calendar"
+    },
+    {
+      "platform": "luogu",
+      "name": "测试赛",
+      "start_time": "2026-06-05 15:00:00",
+      "duration": "1小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/330903"
     },
     {
       "platform": "NowCoder",
