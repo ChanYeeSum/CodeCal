@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-05 18:57:12",
+  "last_updated": "2026-06-05 22:06:11",
   "contests": [
     {
       "platform": "AtCoder",
@@ -147,6 +147,13 @@
       "start_time": "2026-06-07 13:00:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/136171?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2026年浙江科技大学程序设计竞赛（同步赛）",
+      "start_time": "2026-06-07 12:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/136728?from=acm_calendar"
     },
     {
       "platform": "LeetCode",
