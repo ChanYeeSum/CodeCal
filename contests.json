@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-05 14:48:30",
+  "last_updated": "2026-06-05 18:57:12",
   "contests": [
     {
       "platform": "AtCoder",
@@ -194,7 +194,7 @@
       "platform": "luogu",
       "name": "测试赛",
       "start_time": "2026-06-05 15:00:00",
-      "duration": "1小时30分钟",
+      "duration": "2小时30分钟",
       "url": "https://www.luogu.com.cn/contest/330903"
     },
     {
