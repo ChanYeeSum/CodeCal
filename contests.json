@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-07 09:36:45",
+  "last_updated": "2026-06-07 14:47:21",
   "contests": [
     {
       "platform": "AtCoder",
@@ -198,6 +198,13 @@
       "url": "https://leetcode.com/contest/biweekly-contest-184"
     },
     {
+      "platform": "NowCoder",
+      "name": "AtCoder Beginner Contest 461",
+      "start_time": "2026-06-06 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc461"
+    },
+    {
       "platform": "luogu",
       "name": "AFOI 2025 & AFO OI Round 1",
       "start_time": "2026-06-06 13:00:00",
@@ -273,13 +280,6 @@
       "start_time": "2026-05-23 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-183"
-    },
-    {
-      "platform": "luogu",
-      "name": "中山大学 2025 年程序设计竞赛校赛（重现赛）",
-      "start_time": "2026-05-23 13:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/323927"
     }
   ]
 }
