@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11 10:00:09",
+  "last_updated": "2026-06-11 15:13:50",
   "contests": [
     {
       "platform": "AtCoder",
@@ -86,6 +86,13 @@
       "url": "https://www.luogu.com.cn/contest/265057"
     },
     {
+      "platform": "Codeforces",
+      "name": "Order Capital Round 2 (Codeforces Round, Div. 1 + Div. 2)",
+      "start_time": "2026-06-18 22:35:00",
+      "duration": "3小时0分钟",
+      "url": "https://codeforces.com/contest/2237"
+    },
+    {
       "platform": "AtCoder",
       "name": "AtCoder Regular Contest 222",
       "start_time": "2026-06-14 20:00:00",
@@ -140,6 +147,13 @@
       "start_time": "2026-06-13 13:00:00",
       "duration": "5小时0分钟",
       "url": "https://www.luogu.com.cn/contest/330692"
+    },
+    {
+      "platform": "Codeforces",
+      "name": "Codeforces Round 1103 (Div. 3)",
+      "start_time": "2026-06-12 22:35:00",
+      "duration": "2小时30分钟",
+      "url": "https://codeforces.com/contest/2236"
     },
     {
       "platform": "NowCoder",
