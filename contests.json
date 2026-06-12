@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12 21:45:48",
+  "last_updated": "2026-06-13 01:21:56",
   "contests": [
     {
       "platform": "AtCoder",
@@ -154,13 +154,6 @@
       "start_time": "2026-06-13 13:00:00",
       "duration": "5小时0分钟",
       "url": "https://www.luogu.com.cn/contest/330692"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1103 (Div. 3)",
-      "start_time": "2026-06-12 22:35:00",
-      "duration": "2小时30分钟",
-      "url": "https://codeforces.com/contest/2236"
     },
     {
       "platform": "NowCoder",
