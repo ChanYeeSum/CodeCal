@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14 09:54:40",
+  "last_updated": "2026-06-14 15:05:30",
   "contests": [
     {
       "platform": "AtCoder",
@@ -35,6 +35,13 @@
       "start_time": "2026-06-27 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://www.luogu.com.cn/contest/244960"
+    },
+    {
+      "platform": "luogu",
+      "name": "【LGR-289-Div.4】洛谷入门赛 #48",
+      "start_time": "2026-06-26 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/332926"
     },
     {
       "platform": "NowCoder",
@@ -140,6 +147,13 @@
       "start_time": "2026-06-14 08:00:00",
       "duration": "4小时0分钟",
       "url": "https://www.luogu.com.cn/contest/201628"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "CodeQUEEN 2026 予選 (AtCoder Beginner Contest 462)",
+      "start_time": "2026-06-13 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc462"
     },
     {
       "platform": "luogu",
@@ -252,13 +266,6 @@
       "start_time": "2026-05-31 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-504"
-    },
-    {
-      "platform": "luogu",
-      "name": "【LGR-285-Div.2】洛谷蓝桥杯国赛模拟赛 2026",
-      "start_time": "2026-05-30 14:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/326698"
     }
   ]
 }
