@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14 06:36:42",
+  "last_updated": "2026-06-14 09:54:40",
   "contests": [
     {
       "platform": "AtCoder",
@@ -259,13 +259,6 @@
       "start_time": "2026-05-30 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://www.luogu.com.cn/contest/326698"
-    },
-    {
-      "platform": "luogu",
-      "name": "【MX-J30】梦熊 J 组 · H₂O赛 & FDOI Round 1",
-      "start_time": "2026-05-30 09:00:00",
-      "duration": "3小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/327902"
     }
   ]
 }
