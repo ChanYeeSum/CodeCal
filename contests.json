@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-15 23:27:33",
+  "last_updated": "2026-06-16 03:11:47",
   "contests": [
     {
       "platform": "AtCoder",
@@ -37,11 +37,25 @@
       "url": "https://atcoder.jp/contests/abc464"
     },
     {
+      "platform": "luogu",
+      "name": "XRCOI Round 2",
+      "start_time": "2026-06-27 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/244960"
+    },
+    {
       "platform": "NowCoder",
       "name": "牛客小白月赛134",
       "start_time": "2026-06-26 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/137072?from=acm_calendar"
+    },
+    {
+      "platform": "luogu",
+      "name": "【LGR-289-Div.4】洛谷入门赛 #48",
+      "start_time": "2026-06-26 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/332926"
     },
     {
       "platform": "NowCoder",
@@ -56,6 +70,13 @@
       "start_time": "2026-06-21 18:00:00",
       "duration": "4小时0分钟",
       "url": "https://atcoder.jp/contests/ahc067"
+    },
+    {
+      "platform": "luogu",
+      "name": "[SCCPC 2026] 2026 年四川省大学生程序设计竞赛重现赛",
+      "start_time": "2026-06-21 13:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/330334"
     },
     {
       "platform": "LeetCode",
@@ -79,11 +100,25 @@
       "url": "https://atcoder.jp/contests/abc463"
     },
     {
+      "platform": "luogu",
+      "name": "【LGR-287-Div.3】洛谷基础赛 #36 &「NLOI」Round1",
+      "start_time": "2026-06-20 14:00:00",
+      "duration": "3小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/318072"
+    },
+    {
       "platform": "NowCoder",
       "name": "牛客练习赛155",
       "start_time": "2026-06-19 19:00:00",
       "duration": "2小时30分钟",
       "url": "https://ac.nowcoder.com/acm/contest/136719?from=acm_calendar"
+    },
+    {
+      "platform": "luogu",
+      "name": "「LAOI」Round 18",
+      "start_time": "2026-06-19 13:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/265057"
     },
     {
       "platform": "Codeforces",
@@ -107,6 +142,13 @@
       "url": "https://ac.nowcoder.com/acm/contest/136707?from=acm_calendar"
     },
     {
+      "platform": "luogu",
+      "name": "2026年“胜意杯”华中地区高校第十九届程序设计邀请赛重现赛",
+      "start_time": "2026-06-14 13:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/330579"
+    },
+    {
       "platform": "LeetCode",
       "name": "Weekly Contest 506",
       "start_time": "2026-06-14 10:30:00",
@@ -114,11 +156,32 @@
       "url": "https://leetcode.com/contest/weekly-contest-506"
     },
     {
+      "platform": "luogu",
+      "name": "Conclusion Masters #4: LAOI-R13",
+      "start_time": "2026-06-14 08:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/201628"
+    },
+    {
       "platform": "NowCoder",
       "name": "CodeQUEEN 2026 予選 (AtCoder Beginner Contest 462)",
       "start_time": "2026-06-13 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc462"
+    },
+    {
+      "platform": "luogu",
+      "name": "【LGR-286-Div.3】洛谷基础赛 #35 & MierOI Round 2",
+      "start_time": "2026-06-13 14:00:00",
+      "duration": "3小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/324944"
+    },
+    {
+      "platform": "luogu",
+      "name": "[JLCPC 2026] 2026 年第 19 届吉林省大学生程序设计竞赛重现赛",
+      "start_time": "2026-06-13 13:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/330692"
     },
     {
       "platform": "NowCoder",
@@ -133,6 +196,13 @@
       "start_time": "2026-06-07 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/136224?from=acm_calendar"
+    },
+    {
+      "platform": "luogu",
+      "name": "【MX-X29】梦熊 X 组 · 欧尼恩赛 2 & FeOI Round 6（同步赛）",
+      "start_time": "2026-06-07 14:00:00",
+      "duration": "4小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/329969"
     },
     {
       "platform": "NowCoder",
@@ -168,6 +238,20 @@
       "start_time": "2026-06-06 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc461"
+    },
+    {
+      "platform": "luogu",
+      "name": "AFOI 2025 & AFO OI Round 1",
+      "start_time": "2026-06-06 13:00:00",
+      "duration": "4小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/305608"
+    },
+    {
+      "platform": "luogu",
+      "name": "[Xzy OI] Round 1 & ccb(?)",
+      "start_time": "2026-06-06 08:30:00",
+      "duration": "3小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/312073"
     },
     {
       "platform": "NowCoder",
