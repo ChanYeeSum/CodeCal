@@ -1,12 +1,40 @@
 {
-  "last_updated": "2026-06-16 08:11:12",
+  "last_updated": "2026-06-16 14:05:37",
   "contests": [
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Beginner Contest 466",
+      "start_time": "2026-07-11 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc466"
+    },
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Beginner Contest 465",
+      "start_time": "2026-07-04 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc465"
+    },
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Regular Contest 223",
+      "start_time": "2026-06-28 20:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://atcoder.jp/contests/arc223"
+    },
     {
       "platform": "NowCoder",
       "name": "牛客周赛 Round 150",
       "start_time": "2026-06-28 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/137073?from=acm_calendar"
+    },
+    {
+      "platform": "AtCoder",
+      "name": "第七回日本最強プログラマー学生選手権～Advance～ -予選- （AtCoder Beginner Contest 464）",
+      "start_time": "2026-06-27 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc464"
     },
     {
       "platform": "luogu",
@@ -37,6 +65,13 @@
       "url": "https://ac.nowcoder.com/acm/contest/136720?from=acm_calendar"
     },
     {
+      "platform": "AtCoder",
+      "name": "AtCoder Heuristic Contest 067",
+      "start_time": "2026-06-21 18:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://atcoder.jp/contests/ahc067"
+    },
+    {
       "platform": "luogu",
       "name": "[SCCPC 2026] 2026 年四川省大学生程序设计竞赛重现赛",
       "start_time": "2026-06-21 13:00:00",
@@ -56,6 +91,13 @@
       "start_time": "2026-06-20 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-185"
+    },
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Beginner Contest 463",
+      "start_time": "2026-06-20 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc463"
     },
     {
       "platform": "luogu",
