@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16 14:05:37",
+  "last_updated": "2026-06-16 19:41:06",
   "contests": [
     {
       "platform": "AtCoder",
@@ -28,6 +28,13 @@
       "start_time": "2026-06-28 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/137073?from=acm_calendar"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 508",
+      "start_time": "2026-06-28 10:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/weekly-contest-508"
     },
     {
       "platform": "AtCoder",
@@ -259,13 +266,6 @@
       "start_time": "2026-06-05 19:00:00",
       "duration": "2小时30分钟",
       "url": "https://ac.nowcoder.com/acm/contest/135884?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客2026年儿童节比赛",
-      "start_time": "2026-06-01 19:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/135295?from=acm_calendar"
     }
   ]
 }
