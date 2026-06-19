@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-19 10:17:05",
+  "last_updated": "2026-06-19 15:38:27",
   "contests": [
     {
       "platform": "AtCoder",
@@ -28,6 +28,13 @@
       "start_time": "2026-07-04 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc465"
+    },
+    {
+      "platform": "luogu",
+      "name": "【LGR-288-Div.2】洛谷 7 月月赛 I & lnOI Round 1",
+      "start_time": "2026-07-04 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/297106"
     },
     {
       "platform": "Codeforces",
