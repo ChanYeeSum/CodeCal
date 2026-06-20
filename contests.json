@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-20 07:35:50",
+  "last_updated": "2026-06-20 12:51:40",
   "contests": [
     {
       "platform": "AtCoder",
@@ -21,6 +21,27 @@
       "start_time": "2026-07-11 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc466"
+    },
+    {
+      "platform": "AtCoder",
+      "name": "World Tour Finals 2026 Algorithm",
+      "start_time": "2026-07-09 10:00:00",
+      "duration": "7小时0分钟",
+      "url": "https://atcoder.jp/contests/awtf2026algo"
+    },
+    {
+      "platform": "AtCoder",
+      "name": "World Tour Finals 2026 Algorithm（Open Contest）",
+      "start_time": "2026-07-09 10:00:00",
+      "duration": "7小时0分钟",
+      "url": "https://atcoder.jp/contests/awtf2026algo-open"
+    },
+    {
+      "platform": "AtCoder",
+      "name": "World Tour Finals 2026 Heuristic",
+      "start_time": "2026-07-07 08:00:00",
+      "duration": "34小时0分钟",
+      "url": "https://atcoder.jp/contests/awtf2026heuristic"
     },
     {
       "platform": "LeetCode",
