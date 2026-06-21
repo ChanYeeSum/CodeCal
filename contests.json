@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21 06:41:51",
+  "last_updated": "2026-06-21 09:58:23",
   "contests": [
     {
       "platform": "AtCoder",
@@ -315,13 +315,6 @@
       "start_time": "2026-06-06 13:00:00",
       "duration": "4小时30分钟",
       "url": "https://www.luogu.com.cn/contest/305608"
-    },
-    {
-      "platform": "luogu",
-      "name": "[Xzy OI] Round 1 & ccb(?)",
-      "start_time": "2026-06-06 08:30:00",
-      "duration": "3小时30分钟",
-      "url": "https://www.luogu.com.cn/contest/312073"
     }
   ]
 }
