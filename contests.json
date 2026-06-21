@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21 09:58:23",
+  "last_updated": "2026-06-21 15:15:17",
   "contests": [
     {
       "platform": "AtCoder",
@@ -177,6 +177,13 @@
       "url": "https://leetcode.com/contest/biweekly-contest-185"
     },
     {
+      "platform": "NowCoder",
+      "name": "AtCoder Beginner Contest 463",
+      "start_time": "2026-06-20 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc463"
+    },
+    {
       "platform": "luogu",
       "name": "【LGR-287-Div.3】洛谷基础赛 #36 &「NLOI」Round1",
       "start_time": "2026-06-20 14:00:00",
@@ -308,13 +315,6 @@
       "start_time": "2026-06-06 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc461"
-    },
-    {
-      "platform": "luogu",
-      "name": "AFOI 2025 & AFO OI Round 1",
-      "start_time": "2026-06-06 13:00:00",
-      "duration": "4小时30分钟",
-      "url": "https://www.luogu.com.cn/contest/305608"
     }
   ]
 }
