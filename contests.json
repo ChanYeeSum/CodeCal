@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22 16:37:59",
+  "last_updated": "2026-06-22 23:04:10",
   "contests": [
     {
       "platform": "AtCoder",
@@ -122,7 +122,7 @@
     },
     {
       "platform": "AtCoder",
-      "name": "第七回日本最強プログラマー学生選手権～Advance～ -予選- （AtCoder Beginner Contest 464）",
+      "name": "Japanese Student Championship 2026 -Advance- Qualification (AtCoder Beginner Contest 464)",
       "start_time": "2026-06-27 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc464"
@@ -266,13 +266,6 @@
       "start_time": "2026-06-12 19:00:00",
       "duration": "3小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/136706?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客周赛 Round 147",
-      "start_time": "2026-06-07 19:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/136224?from=acm_calendar"
     }
   ]
 }
