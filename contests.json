@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22 10:01:24",
+  "last_updated": "2026-06-22 16:37:59",
   "contests": [
     {
       "platform": "AtCoder",
@@ -42,6 +42,13 @@
       "start_time": "2026-07-07 08:00:00",
       "duration": "34小时0分钟",
       "url": "https://atcoder.jp/contests/awtf2026heuristic"
+    },
+    {
+      "platform": "luogu",
+      "name": "[ICPC2017 Shenyang R] ICPC 2017 区域赛沈阳站重现赛",
+      "start_time": "2026-07-05 13:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/334255"
     },
     {
       "platform": "LeetCode",
@@ -266,34 +273,6 @@
       "start_time": "2026-06-07 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/136224?from=acm_calendar"
-    },
-    {
-      "platform": "luogu",
-      "name": "【MX-X29】梦熊 X 组 · 欧尼恩赛 2 & FeOI Round 6（同步赛）",
-      "start_time": "2026-06-07 14:00:00",
-      "duration": "4小时30分钟",
-      "url": "https://www.luogu.com.cn/contest/329969"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "第七届武汉纺织大学ACM程序设计竞赛(同步赛）",
-      "start_time": "2026-06-07 13:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/136171?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "2026年浙江科技大学程序设计竞赛（同步赛）",
-      "start_time": "2026-06-07 12:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/136728?from=acm_calendar"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 505",
-      "start_time": "2026-06-07 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-505"
     }
   ]
 }
