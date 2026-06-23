@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23 07:50:18",
+  "last_updated": "2026-06-23 12:40:46",
   "contests": [
     {
       "platform": "AtCoder",
@@ -49,13 +49,6 @@
       "start_time": "2026-07-06 22:35:00",
       "duration": "2小时0分钟",
       "url": "https://codeforces.com/contest/2242"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Educational Codeforces Round 192 (Rated for Div. 2)",
-      "start_time": "2026-07-06 22:35:00",
-      "duration": "2小时0分钟",
-      "url": "https://codeforces.com/contest/2243"
     },
     {
       "platform": "luogu",
