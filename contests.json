@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26 03:26:22",
+  "last_updated": "2026-06-26 05:12:51",
   "contests": [
     {
       "platform": "AtCoder",
@@ -7,6 +7,13 @@
       "start_time": "2026-07-25 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc468"
+    },
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Regular Contest 225",
+      "start_time": "2026-07-19 20:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://atcoder.jp/contests/arc225"
     },
     {
       "platform": "AtCoder",
@@ -21,6 +28,13 @@
       "start_time": "2026-07-18 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://atcoder.jp/contests/ahc068"
+    },
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Regular Contest-- 224",
+      "start_time": "2026-07-12 20:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://atcoder.jp/contests/arc224"
     },
     {
       "platform": "AtCoder",
