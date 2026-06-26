@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26 18:35:31",
+  "last_updated": "2026-06-26 21:28:36",
   "contests": [
     {
       "platform": "AtCoder",
@@ -140,6 +140,13 @@
       "start_time": "2026-06-28 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/137073?from=acm_calendar"
+    },
+    {
+      "platform": "luogu",
+      "name": "【MX-S15】梦熊 S 组 · 凡尔赛 & DLESS Round 5（同步赛）",
+      "start_time": "2026-06-28 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/334639"
     },
     {
       "platform": "LeetCode",
