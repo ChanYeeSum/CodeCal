@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27 18:32:35",
+  "last_updated": "2026-06-27 20:51:25",
   "contests": [
     {
       "platform": "AtCoder",
@@ -149,13 +149,6 @@
       "url": "https://codeforces.com/contest/2240"
     },
     {
-      "platform": "AtCoder",
-      "name": "Japanese Student Championship 2026 -Advance- Qualification (AtCoder Beginner Contest 464)",
-      "start_time": "2026-06-27 20:00:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/abc464"
-    },
-    {
       "platform": "NowCoder",
       "name": "牛客小白月赛134",
       "start_time": "2026-06-26 19:00:00",
@@ -224,13 +217,6 @@
       "start_time": "2026-06-13 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc462"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客挑战赛89",
-      "start_time": "2026-06-12 19:00:00",
-      "duration": "3小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/136706?from=acm_calendar"
     }
   ]
 }
