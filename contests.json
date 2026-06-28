@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28 09:33:29",
+  "last_updated": "2026-06-28 14:42:51",
   "contests": [
     {
       "platform": "AtCoder",
@@ -133,6 +133,13 @@
       "start_time": "2026-06-28 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-508"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "第七回日本最強プログラマー学生選手権～Advance～ -予選- （AtCoder Beginner Contest 464）",
+      "start_time": "2026-06-27 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc464"
     },
     {
       "platform": "NowCoder",
