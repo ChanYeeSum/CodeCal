@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-30 23:10:55",
+  "last_updated": "2026-07-01 01:22:49",
   "contests": [
     {
       "platform": "AtCoder",
@@ -7,6 +7,13 @@
       "start_time": "2026-07-25 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc468"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2026牛客暑期多校训练营2",
+      "start_time": "2026-07-22 12:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/133877?from=acm_calendar"
     },
     {
       "platform": "AtCoder",
@@ -28,6 +35,20 @@
       "start_time": "2026-07-18 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://atcoder.jp/contests/ahc068"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "第六届上海理工大学ACM程序设计全国挑战赛",
+      "start_time": "2026-07-18 12:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/137134?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2026牛客暑期多校训练营1",
+      "start_time": "2026-07-17 12:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/133876?from=acm_calendar"
     },
     {
       "platform": "AtCoder",
@@ -58,6 +79,13 @@
       "url": "https://codeforces.com/contest/2244"
     },
     {
+      "platform": "NowCoder",
+      "name": "牛客挑战赛90",
+      "start_time": "2026-07-10 19:00:00",
+      "duration": "3小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/137418?from=acm_calendar"
+    },
+    {
       "platform": "AtCoder",
       "name": "World Tour Finals 2026 Algorithm",
       "start_time": "2026-07-09 10:00:00",
@@ -86,6 +114,20 @@
       "url": "https://codeforces.com/contest/2242"
     },
     {
+      "platform": "NowCoder",
+      "name": "汤圆头 Round 1",
+      "start_time": "2026-07-06 19:00:00",
+      "duration": "4小时45分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/133543?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客周赛 Round 151",
+      "start_time": "2026-07-05 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/137267?from=acm_calendar"
+    },
+    {
       "platform": "LeetCode",
       "name": "Weekly Contest 509",
       "start_time": "2026-07-05 10:30:00",
@@ -107,25 +149,11 @@
       "url": "https://atcoder.jp/contests/abc465"
     },
     {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1107 (Div. 3)",
-      "start_time": "2026-06-30 22:35:00",
-      "duration": "2小时15分钟",
-      "url": "https://codeforces.com/contest/2241"
-    },
-    {
       "platform": "NowCoder",
-      "name": "AtCoder Regular Contest 223",
-      "start_time": "2026-06-28 20:00:00",
+      "name": "牛客小白月赛135",
+      "start_time": "2026-07-03 19:00:00",
       "duration": "2小时0分钟",
-      "url": "https://atcoder.jp/contests/arc223"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客周赛 Round 150",
-      "start_time": "2026-06-28 19:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/137073?from=acm_calendar"
+      "url": "https://ac.nowcoder.com/acm/contest/137264?from=acm_calendar"
     },
     {
       "platform": "LeetCode",
@@ -133,27 +161,6 @@
       "start_time": "2026-06-28 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-508"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "第七回日本最強プログラマー学生選手権～Advance～ -予選- （AtCoder Beginner Contest 464）",
-      "start_time": "2026-06-27 20:00:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/abc464"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客小白月赛134",
-      "start_time": "2026-06-26 19:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/137072?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客周赛 Round 149",
-      "start_time": "2026-06-21 19:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/136720?from=acm_calendar"
     },
     {
       "platform": "LeetCode",
@@ -168,20 +175,6 @@
       "start_time": "2026-06-20 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-185"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "AtCoder Beginner Contest 463",
-      "start_time": "2026-06-20 20:00:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/abc463"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客练习赛155",
-      "start_time": "2026-06-19 19:00:00",
-      "duration": "2小时30分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/136719?from=acm_calendar"
     }
   ]
 }
