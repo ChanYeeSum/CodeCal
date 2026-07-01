@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-07-01 14:50:51",
+  "last_updated": "2026-07-01 18:53:10",
   "contests": [
+    {
+      "platform": "AtCoder",
+      "name": "RECRUIT Nihonbashi Half Marathon 2026 Summer (AtCoder Heuristic Contest 069)",
+      "start_time": "2026-07-31 18:00:00",
+      "duration": "240小时0分钟",
+      "url": "https://atcoder.jp/contests/ahc069"
+    },
     {
       "platform": "AtCoder",
       "name": "AtCoder Beginner Contest 468",
