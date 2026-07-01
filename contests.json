@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-01 09:39:38",
+  "last_updated": "2026-07-01 14:50:51",
   "contests": [
     {
       "platform": "AtCoder",
@@ -56,6 +56,13 @@
       "start_time": "2026-07-12 20:00:00",
       "duration": "2小时0分钟",
       "url": "https://atcoder.jp/contests/arc224"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客周赛 Round 152",
+      "start_time": "2026-07-12 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/137448?from=acm_calendar"
     },
     {
       "platform": "LeetCode",
