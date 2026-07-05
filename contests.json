@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05 12:39:47",
+  "last_updated": "2026-07-05 16:25:21",
   "contests": [
     {
       "platform": "AtCoder",
@@ -154,6 +154,13 @@
       "start_time": "2026-07-06 19:00:00",
       "duration": "4小时45分钟",
       "url": "https://ac.nowcoder.com/acm/contest/133543?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "金山杯2026年武汉理工大学程序设计竞赛",
+      "start_time": "2026-07-06 10:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/137532?from=acm_calendar"
     },
     {
       "platform": "NowCoder",
