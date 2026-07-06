@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-07-06 09:15:06",
+  "last_updated": "2026-07-06 13:57:42",
   "contests": [
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Beginner Contest 469",
+      "start_time": "2026-08-01 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc469"
+    },
     {
       "platform": "AtCoder",
       "name": "RECRUIT Nihonbashi Half Marathon 2026 Summer (AtCoder Heuristic Contest 069)",
@@ -158,7 +165,7 @@
     {
       "platform": "NowCoder",
       "name": "金山杯2026年武汉理工大学程序设计竞赛",
-      "start_time": "2026-07-06 10:00:00",
+      "start_time": "2026-07-06 10:25:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/137532?from=acm_calendar"
     },
@@ -203,13 +210,6 @@
       "start_time": "2026-06-28 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-508"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 507",
-      "start_time": "2026-06-21 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-507"
     }
   ]
 }
