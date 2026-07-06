@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-06 19:11:40",
+  "last_updated": "2026-07-06 22:41:51",
   "contests": [
     {
       "platform": "AtCoder",
@@ -94,6 +94,13 @@
     },
     {
       "platform": "Codeforces",
+      "name": "Codeforces Round (Div. 3)",
+      "start_time": "2026-07-14 22:35:00",
+      "duration": "2小时15分钟",
+      "url": "https://codeforces.com/contest/2244"
+    },
+    {
+      "platform": "Codeforces",
       "name": "Codeforces Round (Div. 2)",
       "start_time": "2026-07-12 22:35:00",
       "duration": "2小时15分钟",
@@ -126,13 +133,6 @@
       "start_time": "2026-07-11 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc466"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round (Div. 3)",
-      "start_time": "2026-07-10 22:35:00",
-      "duration": "2小时15分钟",
-      "url": "https://codeforces.com/contest/2244"
     },
     {
       "platform": "NowCoder",
