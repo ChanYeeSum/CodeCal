@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-06 13:57:42",
+  "last_updated": "2026-07-06 19:11:40",
   "contests": [
     {
       "platform": "AtCoder",
@@ -35,6 +35,20 @@
       "start_time": "2026-07-19 20:00:00",
       "duration": "2小时0分钟",
       "url": "https://atcoder.jp/contests/arc225"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客周赛 Round 153",
+      "start_time": "2026-07-19 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/137561?from=acm_calendar"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 511",
+      "start_time": "2026-07-19 10:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/weekly-contest-511"
     },
     {
       "platform": "Codeforces",
