@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-07 07:37:26",
+  "last_updated": "2026-07-07 12:32:37",
   "contests": [
     {
       "platform": "AtCoder",
@@ -154,13 +154,6 @@
       "start_time": "2026-07-09 10:00:00",
       "duration": "7小时0分钟",
       "url": "https://atcoder.jp/contests/awtf2026algo-open"
-    },
-    {
-      "platform": "AtCoder",
-      "name": "World Tour Finals 2026 Heuristic",
-      "start_time": "2026-07-07 08:00:00",
-      "duration": "34小时0分钟",
-      "url": "https://atcoder.jp/contests/awtf2026heuristic"
     },
     {
       "platform": "NowCoder",
