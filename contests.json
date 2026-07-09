@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-09 07:35:52",
+  "last_updated": "2026-07-09 12:30:10",
   "contests": [
     {
       "platform": "AtCoder",
@@ -147,20 +147,6 @@
       "start_time": "2026-07-10 19:00:00",
       "duration": "3小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/137418?from=acm_calendar"
-    },
-    {
-      "platform": "AtCoder",
-      "name": "World Tour Finals 2026 Algorithm",
-      "start_time": "2026-07-09 10:00:00",
-      "duration": "7小时0分钟",
-      "url": "https://atcoder.jp/contests/awtf2026algo"
-    },
-    {
-      "platform": "AtCoder",
-      "name": "World Tour Finals 2026 Algorithm（Open Contest）",
-      "start_time": "2026-07-09 10:00:00",
-      "duration": "7小时0分钟",
-      "url": "https://atcoder.jp/contests/awtf2026algo-open"
     },
     {
       "platform": "NowCoder",
