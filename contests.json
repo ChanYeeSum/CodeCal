@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-10 13:35:57",
+  "last_updated": "2026-07-10 17:59:48",
   "contests": [
     {
       "platform": "AtCoder",
@@ -42,6 +42,13 @@
       "start_time": "2026-07-19 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/137561?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2025年中南民族大学程序设计竞赛决赛（重现赛）",
+      "start_time": "2026-07-19 13:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/137478?from=acm_calendar"
     },
     {
       "platform": "LeetCode",
