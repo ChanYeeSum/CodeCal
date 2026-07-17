@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-17 15:32:26",
+  "last_updated": "2026-07-17 18:17:37",
   "contests": [
     {
       "platform": "AtCoder",
@@ -30,11 +30,25 @@
       "url": "https://ac.nowcoder.com/acm/contest/137840?from=acm_calendar"
     },
     {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 512",
+      "start_time": "2026-07-26 10:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/weekly-contest-512"
+    },
+    {
       "platform": "AtCoder",
       "name": "AtCoder Beginner Contest 468",
       "start_time": "2026-07-25 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc468"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2026牛客暑期多校训练营3",
+      "start_time": "2026-07-24 12:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/133878?from=acm_calendar"
     },
     {
       "platform": "NowCoder",
