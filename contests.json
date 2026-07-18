@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-18 12:25:09",
+  "last_updated": "2026-07-18 14:27:32",
   "contests": [
     {
       "platform": "AtCoder",
@@ -126,13 +126,6 @@
       "start_time": "2026-07-18 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc467"
-    },
-    {
-      "platform": "AtCoder",
-      "name": "estie Programming Contest 2026 (AtCoder Heuristic Contest 068)",
-      "start_time": "2026-07-18 14:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://atcoder.jp/contests/ahc068"
     },
     {
       "platform": "NowCoder",
