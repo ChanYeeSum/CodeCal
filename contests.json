@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19 00:29:15",
+  "last_updated": "2026-07-19 01:34:09",
   "contests": [
     {
       "platform": "AtCoder",
@@ -119,13 +119,6 @@
       "start_time": "2026-07-19 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-511"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1111 (Div. 2)",
-      "start_time": "2026-07-18 22:35:00",
-      "duration": "2小时0分钟",
-      "url": "https://codeforces.com/contest/2247"
     },
     {
       "platform": "LeetCode",
