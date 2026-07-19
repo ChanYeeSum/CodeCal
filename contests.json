@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19 19:36:19",
+  "last_updated": "2026-07-19 22:02:05",
   "contests": [
     {
       "platform": "AtCoder",
@@ -91,13 +91,6 @@
       "start_time": "2026-07-20 13:00:00",
       "duration": "4小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/137658?from=acm_calendar"
-    },
-    {
-      "platform": "AtCoder",
-      "name": "AtCoder Regular Contest 225",
-      "start_time": "2026-07-19 20:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://atcoder.jp/contests/arc225"
     },
     {
       "platform": "NowCoder",
@@ -217,13 +210,6 @@
       "start_time": "2026-07-04 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-186"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "AtCoder Beginner Contest 465",
-      "start_time": "2026-07-04 20:00:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/abc465"
     }
   ]
 }
