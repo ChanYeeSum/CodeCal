@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-20 16:23:50",
+  "last_updated": "2026-07-20 19:22:05",
   "contests": [
     {
       "platform": "AtCoder",
@@ -42,6 +42,20 @@
       "start_time": "2026-07-31 18:00:00",
       "duration": "240小时0分钟",
       "url": "https://atcoder.jp/contests/ahc069"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2026牛客暑期多校训练营5",
+      "start_time": "2026-07-31 12:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/133880?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2026牛客暑期多校训练营4",
+      "start_time": "2026-07-29 12:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/133879?from=acm_calendar"
     },
     {
       "platform": "Codeforces",
@@ -203,13 +217,6 @@
       "start_time": "2026-07-06 10:25:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/137532?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客周赛 Round 151",
-      "start_time": "2026-07-05 19:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/137267?from=acm_calendar"
     }
   ]
 }
