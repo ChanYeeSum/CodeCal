@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21 18:01:31",
+  "last_updated": "2026-07-21 20:08:04",
   "contests": [
     {
       "platform": "AtCoder",
@@ -210,13 +210,6 @@
       "start_time": "2026-07-10 19:00:00",
       "duration": "3小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/137418?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "汤圆头 Round 1",
-      "start_time": "2026-07-06 19:00:00",
-      "duration": "4小时45分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/133543?from=acm_calendar"
     }
   ]
 }
