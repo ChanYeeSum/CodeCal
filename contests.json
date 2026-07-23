@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-23 23:30:57",
+  "last_updated": "2026-07-24 01:54:45",
   "contests": [
     {
       "platform": "AtCoder",
@@ -28,20 +28,6 @@
       "start_time": "2026-08-08 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc470"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 513",
-      "start_time": "2026-08-02 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-513"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Biweekly Contest 188",
-      "start_time": "2026-08-01 22:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/biweekly-contest-188"
     },
     {
       "platform": "AtCoder",
@@ -100,13 +86,6 @@
       "url": "https://ac.nowcoder.com/acm/contest/137840?from=acm_calendar"
     },
     {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 512",
-      "start_time": "2026-07-26 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-512"
-    },
-    {
       "platform": "AtCoder",
       "name": "AtCoder Beginner Contest 468",
       "start_time": "2026-07-25 20:00:00",
@@ -156,20 +135,6 @@
       "url": "https://ac.nowcoder.com/acm/contest/137478?from=acm_calendar"
     },
     {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 511",
-      "start_time": "2026-07-19 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-511"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Biweekly Contest 187",
-      "start_time": "2026-07-18 22:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/biweekly-contest-187"
-    },
-    {
       "platform": "NowCoder",
       "name": "AtCoder Beginner Contest 467",
       "start_time": "2026-07-18 20:00:00",
@@ -203,13 +168,6 @@
       "start_time": "2026-07-12 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/137448?from=acm_calendar"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 510",
-      "start_time": "2026-07-12 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-510"
     },
     {
       "platform": "NowCoder",
