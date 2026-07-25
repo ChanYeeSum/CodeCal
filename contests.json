@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-25 18:07:26",
+  "last_updated": "2026-07-25 19:43:50",
   "contests": [
     {
       "platform": "AtCoder",
@@ -217,13 +217,6 @@
       "start_time": "2026-07-11 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc466"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客挑战赛90",
-      "start_time": "2026-07-10 19:00:00",
-      "duration": "3小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/137418?from=acm_calendar"
     }
   ]
 }
