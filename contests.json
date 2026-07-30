@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-07-30 12:34:52",
+  "last_updated": "2026-07-30 15:54:11",
   "contests": [
+    {
+      "platform": "AtCoder",
+      "name": "13th Asprova Programming Contest（AtCoder Heuristic Contest 070）",
+      "start_time": "2026-08-29 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://atcoder.jp/contests/ahc070"
+    },
     {
       "platform": "AtCoder",
       "name": "AtCoder Beginner Contest 472",
