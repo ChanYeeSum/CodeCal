@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02 09:09:23",
+  "last_updated": "2026-08-02 12:54:17",
   "contests": [
     {
       "platform": "AtCoder",
@@ -133,6 +133,13 @@
       "start_time": "2026-08-01 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-188"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "AtCoder Beginner Contest 469",
+      "start_time": "2026-08-01 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc469"
     },
     {
       "platform": "LeetCode",
