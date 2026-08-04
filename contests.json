@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-04 23:55:02",
+  "last_updated": "2026-08-05 02:10:33",
   "contests": [
     {
       "platform": "AtCoder",
@@ -133,13 +133,6 @@
       "start_time": "2026-08-05 12:00:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/133881?from=acm_calendar"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1114 (Div. 3)",
-      "start_time": "2026-08-04 22:35:00",
-      "duration": "2小时15分钟",
-      "url": "https://codeforces.com/contest/2254"
     },
     {
       "platform": "NowCoder",
