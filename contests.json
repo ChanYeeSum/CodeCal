@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-06 12:43:07",
+  "last_updated": "2026-08-06 16:00:26",
   "contests": [
     {
       "platform": "AtCoder",
@@ -63,6 +63,13 @@
       "start_time": "2026-08-16 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/139206?from=acm_calendar"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 515",
+      "start_time": "2026-08-16 10:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/weekly-contest-515"
     },
     {
       "platform": "LeetCode",
