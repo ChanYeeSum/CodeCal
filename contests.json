@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-06 08:50:36",
+  "last_updated": "2026-08-06 12:43:07",
   "contests": [
     {
       "platform": "AtCoder",
@@ -98,6 +98,13 @@
       "start_time": "2026-08-12 12:00:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/133883?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "河南萌新联赛2026第（四）场：南阳理工学院",
+      "start_time": "2026-08-10 13:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/139235?from=acm_calendar"
     },
     {
       "platform": "Codeforces",
