@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-10 07:58:24",
+  "last_updated": "2026-08-10 10:40:41",
   "contests": [
     {
       "platform": "AtCoder",
@@ -129,6 +129,13 @@
     },
     {
       "platform": "NowCoder",
+      "name": "ユニークビジョンプログラミングコンテスト2026 夏（AtCoder Regular Contest 226）",
+      "start_time": "2026-08-09 20:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://atcoder.jp/contests/arc226"
+    },
+    {
+      "platform": "NowCoder",
       "name": "牛客周赛 Round 156",
       "start_time": "2026-08-09 19:00:00",
       "duration": "2小时0分钟",
@@ -196,13 +203,6 @@
       "start_time": "2026-08-01 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc469"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 512",
-      "start_time": "2026-07-26 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-512"
     }
   ]
 }
