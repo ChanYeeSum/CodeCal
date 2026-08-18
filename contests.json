@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-18 12:07:23",
+  "last_updated": "2026-08-18 13:01:52",
   "contests": [
     {
       "platform": "AtCoder",
@@ -203,13 +203,6 @@
       "start_time": "2026-08-05 12:00:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/133881?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "河南萌新联赛2026第（三）场：郑州轻工业大学",
-      "start_time": "2026-08-03 13:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/138881?from=acm_calendar"
     }
   ]
 }
