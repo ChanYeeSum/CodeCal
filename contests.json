@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-20 11:24:08",
+  "last_updated": "2026-08-20 12:07:28",
   "contests": [
     {
       "platform": "AtCoder",
@@ -203,13 +203,6 @@
       "start_time": "2026-08-07 12:00:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/133882?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "2026牛客暑期多校训练营6",
-      "start_time": "2026-08-05 12:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/133881?from=acm_calendar"
     }
   ]
 }
