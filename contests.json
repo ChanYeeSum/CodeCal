@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-29 10:22:39",
+  "last_updated": "2026-08-29 17:17:16",
   "contests": [
     {
       "platform": "AtCoder",
@@ -30,6 +30,13 @@
       "url": "https://atcoder.jp/contests/ahc071"
     },
     {
+      "platform": "LeetCode",
+      "name": "Biweekly Contest 191",
+      "start_time": "2026-09-12 22:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/biweekly-contest-191"
+    },
+    {
       "platform": "AtCoder",
       "name": "AtCoder Beginner Contest 475",
       "start_time": "2026-09-12 20:00:00",
@@ -49,6 +56,13 @@
       "start_time": "2026-09-06 12:10:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc474"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 518",
+      "start_time": "2026-09-06 10:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/weekly-contest-518"
     },
     {
       "platform": "Codeforces",
@@ -105,13 +119,6 @@
       "start_time": "2026-08-29 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc473"
-    },
-    {
-      "platform": "AtCoder",
-      "name": "13th Asprova Programming Contest（AtCoder Heuristic Contest 070）",
-      "start_time": "2026-08-29 14:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://atcoder.jp/contests/ahc070"
     },
     {
       "platform": "NowCoder",
@@ -210,13 +217,6 @@
       "start_time": "2026-08-15 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc471"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "2026牛客暑期多校训练营9",
-      "start_time": "2026-08-14 12:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/133884?from=acm_calendar"
     }
   ]
 }
