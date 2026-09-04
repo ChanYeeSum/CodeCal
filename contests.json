@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-09-04 19:34:43",
+  "last_updated": "2026-09-05 00:31:54",
   "contests": [
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Grand Contest 078",
+      "start_time": "2026-09-27 20:00:00",
+      "duration": "3小时30分钟",
+      "url": "https://atcoder.jp/contests/agc078"
+    },
     {
       "platform": "AtCoder",
       "name": "UNICORNProgramming Contest2026(AtCoder Beginner Contest 477)",
