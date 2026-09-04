@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-04 09:10:40",
+  "last_updated": "2026-09-04 14:19:27",
   "contests": [
     {
       "platform": "AtCoder",
@@ -72,6 +72,13 @@
       "url": "https://ac.nowcoder.com/acm/contest/139936?from=acm_calendar"
     },
     {
+      "platform": "Codeforces",
+      "name": "Educational Codeforces Round 194 (Rated for Div. 2)",
+      "start_time": "2026-09-08 22:35:00",
+      "duration": "2小时0分钟",
+      "url": "https://codeforces.com/contest/2260"
+    },
+    {
       "platform": "NowCoder",
       "name": "牛客周赛 Round 160",
       "start_time": "2026-09-06 19:00:00",
@@ -86,11 +93,25 @@
       "url": "https://atcoder.jp/contests/abc474"
     },
     {
+      "platform": "AtCoder",
+      "name": "第七回日本最強プログラマー学生選手権～Advance～",
+      "start_time": "2026-09-06 12:10:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/jsc2026advance-final"
+    },
+    {
       "platform": "LeetCode",
       "name": "Weekly Contest 518",
       "start_time": "2026-09-06 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-518"
+    },
+    {
+      "platform": "Codeforces",
+      "name": "Codeforces Round 1119 (Div. 3)",
+      "start_time": "2026-09-05 22:35:00",
+      "duration": "2小时15分钟",
+      "url": "https://codeforces.com/contest/2259"
     },
     {
       "platform": "AtCoder",
