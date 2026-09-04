@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-04 14:19:27",
+  "last_updated": "2026-09-04 19:34:43",
   "contests": [
     {
       "platform": "AtCoder",
@@ -28,6 +28,13 @@
       "start_time": "2026-09-20 20:00:00",
       "duration": "2小时30分钟",
       "url": "https://atcoder.jp/contests/arc230"
+    },
+    {
+      "platform": "AtCoder",
+      "name": "JIJ Programming Contest 2026（AtCoder Beginner Contest 476）",
+      "start_time": "2026-09-19 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc476"
     },
     {
       "platform": "NowCoder",
