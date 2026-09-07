@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-07 13:04:00",
+  "last_updated": "2026-09-07 18:37:21",
   "contests": [
     {
       "platform": "AtCoder",
@@ -35,6 +35,13 @@
       "start_time": "2026-09-20 20:00:00",
       "duration": "2小时30分钟",
       "url": "https://atcoder.jp/contests/arc230"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 520",
+      "start_time": "2026-09-20 10:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/weekly-contest-520"
     },
     {
       "platform": "AtCoder",
