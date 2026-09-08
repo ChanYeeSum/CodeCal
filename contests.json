@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-08 13:00:59",
+  "last_updated": "2026-09-08 17:57:43",
   "contests": [
     {
       "platform": "AtCoder",
@@ -42,6 +42,13 @@
       "start_time": "2026-09-20 20:00:00",
       "duration": "2小时30分钟",
       "url": "https://atcoder.jp/contests/arc230"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客周赛 Round 162",
+      "start_time": "2026-09-20 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/140489?from=acm_calendar"
     },
     {
       "platform": "LeetCode",
