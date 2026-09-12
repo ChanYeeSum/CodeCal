@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-09-12 08:28:11",
+  "last_updated": "2026-09-12 12:55:25",
   "contests": [
+    {
+      "platform": "AtCoder",
+      "name": "AAL Contest 001: Let's use segtree!",
+      "start_time": "2026-10-12 12:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://atcoder.jp/contests/aalc001"
+    },
     {
       "platform": "AtCoder",
       "name": "AtCoder Regular Contest++ 232",
