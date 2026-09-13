@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-13 13:11:37",
+  "last_updated": "2026-09-13 18:29:44",
   "contests": [
     {
       "platform": "AtCoder",
@@ -112,13 +112,6 @@
       "start_time": "2026-09-13 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/140235?from=acm_calendar"
-    },
-    {
-      "platform": "AtCoder",
-      "name": "AtCoder Heuristic Contest 071",
-      "start_time": "2026-09-13 18:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://atcoder.jp/contests/ahc071"
     },
     {
       "platform": "LeetCode",
