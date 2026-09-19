@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-19 14:20:55",
+  "last_updated": "2026-09-19 19:21:01",
   "contests": [
     {
       "platform": "AtCoder",
@@ -217,13 +217,6 @@
       "start_time": "2026-09-05 20:00:00",
       "duration": "2小时0分钟",
       "url": "https://atcoder.jp/contests/arc229"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客挑战赛91",
-      "start_time": "2026-09-04 19:00:00",
-      "duration": "3小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/139935?from=acm_calendar"
     }
   ]
 }
