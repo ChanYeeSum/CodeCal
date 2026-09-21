@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-21 09:23:02",
+  "last_updated": "2026-09-21 14:49:36",
   "contests": [
     {
       "platform": "AtCoder",
@@ -122,6 +122,13 @@
     },
     {
       "platform": "NowCoder",
+      "name": "AtCoder Regular Contest++ 230",
+      "start_time": "2026-09-20 20:00:00",
+      "duration": "2小时30分钟",
+      "url": "https://atcoder.jp/contests/arc230"
+    },
+    {
+      "platform": "NowCoder",
       "name": "牛客周赛 Round 162",
       "start_time": "2026-09-20 19:00:00",
       "duration": "2小时0分钟",
@@ -189,27 +196,6 @@
       "start_time": "2026-09-06 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/139989?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "AtCoder Beginner Contest 474",
-      "start_time": "2026-09-06 12:10:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/abc474"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "第七回日本最強プログラマー学生選手権～Advance～",
-      "start_time": "2026-09-06 12:10:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/jsc2026advance-final"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 518",
-      "start_time": "2026-09-06 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-518"
     }
   ]
 }
