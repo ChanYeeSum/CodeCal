@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-25 16:05:05",
+  "last_updated": "2026-09-25 22:03:58",
   "contests": [
     {
       "platform": "AtCoder",
@@ -105,13 +105,6 @@
       "start_time": "2026-09-25 19:00:00",
       "duration": "3小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/140237?from=acm_calendar"
-    },
-    {
-      "platform": "AtCoder",
-      "name": "ALGO ARTIS Programming Contest 2026 September（AtCoder Heuristic Contest 072）",
-      "start_time": "2026-09-25 18:00:00",
-      "duration": "240小时0分钟",
-      "url": "https://atcoder.jp/contests/ahc072"
     },
     {
       "platform": "NowCoder",

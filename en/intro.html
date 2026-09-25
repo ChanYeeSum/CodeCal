@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeCal - Contest Calendar</title>
+  <link rel="icon" type="image/png" href="../icons/icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../platform-tag.css">
+  <style>
+    .intro-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 60px;
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    .hero-title {
+      font-size: 4rem;
+      font-weight: 800;
+      color: var(--text-color);
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+      text-shadow: 4px 4px 0px var(--accent-color);
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      color: var(--secondary-text);
+      font-weight: 500;
+    }
+
+    .section {
+      margin-bottom: 50px;
+      animation: fadeInUp 0.6s ease-out;
+      animation-fill-mode: both;
+    }
+
+    .section:nth-child(2) { animation-delay: 0.1s; }
+    .section:nth-child(3) { animation-delay: 0.2s; }
+    .section:nth-child(4) { animation-delay: 0.3s; }
+    .section:nth-child(5) { animation-delay: 0.4s; }
+    .section:nth-child(6) { animation-delay: 0.5s; }
+
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--text-color);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 3px solid var(--border-color);
+      display: inline-block;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .feature-card {
+      background: var(--card-background);
+      border: 3px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 5px 5px 0px var(--border-color);
+      transition: all 0.2s ease;
+    }
+
+    .feature-card:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 8px 8px 0px var(--border-color);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+    }
+
+    .feature-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-color);
+      margin-bottom: 8px;
+    }
+
+    .feature-desc {
+      color: var(--secondary-text);
+      line-height: 1.6;
+    }
+
+    .platform-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .platform-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px;
+      background: var(--card-background);
+      border: 2px solid var(--border-color);
+      border-radius: 8px;
+      box-shadow: 3px 3px 0px var(--border-color);
+      transition: all 0.2s ease;
+      text-decoration: none;
+      color: var(--text-color);
+    }
+
+    .platform-item:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 5px 5px 0px var(--border-color);
+    }
+
+    .platform-logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+    }
+
+    .platform-name {
+      font-weight: 600;
+      flex: 1;
+    }
+
+    .platform-arrow {
+      color: var(--secondary-text);
+    }
+
+    .view-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .view-card {
+      background: var(--card-background);
+      border: 3px solid var(--border-color);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 5px 5px 0px var(--border-color);
+      transition: all 0.2s ease;
+    }
+
+    .view-card:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 8px 8px 0px var(--border-color);
+    }
+
+    .view-card-header {
+      padding: 20px 24px;
+      border-bottom: 3px solid var(--border-color);
+      background: var(--accent-color);
+    }
+
+    .view-card-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    .view-card-body {
+      padding: 24px;
+    }
+
+    .view-card-desc {
+      color: var(--secondary-text);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .view-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      border: 2px solid var(--border-color);
+      box-shadow: 3px 3px 0px var(--border-color);
+      transition: all 0.2s ease;
+    }
+
+    .view-card-link:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 5px 5px 0px var(--border-color);
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .tech-tag {
+      padding: 8px 16px;
+      background: var(--card-background);
+      border: 2px solid var(--border-color);
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: 3px 3px 0px var(--border-color);
+    }
+
+    .author-section {
+      text-align: center;
+      padding: 40px;
+      background: var(--card-background);
+      border: 3px solid var(--border-color);
+      border-radius: 12px;
+      box-shadow: 5px 5px 0px var(--border-color);
+    }
+
+    .author-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid var(--border-color);
+      box-shadow: 4px 4px 0px var(--border-color);
+      margin-bottom: 16px;
+    }
+
+    .author-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-color);
+      margin-bottom: 8px;
+    }
+
+    .author-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .author-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      border: 2px solid var(--border-color);
+      box-shadow: 3px 3px 0px var(--border-color);
+      transition: all 0.2s ease;
+    }
+
+    .author-link:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 5px 5px 0px var(--border-color);
+    }
+
+    .repo-link {
+      background: #24292e;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      background: var(--accent-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      border: 3px solid var(--border-color);
+      box-shadow: 5px 5px 0px var(--border-color);
+      transition: all 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 8px 8px 0px var(--border-color);
+    }
+
+    .nav-btn.secondary {
+      background: var(--card-background);
+      color: var(--text-color);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.1rem;
+      }
+
+      .section-title {
+        font-size: 1.4rem;
+      }
+
+      .nav-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" class="container">
+    <button class="theme-toggle" @click="toggleTheme" :title="theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'">
+      {{ theme === 'dark' ? 'L' : 'D' }}
+    </button>
+    <button class="theme-toggle" onclick="location.href='../zh-CN/intro.html'" title="中文" style="margin-left: 10px;">中</button>
+
+    <div class="intro-container">
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1 class="hero-title">CodeCal</h1>
+        <p class="hero-subtitle">A modern contest calendar that tracks competitions across major platforms</p>
+      </section>
+
+      <!-- Navigation Buttons -->
+      <div class="nav-buttons section">
+        <a href="index.html" class="nav-btn">
+          <span>📋</span> List View
+        </a>
+        <a href="calendar-modern.html" class="nav-btn">
+          <span></span> Calendar View
+        </a>
+        <a href="https://github.com/ChanYeeSum/CodeCal" target="_blank" class="nav-btn secondary">
+          <span>⭐</span> GitHub Repo
+        </a>
+      </div>
+
+      <!-- Features Section -->
+      <section class="section">
+        <h2 class="section-title">✨ Features</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <h3 class="feature-title">Neo-brutalist Design</h3>
+            <p class="feature-desc">A distinctive hard-border shadow style that blends modern and retro looks, with light and dark theme support.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3 class="feature-title">Responsive Layout</h3>
+            <p class="feature-desc">Perfectly adapts to any device, from desktop to mobile, for the best experience.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3 class="feature-title">Platform Filters</h3>
+            <p class="feature-desc">Quickly filter contests by platform and view a specific platform in one click.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📋</div>
+            <h3 class="feature-title">One-click Copy</h3>
+            <p class="feature-desc">Copy full contest details instantly, including name, time, platform and more.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📧</div>
+            <h3 class="feature-title">Email Reminders</h3>
+            <p class="feature-desc">GitHub Actions can send daily contest digests by email, so you never miss a contest.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3 class="feature-title">Real-time Updates</h3>
+            <p class="feature-desc">Contest data refreshes automatically every 15 minutes to stay accurate and current.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Views Section -->
+      <section class="section">
+        <h2 class="section-title">🖼️ Two Views</h2>
+        <div class="view-cards">
+          <div class="view-card">
+            <div class="view-card-header">
+              <h3 class="view-card-title">📋 List View</h3>
+            </div>
+            <div class="view-card-body">
+              <p class="view-card-desc">A clean overview of all contests shown as cards, with platform filtering for quick browsing.</p>
+              <a href="index.html" class="view-card-link">Open list view →</a>
+            </div>
+          </div>
+          <div class="view-card">
+            <div class="view-card-header">
+              <h3 class="view-card-title">📅 Calendar View</h3>
+            </div>
+            <div class="view-card-body">
+              <p class="view-card-desc">A visual schedule of contests with week, day and month views, ideal for planning your contest calendar.</p>
+              <a href="calendar-modern.html" class="view-card-link">Open calendar view →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Platforms Section -->
+      <section class="section">
+        <h2 class="section-title">📊 Supported Platforms</h2>
+        <div class="platform-grid">
+          <a href="https://codeforces.com" target="_blank" class="platform-item">
+            <img src="../icons/codeforces.png" alt="Codeforces" class="platform-logo">
+            <span class="platform-name">Codeforces</span>
+            <span class="platform-arrow">→</span>
+          </a>
+          <a href="https://atcoder.jp" target="_blank" class="platform-item">
+            <img src="../icons/atcoder.png" alt="AtCoder" class="platform-logo">
+            <span class="platform-name">AtCoder</span>
+            <span class="platform-arrow">→</span>
+          </a>
+          <a href="https://leetcode.com" target="_blank" class="platform-item">
+            <img src="../icons/leetcode.png" alt="LeetCode" class="platform-logo">
+            <span class="platform-name">LeetCode</span>
+            <span class="platform-arrow">→</span>
+          </a>
+          <a href="https://www.nowcoder.com" target="_blank" class="platform-item">
+            <img src="../icons/nowcoder.png" alt="NowCoder" class="platform-logo">
+            <span class="platform-name">NowCoder</span>
+            <span class="platform-arrow">→</span>
+          </a>
+          <a href="https://www.luogu.com.cn" target="_blank" class="platform-item">
+            <img src="../icons/luogu.png" alt="Luogu" class="platform-logo">
+            <span class="platform-name">Luogu</span>
+            <span class="platform-arrow">→</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Tech Stack Section -->
+      <section class="section">
+        <h2 class="section-title">🛠️ Tech Stack</h2>
+        <div class="tech-stack">
+          <span class="tech-tag">Vue 3</span>
+          <span class="tech-tag">FullCalendar</span>
+          <span class="tech-tag">CSS Variables</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">GitHub Actions</span>
+          <span class="tech-tag">SMTP</span>
+        </div>
+      </section>
+
+      <!-- Author Section -->
+      <section class="section">
+        <h2 class="section-title">👨‍💻 Author</h2>
+        <div class="author-section">
+          <img src="https://avatars.githubusercontent.com/u/ChanYeeSum" alt="ChanYeeSum" class="author-avatar" onerror="this.src='../icons/icon.png'">
+          <h3 class="author-name">ChanYeeSum</h3>
+          <p class="feature-desc">Loves programming and building open-source projects</p>
+          <div class="author-links">
+            <a href="https://github.com/ChanYeeSum/CodeCal" target="_blank" class="author-link repo-link">
+              <span>📦</span> GitHub Repo
+            </a>
+            <a href="https://github.com/ChanYeeSum" target="_blank" class="author-link">
+              <span>👤</span> Profile
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer" style="margin-top: 40px;">
+        <p>© {{ currentYear }} ChanYeeSum. All rights reserved.</p>
+        <p style="margin-top: 8px;">
+          <a href="https://github.com/ChanYeeSum/CodeCal" target="_blank" style="color: var(--link-color); text-decoration: none;">GitHub</a>
+          ·
+          <a href="https://github.com/ChanYeeSum" target="_blank" style="color: var(--link-color); text-decoration: none;">Author</a>
+        </p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp } = Vue;
+    createApp({
+      data() {
+        return {
+          theme: localStorage.getItem('theme') || 'light',
+          currentYear: new Date().getFullYear()
+        };
+      },
+      created() {
+        document.documentElement.setAttribute('data-theme', this.theme);
+      },
+      methods: {
+        toggleTheme() {
+          this.theme = this.theme === 'light' ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', this.theme);
+          localStorage.setItem('theme', this.theme);
+        }
+      }
+    }).mount('#app');
+  </script>
+</body>
+</html>

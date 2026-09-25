@@ -6,3 +6,12 @@ __pycache__/
 
 # Claude IDE config
 .claude/
+.omo/run-continuation/ses_f281f9cc5ffeEtWwcn6gKb2j0a.json
+.spec-workflow/templates/design-template.md
+.spec-workflow/templates/product-template.md
+.spec-workflow/templates/requirements-template.md
+.spec-workflow/templates/structure-template.md
+.spec-workflow/templates/tasks-template.md
+.spec-workflow/templates/tech-template.md
+.spec-workflow/user-templates/README.md
+.trae/rules/git-commit-message.md

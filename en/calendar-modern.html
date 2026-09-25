@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeCal - Contest Calendar</title>
+  <link rel="icon" type="image/png" href="../icons/icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vue 3 -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <!-- FullCalendar -->
+  <script src="https://unpkg.com/fullcalendar@6.1.8/index.global.min.js"></script>
+  <script src="https://unpkg.com/fullcalendar@6.1.8/locales/zh-cn.global.min.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../calendar-modern.css">
+  <link rel="stylesheet" href="../platform-tag-modern.css">
+</head>
+
+<body>
+  <div id="app">
+    <!-- Top navigation bar -->
+    <header class="top-bar">
+      <div class="top-left">
+        <button class="sidebar-btn" @click="sidebarExpanded = !sidebarExpanded" :title="sidebarExpanded ? 'This button collapses the sidebar!' : 'This button expands the sidebar!'">
+          {{ sidebarExpanded ? "‹" : "›" }}
+        </button>
+        <div class="logo">
+          <span class="logo-text">Contest Calendar</span>
+        </div>
+      </div>
+
+      <nav class="view-switcher">
+        <a href="index.html" class="nav-link">List View</a>
+        <a href="calendar-modern.html" class="nav-link active">Calendar View</a>
+        <a href="subscribe.html" class="nav-link">Subscribe</a>
+      </nav>
+
+      <div class="top-actions">
+        <button class="theme-toggle" onclick="location.href='../zh-CN/calendar-modern.html'" title="中文">中</button>
+        <button class="theme-toggle" @click="toggleTheme" :title="theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'">
+          {{ theme === 'dark' ? 'L' : 'D' }}
+        </button>
+      </div>
+    </header>
+
+    <!-- Main content area -->
+    <div class="modern-container">
+      <!-- Sidebar -->
+      <aside class="sidebar" :class="{ expanded: sidebarExpanded }">
+        <!-- Platform filters -->
+        <div class="platform-filters">
+          <div class="sidebar-title">Platforms</div>
+          <div class="platform-list">
+            <button
+              v-for="platform in platforms"
+              :key="platform.id"
+              :class="['platform-filter-btn', { active: selectedPlatform === platform.id }]"
+              @click="selectPlatform(platform.id)"
+            >
+              <span class="platform-dot" :style="{ background: platform.color }"></span>
+              {{ platform.name }}
+            </button>
+          </div>
+        </div>
+
+        <!-- Overview -->
+        <div class="data-summary" v-if="dateRangeText">
+          <div class="sidebar-title">Overview</div>
+          <div class="summary-content">
+            {{ dateRangeText }}
+          </div>
+        </div>
+
+        <!-- Upcoming -->
+        <div class="upcoming-contests">
+          <div class="sidebar-title">Upcoming</div>
+          <div class="upcoming-list" v-if="upcomingContests.length > 0">
+            <div
+              v-for="contest in upcomingContests"
+              :key="contest.url"
+              class="upcoming-item"
+              @click="openContest(contest)"
+            >
+              <div class="upcoming-time">
+                <span class="upcoming-day">{{ formatDay(contest.start_time) }}</span>
+                <span class="upcoming-month">{{ formatMonth(contest.start_time) }}</span>
+              </div>
+              <div class="upcoming-info">
+                <div class="upcoming-name">{{ contest.name }}</div>
+                <div class="upcoming-platform">
+                  <span :class="['event-platform', contest.platform.toLowerCase()]">{{ contest.platform }}</span>
+                  {{ formatTime(contest.start_time) }}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div v-else class="empty-state">
+            <div class="empty-state-icon">📭</div>
+            <div class="empty-state-text">No upcoming contests</div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Calendar main area -->
+      <main class="main-content">
+        <div class="calendar-wrapper">
+          <div id="calendar"></div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Contest detail modal -->
+    <div :class="['modal-overlay', { active: selectedContest }]" @click.self="closeModal">
+      <div class="modal-content" v-if="selectedContest">
+        <div class="modal-header">
+          <h3 class="modal-title">{{ selectedContest.name }}</h3>
+          <button class="modal-close" @click="closeModal">×</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-row">
+            <div class="modal-icon" :class="selectedContest.platform.toLowerCase()">
+              {{ getPlatformIcon(selectedContest.platform) }}
+            </div>
+            <div>
+              <div class="modal-label">Platform</div>
+              <div class="modal-value">{{ selectedContest.platform }}</div>
+            </div>
+          </div>
+          <div class="modal-row">
+            <div class="modal-icon"></div>
+            <div>
+              <div class="modal-label">Start time</div>
+              <div class="modal-value">{{ selectedContest.start_time }}</div>
+            </div>
+          </div>
+          <div class="modal-row">
+            <div class="modal-icon">⏱️</div>
+            <div>
+              <div class="modal-label">Duration</div>
+              <div class="modal-value">{{ formatDuration(selectedContest.duration) }}</div>
+            </div>
+          </div>
+          <a :href="selectedContest.url" target="_blank" class="modal-link">
+            View contest details →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <p>© {{ currentYear }} ChanYeeSum. All rights reserved.</p>
+    <p style="margin-top: 8px;">
+      <a href="https://github.com/ChanYeeSum/CodeCal" target="_blank" style="color: var(--text-secondary); text-decoration: none;">GitHub</a>
+      ·
+      <a href="https://github.com/ChanYeeSum" target="_blank" style="color: var(--text-secondary); text-decoration: none;">Author</a>
+    </p>
+    </footer>  </div>
+
+  <script>
+    const { createApp } = Vue;
+
+    createApp({
+      data() {
+        return {
+          contests: [],
+          calendar: null,
+          theme: localStorage.getItem('theme') || 'light',
+          selectedPlatform: 'all',
+          selectedContest: null,
+          sidebarExpanded: window.innerWidth > 1024,
+          currentYear: new Date().getFullYear(),
+          platforms: [
+            { id: 'all', name: 'All Platforms', color: '#4f46e5' },
+            { id: 'Codeforces', name: 'Codeforces', color: '#3b82f6' },
+            { id: 'LeetCode', name: 'LeetCode', color: '#f97316' },
+            { id: 'NowCoder', name: 'NowCoder', color: '#06b6d4' },
+            { id: 'luogu', name: 'Luogu', color: '#22c55e' },
+            { id: 'AtCoder', name: 'AtCoder', color: '#a855f7' }
+          ],
+          filteredContestsCache: null,
+          filteredContestsCacheKey: null,
+          upcomingContestsCache: null,
+          upcomingContestsCacheKey: null
+        };
+      },
+      computed: {
+        filteredContests() {
+          const cacheKey = `${this.selectedPlatform}-${this.contests.length}`;
+          if (this.filteredContestsCacheKey === cacheKey && this.filteredContestsCache) {
+            return this.filteredContestsCache;
+          }
+          
+          let result;
+          if (this.selectedPlatform === 'all') {
+            result = this.contests;
+          } else {
+            result = this.contests.filter(contest => contest.platform === this.selectedPlatform);
+          }
+          
+          this.filteredContestsCache = result;
+          this.filteredContestsCacheKey = cacheKey;
+          return result;
+        },
+        upcomingContests() {
+          const cacheKey = `${this.filteredContestsCacheKey}-${Date.now()}`;
+          if (this.upcomingContestsCacheKey === cacheKey && this.upcomingContestsCache) {
+            return this.upcomingContestsCache;
+          }
+          
+          const now = Date.now();
+          const result = this.filteredContests
+            .map(contest => ({
+              ...contest,
+              _date: new Date(contest.start_time).getTime()
+            }))
+            .filter(contest => contest._date > now)
+            .sort((a, b) => a._date - b._date)
+            .slice(0, 5)
+            .map(({ _date, ...contest }) => contest);
+          
+          this.upcomingContestsCache = result;
+          this.upcomingContestsCacheKey = cacheKey;
+          return result;
+        },
+        dateRangeText() {
+          if (this.filteredContests.length === 0) {
+            return 'No contest data';
+          }
+          
+          const dates = this.filteredContests.map(c => new Date(c.start_time));
+          const earliest = new Date(Math.min(...dates));
+          const latest = new Date(Math.max(...dates));
+          
+          const formatDate = (d) => {
+            return `${d.getFullYear()}/${(d.getMonth() + 1).toString().padStart(2, '0')}/${d.getDate().toString().padStart(2, '0')}`;
+          };
+          
+          const platform = this.platforms.find(p => p.id === this.selectedPlatform);
+          const platformText = platform ? platform.name : 'All Platforms';
+          
+          if (earliest.getTime() === latest.getTime()) {
+            return `${platformText} · ${formatDate(earliest)} · ${this.filteredContests.length} contests`;
+          }
+          
+          return `${platformText} · ${formatDate(earliest)} ~ ${formatDate(latest)} · ${this.filteredContests.length} contests`;
+        }
+      },
+      watch: {
+        selectedPlatform() {
+          this.filteredContestsCache = null;
+          this.filteredContestsCacheKey = null;
+          this.upcomingContestsCache = null;
+          this.upcomingContestsCacheKey = null;
+          this.refreshCalendar();
+        },
+        sidebarExpanded() {
+          if (this.updateSizeTimer) {
+            clearTimeout(this.updateSizeTimer);
+          }
+          this.updateSizeTimer = setTimeout(() => {
+            if (this.calendar) {
+              this.calendar.updateSize();
+            }
+          }, 200);
+        }
+      },
+      created() {
+        document.documentElement.setAttribute('data-theme', this.theme);
+      },
+      mounted() {
+        this.fetchContests().then(() => {
+          this.initCalendar();
+        });
+      },
+      beforeUnmount() {
+        if (this.updateSizeTimer) {
+          clearTimeout(this.updateSizeTimer);
+        }
+        if (this.handleResize) {
+          window.removeEventListener('resize', this.handleResize);
+        }
+      },
+      methods: {
+        async fetchContests() {
+          try {
+            const response = await fetch('../contests.json');
+            const data = await response.json();
+
+            // the calendar page shows all contests (no cutoff)
+            this.contests = data.contests;
+          } catch (error) {
+            console.error('Error fetching contests:', error);
+            this.showToast('Failed to load contest data', 'error');
+          }
+        },
+
+        initCalendar() {
+          const calendarEl = document.getElementById('calendar');
+
+          this.calendar = new FullCalendar.Calendar(calendarEl, {
+            locale: 'en',
+            initialView: 'dayGridMonth',
+            headerToolbar: {
+              left: 'prev,next today',
+              center: 'title',
+              right: 'timeGridWeek,timeGridDay,dayGridMonth'
+            },
+            buttonText: {
+              today: 'today',
+              week: 'week',
+              day: 'day',
+              month: 'month'
+            },
+            nowIndicator: true,
+            slotMinTime: '00:00:00',
+            slotMaxTime: '24:00:00',
+            allDaySlot: false,
+            weekends: true,
+            height: 'auto',
+
+            events: this.filteredContests.map(contest => ({
+              id: contest.url,
+              title: contest.name,
+              start: contest.start_time,
+              end: this.calculateEndTime(contest),
+              extendedProps: {
+                platform: contest.platform,
+                duration: contest.duration,
+                url: contest.url
+              },
+              backgroundColor: this.getPlatformColor(contest.platform),
+              borderColor: 'transparent'
+            })),
+
+            eventContent: this.renderEventContent,
+            eventClick: this.handleEventClick,
+            eventDidMount: this.handleEventDidMount
+          });
+
+          this.calendar.render();
+        },
+
+        calculateEndTime(contest) {
+          // parse the Chinese duration string (raw data format) to compute end time
+          const duration = contest.duration;
+          const match = duration.match(/(\d+)小时|(\d+)分钟/g);
+          let totalMinutes = 0;
+
+          if (match) {
+            match.forEach(part => {
+              if (part.includes('小时')) {
+                totalMinutes += parseInt(part) * 60;
+              } else if (part.includes('分钟')) {
+                totalMinutes += parseInt(part);
+              }
+            });
+          }
+
+          const startTime = new Date(contest.start_time);
+          startTime.setMinutes(startTime.getMinutes() + totalMinutes);
+          return startTime;
+        },
+
+        getPlatformColor(platform) {
+          const colors = {
+            'Codeforces': '#3b82f6',
+            'LeetCode': '#f97316',
+            'NowCoder': '#06b6d4',
+            'luogu': '#22c55e',
+            'AtCoder': '#a855f7'
+          };
+          return colors[platform] || '#4f46e5';
+        },
+
+        renderEventContent(arg) {
+          const platform = arg.event.extendedProps.platform;
+          return {
+            html: `
+              <div class="contest-event" style="border-left-color: ${this.getPlatformColor(platform)}">
+                <span class="event-platform ${platform.toLowerCase()}">${platform}</span>
+                <span class="event-title">${arg.event.title}</span>
+              </div>
+            `
+          };
+        },
+
+        handleEventClick(info) {
+          const props = info.event.extendedProps;
+          this.selectedContest = {
+            name: info.event.title,
+            platform: props.platform,
+            start_time: this.formatDateTime(info.event.start),
+            duration: props.duration,
+            url: props.url
+          };
+        },
+
+        handleEventDidMount(info) {
+          // tooltips or other interactions can be added here
+        },
+
+        refreshCalendar() {
+          if (this.calendar) {
+            this.calendar.removeAllEvents();
+            this.calendar.addEventSource(this.filteredContests.map(contest => ({
+              id: contest.url,
+              title: contest.name,
+              start: contest.start_time,
+              end: this.calculateEndTime(contest),
+              extendedProps: {
+                platform: contest.platform,
+                duration: contest.duration,
+                url: contest.url
+              },
+              backgroundColor: this.getPlatformColor(contest.platform),
+              borderColor: 'transparent'
+            })));
+          }
+        },
+
+        selectPlatform(platformId) {
+          this.selectedPlatform = platformId;
+          if (this.dateRangeText) {
+            this.showToast(this.dateRangeText);
+          }
+        },
+
+        toggleTheme() {
+          this.theme = this.theme === 'light' ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', this.theme);
+          localStorage.setItem('theme', this.theme);
+        },
+
+        openContest(contest) {
+          this.selectedContest = contest;
+        },
+
+        closeModal() {
+          this.selectedContest = null;
+        },
+
+        formatDay(dateStr) {
+          return new Date(dateStr).getDate();
+        },
+
+        formatMonth(dateStr) {
+          const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+          return months[new Date(dateStr).getMonth()];
+        },
+
+        formatTime(dateStr) {
+          const date = new Date(dateStr);
+          return `${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}`;
+        },
+
+        formatDateTime(date) {
+          if (!date) return '';
+          const d = new Date(date);
+          return `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')} ${d.getHours().toString().padStart(2, '0')}:${d.getMinutes().toString().padStart(2, '0')}:${d.getSeconds().toString().padStart(2, '0')}`;
+        },
+
+        formatDuration(d) {
+          return String(d).replace(/(\d+)\s*小时/g, '$1h ').replace(/(\d+)\s*分钟/g, '$1m').replace(/\s+/g, ' ').trim();
+        },
+
+        getPlatformIcon(platform) {
+          const icons = {
+            'Codeforces': '⚡',
+            'LeetCode': '🔥',
+            'NowCoder': '🐄',
+            'luogu': '🌲',
+            'AtCoder': '🎯'
+          };
+          return icons[platform] || '🏆';
+        },
+
+        showToast(message, type = 'info') {
+          const container = document.getElementById('toast-container');
+          const toast = document.createElement('div');
+          toast.className = 'toast';
+          toast.textContent = message;
+          container.appendChild(toast);
+
+          setTimeout(() => {
+            toast.remove();
+          }, 3000);
+        }
+      }
+    }).mount('#app');
+  </script>
+</body>
+</html>
