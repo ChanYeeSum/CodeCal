@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-25 22:03:58",
+  "last_updated": "2026-09-26 02:48:14",
   "contests": [
     {
       "platform": "AtCoder",
@@ -14,6 +14,20 @@
       "start_time": "2026-10-11 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc479"
+    },
+    {
+      "platform": "Codeforces",
+      "name": "Codeforces Round (Div. 1 + Div. 2)",
+      "start_time": "2026-10-10 23:05:00",
+      "duration": "3小时0分钟",
+      "url": "https://codeforces.com/contest/2271"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Biweekly Contest 193",
+      "start_time": "2026-10-10 22:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/biweekly-contest-193"
     },
     {
       "platform": "AtCoder",
@@ -91,13 +105,6 @@
       "start_time": "2026-09-26 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc477"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1123 (Div. 2)",
-      "start_time": "2026-09-25 22:35:00",
-      "duration": "2小时15分钟",
-      "url": "https://codeforces.com/contest/2267"
     },
     {
       "platform": "NowCoder",
