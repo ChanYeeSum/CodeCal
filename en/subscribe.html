@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
     <link rel="icon" type="image/png" href="../icons/icon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>订阅日历 - CodeCal</title>
+    <title>Subscribe - CodeCal</title>
     <script src="../main.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link rel="stylesheet" href="../calendar.css">
@@ -16,25 +16,25 @@
 <body>
     <div id="app" class="container">
         <div class="header">
-            <h1>订阅日历</h1>
+            <h1>Subscribe</h1>
             <div class="header-actions">
-                <button class="action-btn" onclick="location.href='../en/subscribe.html'" title="English">EN</button>
+                <button class="action-btn" onclick="location.href='../zh-CN/subscribe.html'" title="中文">中</button>
                 <div class="theme-dropdown">
                     <button class="theme-toggle" @click="showThemeMenu = !showThemeMenu" :title="getThemeTitle">
                         {{ getThemeIcon }}
                     </button>
                     <div class="theme-menu" v-if="showThemeMenu">
                         <div class="theme-option" :class="{ active: themeMode === 'system' }" @click="setThemeMode('system')">
-                            <span class="theme-option-icon">系</span> 系统设置
+                            <span class="theme-option-icon">S</span> System
                         </div>
                         <div class="theme-option" :class="{ active: themeMode === 'light' }" @click="setThemeMode('light')">
-                            <span class="theme-option-icon">明</span> 浅色模式
+                            <span class="theme-option-icon">L</span> Light
                         </div>
                         <div class="theme-option" :class="{ active: themeMode === 'dark' }" @click="setThemeMode('dark')">
-                            <span class="theme-option-icon">暗</span> 深色模式
+                            <span class="theme-option-icon">D</span> Dark
                         </div>
                         <div class="theme-option" :class="{ active: themeMode === 'auto' }" @click="setThemeMode('auto')">
-                            <span class="theme-option-icon">自</span> 自动切换
+                            <span class="theme-option-icon">A</span> Auto
                         </div>
                     </div>
                 </div>
@@ -42,15 +42,15 @@
         </div>
 
         <nav class="view-switcher">
-            <a href="index.html" class="nav-link">列表视图</a>
-            <a href="calendar-modern.html" class="nav-link">日历视图</a>
-            <a href="subscribe.html" class="nav-link active">订阅日历</a>
+            <a href="index.html" class="nav-link">List View</a>
+            <a href="calendar-modern.html" class="nav-link">Calendar View</a>
+            <a href="subscribe.html" class="nav-link active">Subscribe</a>
         </nav>
 
         <div class="subscribe-container">
             <div class="subscribe-info">
-                <h2> 导出比赛到日历</h2>
-                <p>选择要订阅的平台和比赛，生成 .ics 日历文件</p>
+                <h2> Export Contests to Calendar</h2>
+                <p>Pick the platforms and contests you want, then generate an .ics calendar file</p>
             </div>
 
             <div class="date-range-info" v-if="filterSummaryText || selectedSummaryText">
@@ -59,15 +59,15 @@
             </div>
 
             <div class="search-box">
-                <input type="text" v-model="searchText" placeholder="搜索比赛名称..." class="search-input">
+                <input type="text" v-model="searchText" placeholder="Search contest name..." class="search-input">
             </div>
 
             <div class="filter-section">
-                <div class="filter-title">选择平台</div>
+                <div class="filter-title">Platforms</div>
                 <div class="platform-filters">
                     <label class="platform-checkbox" :class="{ active: selectedPlatforms.includes('all') }">
                         <input type="checkbox" :checked="selectedPlatforms.includes('all')" @change="togglePlatform('all')">
-                        <span>全部平台</span>
+                        <span>All platforms</span>
                     </label>
                     <label class="platform-checkbox" v-for="platform in allPlatforms" :key="platform" :class="{ active: selectedPlatforms.includes(platform) }">
                         <input type="checkbox" :checked="selectedPlatforms.includes(platform)" @change="togglePlatform(platform)">
@@ -78,21 +78,21 @@
             </div>
 
             <div class="filter-section">
-                <div class="filter-title">选择日期</div>
+                <div class="filter-title">Date</div>
                 <div class="date-filters">
-                    <button class="filter-btn" :class="{ active: dateFilter === 'today' }" @click="setDateFilter('today')">今天</button>
-                    <button class="filter-btn" :class="{ active: dateFilter === 'week' }" @click="setDateFilter('week')">本周</button>
-                    <button class="filter-btn" :class="{ active: dateFilter === 'month' }" @click="setDateFilter('month')">本月</button>
-                    <button class="filter-btn" :class="{ active: dateFilter === 'all' }" @click="setDateFilter('all')">全部</button>
-                    <button class="filter-btn" :class="{ active: dateFilter === 'custom' }" @click="setDateFilter('custom')">自定义</button>
+                    <button class="filter-btn" :class="{ active: dateFilter === 'today' }" @click="setDateFilter('today')">Today</button>
+                    <button class="filter-btn" :class="{ active: dateFilter === 'week' }" @click="setDateFilter('week')">This week</button>
+                    <button class="filter-btn" :class="{ active: dateFilter === 'month' }" @click="setDateFilter('month')">This month</button>
+                    <button class="filter-btn" :class="{ active: dateFilter === 'all' }" @click="setDateFilter('all')">All</button>
+                    <button class="filter-btn" :class="{ active: dateFilter === 'custom' }" @click="setDateFilter('custom')">Custom</button>
                 </div>
                 <div class="date-range-picker" v-if="dateFilter === 'custom'">
                     <label class="date-input-group">
-                        <span>从</span>
+                        <span>From</span>
                         <input type="date" v-model="dateFrom" class="date-input" :max="dateTo || undefined">
                     </label>
                     <label class="date-input-group">
-                        <span>至</span>
+                        <span>To</span>
                         <input type="date" v-model="dateTo" class="date-input" :min="dateFrom || undefined">
                     </label>
                 </div>
@@ -100,10 +100,10 @@
 
             <div class="contest-list" v-if="filteredContests.length > 0">
                 <div class="contest-list-header">
-                    <span>共 {{ filteredContests.length }} 场比赛</span>
+                    <span>{{ filteredContests.length }} contests</span>
                     <label class="select-all">
                         <input type="checkbox" :checked="isAllSelected" @change="toggleSelectAll">
-                        <span>全选</span>
+                        <span>Select all</span>
                     </label>
                 </div>
                 <div class="contest-item" v-for="contest in filteredContests" :key="contest.url">
@@ -121,12 +121,12 @@
             </div>
             <div class="empty-state" v-else>
                 <div class="empty-icon">📭</div>
-                <div class="empty-text">没有找到匹配的比赛</div>
+                <div class="empty-text">No matching contests found</div>
             </div>
 
             <div class="export-section">
                 <button class="export-btn" @click="exportSelected" :disabled="selectedContests.length === 0">
-                    📥 导出 {{ selectedContests.length }} 场到日历 (.ics)
+                    📥 Export {{ selectedContests.length }} contests to calendar (.ics)
                 </button>
             </div>
         </div>
@@ -138,7 +138,7 @@
             <p style="margin-top: 8px;">
                 <a href="https://github.com/ChanYeeSum/CodeCal" target="_blank" style="color: var(--link-color, #4f46e5); text-decoration: none;">GitHub</a>
                 ·
-                <a href="https://github.com/ChanYeeSum" target="_blank" style="color: var(--link-color, #4f46e5); text-decoration: none;">作者</a>
+                <a href="https://github.com/ChanYeeSum" target="_blank" style="color: var(--link-color, #4f46e5); text-decoration: none;">Author</a>
             </p>
         </footer>
     </div>
@@ -164,21 +164,21 @@
             computed: {
                 getThemeIcon() {
                     if (this.themeMode === 'system') {
-                        return '系';
+                        return 'S';
                     } else if (this.themeMode === 'auto') {
                         const hour = new Date().getHours();
-                        return (hour >= 6 && hour < 18) ? '明' : '暗';
+                        return (hour >= 6 && hour < 18) ? 'L' : 'D';
                     }
-                    return this.theme === 'dark' ? '暗' : '明';
+                    return this.theme === 'dark' ? 'D' : 'L';
                 },
                 getThemeTitle() {
                     const titles = {
-                        system: '跟随系统设置',
-                        light: '浅色模式',
-                        dark: '深色模式',
-                        auto: '自动切换（随时间）'
+                        system: 'Follow system settings',
+                        light: 'Light mode',
+                        dark: 'Dark mode',
+                        auto: 'Auto (by time of day)'
                     };
-                    return titles[this.themeMode] || '切换主题';
+                    return titles[this.themeMode] || 'Toggle theme';
                 },
                 allPlatforms() {
                     return [...new Set(this.contests.map(c => c.platform))].sort();
@@ -231,20 +231,20 @@
                 },
                 filterSummaryText() {
                     if (this.filteredContests.length === 0) {
-                        return '当前筛选结果为空';
+                        return 'No results for the current filters';
                     }
 
                     const platformText = this.selectedPlatforms.includes('all')
-                        ? '所有平台'
+                        ? 'All platforms'
                         : [...this.selectedPlatforms].sort().join(' + ');
                     const dateRangeText = this.getContestDateRangeText(this.filteredContests);
                     const dateLabel = this.dateFilter === 'all' ? '' :
-                        this.dateFilter === 'today' ? '今天 · ' :
-                        this.dateFilter === 'week' ? '本周 · ' :
-                        this.dateFilter === 'month' ? '本月 · ' :
-                        '自定义 · ';
+                        this.dateFilter === 'today' ? 'Today · ' :
+                        this.dateFilter === 'week' ? 'This week · ' :
+                        this.dateFilter === 'month' ? 'This month · ' :
+                        'Custom · ';
 
-                    return `${dateLabel}${platformText} · ${dateRangeText} · 共 ${this.filteredContests.length} 场比赛`;
+                    return `${dateLabel}${platformText} · ${dateRangeText} · ${this.filteredContests.length} contests`;
                 },
                 selectedSummaryText() {
                     if (this.selectedContests.length === 0) {
@@ -254,11 +254,11 @@
                     const selectedContests = this.getSelectedContestItems();
                     const platformList = [...new Set(selectedContests.map(contest => contest.platform))].sort();
                     const platformText = platformList.length === this.allPlatforms.length
-                        ? '覆盖当前全部平台'
-                        : `已选平台：${platformList.join(' + ')}`;
+                        ? 'Covers all current platforms'
+                        : `Selected platforms: ${platformList.join(' + ')}`;
                     const dateRangeText = this.getContestDateRangeText(selectedContests);
 
-                    return `已选 ${selectedContests.length} 场 · ${platformText} · ${dateRangeText}`;
+                    return `${selectedContests.length} selected · ${platformText} · ${dateRangeText}`;
                 },
                 isAllSelected() {
                     return this.filteredContests.length > 0 && 
@@ -293,7 +293,7 @@
                 getContestDateRangeText(contests) {
                     const dateRange = this.getContestDateRange(contests);
                     if (!dateRange) {
-                        return '暂无日期范围';
+                        return 'No date range';
                     }
 
                     const startText = this.formatDateForDisplay(dateRange.start);
@@ -397,7 +397,7 @@
                     link.click();
                     document.body.removeChild(link);
                     URL.revokeObjectURL(url);
-                    showToast(`已导出 ${selectedContests.length} 场比赛到日历文件`);
+                    showToast(`Exported ${selectedContests.length} contests to a calendar file`);
                 },
                 generateICS(contests) {
                     const lines = [
@@ -406,7 +406,7 @@
                         'PRODID:-//CodeCal//Contest Calendar//ZH-CN',
                         'CALSCALE:GREGORIAN',
                         'METHOD:PUBLISH',
-                        'X-WR-CALNAME:CodeCal编程竞赛',
+                        'X-WR-CALNAME:CodeCal Contests',
                         'X-WR-TIMEZONE:Asia/Shanghai'
                     ];
 
@@ -421,7 +421,7 @@
                         lines.push(`DTSTART:${this.formatICSDate(startDate)}`);
                         lines.push(`DTEND:${this.formatICSDate(endDate)}`);
                         lines.push(`SUMMARY:${contest.name}`);
-                        lines.push(`DESCRIPTION:平台：${contest.platform}\\n比赛链接：${contest.url}`);
+                        lines.push(`DESCRIPTION:Platform: ${contest.platform}\\nContest link: ${contest.url}`);
                         lines.push(`URL:${contest.url}`);
                         lines.push('END:VEVENT');
                     });

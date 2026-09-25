@@ -54,12 +54,24 @@
    cd CodeCal
    ```
 
-2. 启动本地服务器：
+2. 启动（单命令同时开启网页服务与后台定时拉取）：
    ```bash
-   python -m http.server 8080
+   python scheduler.py
    ```
 
 3. 访问网页：打开浏览器访问 `http://localhost:8080`
+   - 中文版：`http://localhost:8080/zh-CN/`
+   - 英文版：`http://localhost:8080/en/`
+   - 根路径会按浏览器语言自动跳转
+
+4. 关于比赛数据：
+
+   本地部署时 `contests.json` 不会自动更新（线上由 GitHub Actions 每 15 分钟刷新）。
+   `scheduler.py` 启动时会立即抓取一次，之后每 60 分钟自动更新一次，Ctrl+C 停止。
+   也可手动执行单次抓取：
+   ```bash
+   python contest_fetcher.py
+   ```
 
 ### 配置邮件提醒
 
@@ -101,14 +113,24 @@
 
 ```
 CodeCal/
-├── intro.html              # 介绍页面
-├── index.html              # 列表视图
-├── calendar-modern.html    # 日历视图
+├── index.html              # 语言跳转入口（按浏览器语言跳转至 zh-CN / en）
+├── zh-CN/                  # 中文页面
+│   ├── index.html          # 列表视图
+│   ├── calendar-modern.html # 日历视图
+│   ├── subscribe.html      # 订阅/导出页面
+│   ├── intro.html          # 介绍页面
+│   └── calendar.html       # 旧版日历页（遗留）
+├── en/                     # 英文页面（与 zh-CN 一一对应）
+│   ├── index.html
+│   ├── calendar-modern.html
+│   ├── subscribe.html
+│   └── intro.html
 ├── index.css               # 列表样式
 ├── calendar-modern.css     # 日历样式
 ├── platform-tag.css        # 平台标签样式
-├── contests.json           # 比赛数据
+├── contests.json           # 比赛数据（根目录，供 Actions 更新）
 ├── contest_fetcher.py      # 数据爬取脚本
+├── scheduler.py            # 本地一键启动：web 服务 + 每 60 分钟定时爬取
 ├── mailer/                 # 邮件模块
 │   ├── send_contest_email.py
 │   ├── templates.py
@@ -120,7 +142,7 @@ CodeCal/
 ## 自定义开发
 
 ### 修改前端界面
-编辑 `index.html`、`calendar-modern.html` 及相关 CSS 文件
+编辑 `zh-CN/`（中文）与 `en/`（英文）下对应页面及根目录相关 CSS 文件
 
 ### 调整邮件模板
 在 `mailer/templates.py` 中修改 HTML 模板

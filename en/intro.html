@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CodeCal - 编程竞赛日历</title>
+  <title>CodeCal - Contest Calendar</title>
   <link rel="icon" type="image/png" href="../icons/icon.png">
 
-  <!-- 字体 -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -348,88 +348,88 @@
 
 <body>
   <div id="app" class="container">
-    <button class="theme-toggle" @click="toggleTheme" :title="theme === 'dark' ? '切换到亮色模式' : '切换到暗色模式'">
-      {{ theme === 'dark' ? '明' : '暗' }}
+    <button class="theme-toggle" @click="toggleTheme" :title="theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'">
+      {{ theme === 'dark' ? 'L' : 'D' }}
     </button>
-    <button class="theme-toggle" onclick="location.href='../en/intro.html'" title="English" style="margin-left: 10px;">EN</button>
+    <button class="theme-toggle" onclick="location.href='../zh-CN/intro.html'" title="中文" style="margin-left: 10px;">中</button>
 
     <div class="intro-container">
       <!-- Hero Section -->
       <section class="hero">
         <h1 class="hero-title">CodeCal</h1>
-        <p class="hero-subtitle">现代化的编程竞赛日历，追踪各大平台比赛信息</p>
+        <p class="hero-subtitle">A modern contest calendar that tracks competitions across major platforms</p>
       </section>
 
       <!-- Navigation Buttons -->
       <div class="nav-buttons section">
         <a href="index.html" class="nav-btn">
-          <span>📋</span> 列表视图
+          <span>📋</span> List View
         </a>
         <a href="calendar-modern.html" class="nav-btn">
-          <span></span> 日历视图
+          <span></span> Calendar View
         </a>
         <a href="https://github.com/ChanYeeSum/CodeCal" target="_blank" class="nav-btn secondary">
-          <span>⭐</span> GitHub 仓库
+          <span>⭐</span> GitHub Repo
         </a>
       </div>
 
       <!-- Features Section -->
       <section class="section">
-        <h2 class="section-title">✨ 特色功能</h2>
+        <h2 class="section-title">✨ Features</h2>
         <div class="feature-grid">
           <div class="feature-card">
             <div class="feature-icon">🎨</div>
-            <h3 class="feature-title">新粗野主义设计</h3>
-            <p class="feature-desc">独特的硬边框阴影设计风格，现代感与复古感并存，支持明暗主题切换。</p>
+            <h3 class="feature-title">Neo-brutalist Design</h3>
+            <p class="feature-desc">A distinctive hard-border shadow style that blends modern and retro looks, with light and dark theme support.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📱</div>
-            <h3 class="feature-title">响应式布局</h3>
-            <p class="feature-desc">完美适配各种设备，从桌面端到移动端都能获得最佳体验。</p>
+            <h3 class="feature-title">Responsive Layout</h3>
+            <p class="feature-desc">Perfectly adapts to any device, from desktop to mobile, for the best experience.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🔍</div>
-            <h3 class="feature-title">平台筛选</h3>
-            <p class="feature-desc">支持按平台快速筛选比赛，一键查看特定平台的比赛信息。</p>
+            <h3 class="feature-title">Platform Filters</h3>
+            <p class="feature-desc">Quickly filter contests by platform and view a specific platform in one click.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📋</div>
-            <h3 class="feature-title">一键复制</h3>
-            <p class="feature-desc">快速复制比赛信息，包含比赛名称、时间、平台等完整信息。</p>
+            <h3 class="feature-title">One-click Copy</h3>
+            <p class="feature-desc">Copy full contest details instantly, including name, time, platform and more.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📧</div>
-            <h3 class="feature-title">邮件提醒</h3>
-            <p class="feature-desc">支持 GitHub Actions 自动发送每日比赛信息邮件，不错过任何比赛。</p>
+            <h3 class="feature-title">Email Reminders</h3>
+            <p class="feature-desc">GitHub Actions can send daily contest digests by email, so you never miss a contest.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">⚡</div>
-            <h3 class="feature-title">实时更新</h3>
-            <p class="feature-desc">比赛数据每 15 分钟自动更新，确保信息准确及时。</p>
+            <h3 class="feature-title">Real-time Updates</h3>
+            <p class="feature-desc">Contest data refreshes automatically every 15 minutes to stay accurate and current.</p>
           </div>
         </div>
       </section>
 
       <!-- Views Section -->
       <section class="section">
-        <h2 class="section-title">🖼️ 双视图展示</h2>
+        <h2 class="section-title">🖼️ Two Views</h2>
         <div class="view-cards">
           <div class="view-card">
             <div class="view-card-header">
-              <h3 class="view-card-title">📋 列表视图</h3>
+              <h3 class="view-card-title">📋 List View</h3>
             </div>
             <div class="view-card-body">
-              <p class="view-card-desc">简洁清晰的比赛概览，以卡片列表形式展示所有比赛信息，支持按平台筛选，适合快速浏览。</p>
-              <a href="index.html" class="view-card-link">查看列表视图 →</a>
+              <p class="view-card-desc">A clean overview of all contests shown as cards, with platform filtering for quick browsing.</p>
+              <a href="index.html" class="view-card-link">Open list view →</a>
             </div>
           </div>
           <div class="view-card">
             <div class="view-card-header">
-              <h3 class="view-card-title"> 日历视图</h3>
+              <h3 class="view-card-title">📅 Calendar View</h3>
             </div>
             <div class="view-card-body">
-              <p class="view-card-desc">直观的时间安排，以日历形式展示比赛时间，支持周/日/月视图切换，适合规划比赛日程。</p>
-              <a href="calendar-modern.html" class="view-card-link">查看日历视图 →</a>
+              <p class="view-card-desc">A visual schedule of contests with week, day and month views, ideal for planning your contest calendar.</p>
+              <a href="calendar-modern.html" class="view-card-link">Open calendar view →</a>
             </div>
           </div>
         </div>
@@ -437,7 +437,7 @@
 
       <!-- Platforms Section -->
       <section class="section">
-        <h2 class="section-title">📊 支持平台</h2>
+        <h2 class="section-title">📊 Supported Platforms</h2>
         <div class="platform-grid">
           <a href="https://codeforces.com" target="_blank" class="platform-item">
             <img src="../icons/codeforces.png" alt="Codeforces" class="platform-logo">
@@ -455,13 +455,13 @@
             <span class="platform-arrow">→</span>
           </a>
           <a href="https://www.nowcoder.com" target="_blank" class="platform-item">
-            <img src="../icons/nowcoder.png" alt="牛客" class="platform-logo">
-            <span class="platform-name">牛客</span>
+            <img src="../icons/nowcoder.png" alt="NowCoder" class="platform-logo">
+            <span class="platform-name">NowCoder</span>
             <span class="platform-arrow">→</span>
           </a>
           <a href="https://www.luogu.com.cn" target="_blank" class="platform-item">
-            <img src="../icons/luogu.png" alt="洛谷" class="platform-logo">
-            <span class="platform-name">洛谷</span>
+            <img src="../icons/luogu.png" alt="Luogu" class="platform-logo">
+            <span class="platform-name">Luogu</span>
             <span class="platform-arrow">→</span>
           </a>
         </div>
@@ -469,7 +469,7 @@
 
       <!-- Tech Stack Section -->
       <section class="section">
-        <h2 class="section-title">🛠️ 技术栈</h2>
+        <h2 class="section-title">🛠️ Tech Stack</h2>
         <div class="tech-stack">
           <span class="tech-tag">Vue 3</span>
           <span class="tech-tag">FullCalendar</span>
@@ -482,17 +482,17 @@
 
       <!-- Author Section -->
       <section class="section">
-        <h2 class="section-title">👨‍💻 作者信息</h2>
+        <h2 class="section-title">👨‍💻 Author</h2>
         <div class="author-section">
           <img src="https://avatars.githubusercontent.com/u/ChanYeeSum" alt="ChanYeeSum" class="author-avatar" onerror="this.src='../icons/icon.png'">
           <h3 class="author-name">ChanYeeSum</h3>
-          <p class="feature-desc">热爱编程，热衷于开源项目开发</p>
+          <p class="feature-desc">Loves programming and building open-source projects</p>
           <div class="author-links">
             <a href="https://github.com/ChanYeeSum/CodeCal" target="_blank" class="author-link repo-link">
-              <span>📦</span> GitHub 仓库
+              <span>📦</span> GitHub Repo
             </a>
             <a href="https://github.com/ChanYeeSum" target="_blank" class="author-link">
-              <span>👤</span> 作者主页
+              <span>👤</span> Profile
             </a>
           </div>
         </div>
@@ -504,7 +504,7 @@
         <p style="margin-top: 8px;">
           <a href="https://github.com/ChanYeeSum/CodeCal" target="_blank" style="color: var(--link-color); text-decoration: none;">GitHub</a>
           ·
-          <a href="https://github.com/ChanYeeSum" target="_blank" style="color: var(--link-color); text-decoration: none;">作者</a>
+          <a href="https://github.com/ChanYeeSum" target="_blank" style="color: var(--link-color); text-decoration: none;">Author</a>
         </p>
       </footer>
     </div>
