@@ -54,24 +54,20 @@
    cd CodeCal
    ```
 
-2. 启动（单命令同时开启网页服务与后台定时拉取）：
+2. 单命令启动（网页服务 + 后台定时拉取）：
    ```bash
    python scheduler.py
    ```
 
-3. 访问网页：打开浏览器访问 `http://localhost:8080`
+3. 访问网页：
    - 中文版：`http://localhost:8080/zh-CN/`
    - 英文版：`http://localhost:8080/en/`
-   - 根路径会按浏览器语言自动跳转
+   - 根路径 `http://localhost:8080` 按浏览器语言自动跳转
 
-4. 关于比赛数据：
-
-   本地部署时 `contests.json` 不会自动更新（线上由 GitHub Actions 每 15 分钟刷新）。
-   `scheduler.py` 启动时会立即抓取一次，之后每 60 分钟自动更新一次，Ctrl+C 停止。
-   也可手动执行单次抓取：
-   ```bash
-   python contest_fetcher.py
-   ```
+4. 数据更新（`scheduler.py` 仅用于本地）：
+   - 启动时立即抓取一次，之后每 60 分钟自动更新 `contests.json`，`Ctrl+C` 停止
+   - 线上 GitHub Pages 由 GitHub Actions 每 15 分钟自动刷新，不依赖此脚本
+   - 手动单次抓取：`python contest_fetcher.py`
 
 ### 配置邮件提醒
 
