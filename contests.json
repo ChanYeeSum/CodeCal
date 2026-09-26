@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-26 15:55:55",
+  "last_updated": "2026-09-26 21:18:18",
   "contests": [
     {
       "platform": "AtCoder",
@@ -100,13 +100,6 @@
       "url": "https://leetcode.com/contest/biweekly-contest-192"
     },
     {
-      "platform": "AtCoder",
-      "name": "UNICORNProgramming Contest2026(AtCoder Beginner Contest 477)",
-      "start_time": "2026-09-26 20:00:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/abc477"
-    },
-    {
       "platform": "NowCoder",
       "name": "牛客挑战赛92",
       "start_time": "2026-09-25 19:00:00",
@@ -175,13 +168,6 @@
       "start_time": "2026-09-12 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc475"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客小白月赛137",
-      "start_time": "2026-09-11 19:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/139936?from=acm_calendar"
     }
   ]
 }
