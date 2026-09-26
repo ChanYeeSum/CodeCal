@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27 01:20:29",
+  "last_updated": "2026-09-27 04:03:48",
   "contests": [
     {
       "platform": "AtCoder",
@@ -7,6 +7,20 @@
       "start_time": "2026-10-12 12:00:00",
       "duration": "5小时0分钟",
       "url": "https://atcoder.jp/contests/aalc001"
+    },
+    {
+      "platform": "Codeforces",
+      "name": "Codeforces Round (Div. 1)",
+      "start_time": "2026-10-12 02:35:00",
+      "duration": "2小时30分钟",
+      "url": "https://codeforces.com/contest/2273"
+    },
+    {
+      "platform": "Codeforces",
+      "name": "Codeforces Round (Div. 2)",
+      "start_time": "2026-10-12 02:35:00",
+      "duration": "2小时30分钟",
+      "url": "https://codeforces.com/contest/2274"
     },
     {
       "platform": "AtCoder",
