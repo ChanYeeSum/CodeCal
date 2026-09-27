@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27 16:27:49",
+  "last_updated": "2026-09-27 22:13:40",
   "contests": [
     {
       "platform": "AtCoder",
@@ -70,13 +70,6 @@
       "start_time": "2026-10-03 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc478"
-    },
-    {
-      "platform": "AtCoder",
-      "name": "AtCoder Grand Contest 078",
-      "start_time": "2026-09-27 20:00:00",
-      "duration": "3小时30分钟",
-      "url": "https://atcoder.jp/contests/agc078"
     },
     {
       "platform": "NowCoder",
@@ -168,13 +161,6 @@
       "start_time": "2026-09-12 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-191"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "AtCoder Beginner Contest 475",
-      "start_time": "2026-09-12 20:00:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/abc475"
     }
   ]
 }
