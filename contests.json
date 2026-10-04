@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-04 09:51:22",
+  "last_updated": "2026-10-04 16:39:50",
   "contests": [
     {
       "platform": "AtCoder",
@@ -115,6 +115,13 @@
     },
     {
       "platform": "NowCoder",
+      "name": "沈阳化工大学第十三届程序设计竞赛(同步赛)",
+      "start_time": "2026-10-06 10:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/141562?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
       "name": "2026牛客国庆集训派对day5",
       "start_time": "2026-10-05 12:00:00",
       "duration": "5小时0分钟",
@@ -147,6 +154,13 @@
       "start_time": "2026-10-04 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-522"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "AtCoder Beginner Contest 478",
+      "start_time": "2026-10-03 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc478"
     },
     {
       "platform": "NowCoder",
