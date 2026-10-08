@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-08 10:11:13",
+  "last_updated": "2026-10-08 17:19:55",
   "contests": [
     {
       "platform": "AtCoder",
@@ -30,6 +30,13 @@
       "url": "https://atcoder.jp/contests/ahc073"
     },
     {
+      "platform": "Codeforces",
+      "name": "Educational Codeforces Round 195 (Rated for Div. 2)",
+      "start_time": "2026-10-14 22:35:00",
+      "duration": "2小时0分钟",
+      "url": "https://codeforces.com/contest/2276"
+    },
+    {
       "platform": "AtCoder",
       "name": "AAL Contest 001: Let's use segtree!",
       "start_time": "2026-10-12 12:00:00",
@@ -58,6 +65,13 @@
       "url": "https://atcoder.jp/contests/abc479"
     },
     {
+      "platform": "NowCoder",
+      "name": "牛客周赛 Round 165",
+      "start_time": "2026-10-11 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/141721?from=acm_calendar"
+    },
+    {
       "platform": "LeetCode",
       "name": "Weekly Contest 523",
       "start_time": "2026-10-11 10:30:00",
@@ -84,6 +98,13 @@
       "start_time": "2026-10-10 20:00:00",
       "duration": "2小时30分钟",
       "url": "https://atcoder.jp/contests/arc232"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "苏州工学院 2026 ACM新生程序设计竞赛同步赛",
+      "start_time": "2026-10-10 18:00:00",
+      "duration": "3小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/141092?from=acm_calendar"
     },
     {
       "platform": "NowCoder",
