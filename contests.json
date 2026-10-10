@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-10 22:36:16",
+  "last_updated": "2026-10-11 03:26:01",
   "contests": [
     {
       "platform": "AtCoder",
@@ -168,13 +168,6 @@
       "start_time": "2026-10-11 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-523"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "DeepInfra Round 1 (Codeforces Round 1126, Div. 1 + Div. 2)",
-      "start_time": "2026-10-10 23:05:00",
-      "duration": "3小时0分钟",
-      "url": "https://codeforces.com/contest/2271"
     },
     {
       "platform": "NowCoder",
