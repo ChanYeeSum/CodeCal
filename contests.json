@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-10 09:07:32",
+  "last_updated": "2026-10-10 15:34:23",
   "contests": [
     {
       "platform": "AtCoder",
@@ -9,6 +9,13 @@
       "url": "https://atcoder.jp/contests/agc079"
     },
     {
+      "platform": "NowCoder",
+      "name": "牛客小白月赛139",
+      "start_time": "2026-10-30 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/141882?from=acm_calendar"
+    },
+    {
       "platform": "AtCoder",
       "name": "HACK TO THE FUTURE 2027 (AtCoder Heuristic Contest 074)",
       "start_time": "2026-10-30 18:00:00",
@@ -16,11 +23,39 @@
       "url": "https://atcoder.jp/contests/ahc074"
     },
     {
+      "platform": "LeetCode",
+      "name": "Biweekly Contest 194",
+      "start_time": "2026-10-24 22:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/biweekly-contest-194"
+    },
+    {
       "platform": "NowCoder",
       "name": "牛客2026年1024程序员节娱乐赛",
       "start_time": "2026-10-24 19:00:00",
       "duration": "3小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/141819?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客挑战赛93",
+      "start_time": "2026-10-23 19:00:00",
+      "duration": "3小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/141878?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客周赛 Round 166",
+      "start_time": "2026-10-18 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/141877?from=acm_calendar"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 524",
+      "start_time": "2026-10-18 10:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/weekly-contest-524"
     },
     {
       "platform": "Codeforces",
@@ -49,6 +84,13 @@
       "start_time": "2026-10-17 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://atcoder.jp/contests/ahc073"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客练习赛158",
+      "start_time": "2026-10-16 19:00:00",
+      "duration": "2小时30分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/141876?from=acm_calendar"
     },
     {
       "platform": "Codeforces",
