@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-11 06:50:13",
+  "last_updated": "2026-10-11 10:04:09",
   "contests": [
     {
       "platform": "AtCoder",
@@ -182,6 +182,13 @@
       "start_time": "2026-10-10 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-193"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "第三回 AtCoder Japan Open -予選-  (AtCoder Regular Contest++ 232)",
+      "start_time": "2026-10-10 20:00:00",
+      "duration": "2小时30分钟",
+      "url": "https://atcoder.jp/contests/arc232"
     },
     {
       "platform": "NowCoder",
