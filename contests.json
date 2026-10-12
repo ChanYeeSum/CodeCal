@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-12 07:53:51",
+  "last_updated": "2026-10-12 14:19:42",
   "contests": [
     {
       "platform": "AtCoder",
@@ -114,13 +114,6 @@
       "url": "https://codeforces.com/contest/2276"
     },
     {
-      "platform": "AtCoder",
-      "name": "AAL Contest 001: Let's use segtree!",
-      "start_time": "2026-10-12 12:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://atcoder.jp/contests/aalc001"
-    },
-    {
       "platform": "NowCoder",
       "name": "Codeforces Round (Div. 1)",
       "start_time": "2026-10-12 02:35:00",
@@ -133,6 +126,13 @@
       "start_time": "2026-10-12 02:35:00",
       "duration": "2小时0分钟",
       "url": "https://codeforces.com/contest/2274"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "オムロンプログラミングコンテスト2026 （AtCoder Beginner Contest 479）",
+      "start_time": "2026-10-11 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc479"
     },
     {
       "platform": "NowCoder",
@@ -280,13 +280,6 @@
       "start_time": "2026-10-01 12:00:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/140729?from=acm_calendar"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 521",
-      "start_time": "2026-09-27 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-521"
     }
   ]
 }
