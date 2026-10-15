@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-15 14:14:16",
+  "last_updated": "2026-10-15 19:55:39",
   "contests": [
     {
       "platform": "AtCoder",
@@ -72,6 +72,13 @@
       "url": "https://leetcode.com/contest/biweekly-contest-194"
     },
     {
+      "platform": "AtCoder",
+      "name": "SMBC Programming Contest #2 (AtCoder Beginner Contest 481）",
+      "start_time": "2026-10-24 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc481"
+    },
+    {
       "platform": "Codeforces",
       "name": "Codeforces Round (Div. 2)",
       "start_time": "2026-10-24 19:05:00",
@@ -101,7 +108,7 @@
     },
     {
       "platform": "NowCoder",
-      "name": "2026年广东工业大学月赛（同步赛）",
+      "name": "【华为杯】2026年广东工业大学月赛（同步赛）",
       "start_time": "2026-10-18 13:30:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/142131?from=acm_calendar"
