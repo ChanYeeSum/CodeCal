@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-16 09:34:22",
+  "last_updated": "2026-10-16 15:26:07",
   "contests": [
     {
       "platform": "AtCoder",
@@ -322,13 +322,6 @@
       "start_time": "2026-10-02 12:00:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/140730?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "2026牛客国庆集训派对day1",
-      "start_time": "2026-10-01 12:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/140729?from=acm_calendar"
     }
   ]
 }
