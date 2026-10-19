@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-10-19 13:05:31",
+  "last_updated": "2026-10-19 19:04:16",
   "contests": [
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Beginner Contest 484",
+      "start_time": "2026-11-14 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc484"
+    },
     {
       "platform": "AtCoder",
       "name": "AtCoder Grand Contest 079",
@@ -273,13 +280,6 @@
       "start_time": "2026-10-04 20:00:00",
       "duration": "2小时0分钟",
       "url": "https://atcoder.jp/contests/arc231"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客周赛 Round 164",
-      "start_time": "2026-10-04 19:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/141142?from=acm_calendar"
     }
   ]
 }
