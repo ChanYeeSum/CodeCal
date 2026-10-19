@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-19 08:21:45",
+  "last_updated": "2026-10-19 13:05:31",
   "contests": [
     {
       "platform": "AtCoder",
@@ -280,20 +280,6 @@
       "start_time": "2026-10-04 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/141142?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "2026牛客国庆集训派对day4",
-      "start_time": "2026-10-04 12:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/140732?from=acm_calendar"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 522",
-      "start_time": "2026-10-04 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-522"
     }
   ]
 }
