@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-19 19:04:16",
+  "last_updated": "2026-10-20 01:38:47",
   "contests": [
     {
       "platform": "AtCoder",
@@ -273,13 +273,6 @@
       "start_time": "2026-10-05 12:00:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/140733?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "AtCoder Regular Contest 231",
-      "start_time": "2026-10-04 20:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://atcoder.jp/contests/arc231"
     }
   ]
 }
