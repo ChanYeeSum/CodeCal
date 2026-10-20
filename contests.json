@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-20 15:50:43",
+  "last_updated": "2026-10-20 21:45:52",
   "contests": [
     {
       "platform": "AtCoder",
@@ -21,6 +21,13 @@
       "start_time": "2026-11-07 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc483"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 526",
+      "start_time": "2026-11-01 10:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/weekly-contest-526"
     },
     {
       "platform": "Codeforces",
