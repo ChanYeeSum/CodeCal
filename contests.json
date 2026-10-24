@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-24 19:25:28",
+  "last_updated": "2026-10-24 22:45:18",
   "contests": [
     {
       "platform": "AtCoder",
@@ -119,20 +119,6 @@
       "start_time": "2026-10-24 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-194"
-    },
-    {
-      "platform": "AtCoder",
-      "name": "SMBC Programming Contest #2 (AtCoder Beginner Contest 481）",
-      "start_time": "2026-10-24 20:00:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/abc481"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1129 (Div. 2)",
-      "start_time": "2026-10-24 19:05:00",
-      "duration": "2小时15分钟",
-      "url": "https://codeforces.com/contest/2277"
     },
     {
       "platform": "NowCoder",
