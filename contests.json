@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-25 13:05:32",
+  "last_updated": "2026-10-25 18:00:30",
   "contests": [
     {
       "platform": "AtCoder",
@@ -252,13 +252,6 @@
       "start_time": "2026-10-10 20:00:00",
       "duration": "2小时30分钟",
       "url": "https://atcoder.jp/contests/arc232"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "苏州工学院 2026 ACM新生程序设计竞赛同步赛",
-      "start_time": "2026-10-10 18:00:00",
-      "duration": "3小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/141092?from=acm_calendar"
     }
   ]
 }
