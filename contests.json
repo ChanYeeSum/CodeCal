@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-26 23:22:27",
+  "last_updated": "2026-10-27 04:40:03",
   "contests": [
     {
       "platform": "AtCoder",
@@ -66,6 +66,13 @@
     },
     {
       "platform": "Codeforces",
+      "name": "Codeforces Round (Div. 2)",
+      "start_time": "2026-11-06 22:35:00",
+      "duration": "2小时15分钟",
+      "url": "https://codeforces.com/contest/2284"
+    },
+    {
+      "platform": "Codeforces",
       "name": "ICPC 2026 Online Challenge 2 powered by Huawei",
       "start_time": "2026-11-05 19:00:00",
       "duration": "336小时0分钟",
@@ -112,13 +119,6 @@
       "start_time": "2026-10-30 18:00:00",
       "duration": "240小时0分钟",
       "url": "https://atcoder.jp/contests/ahc074"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1130 (Div. 2)",
-      "start_time": "2026-10-26 22:35:00",
-      "duration": "2小时15分钟",
-      "url": "https://codeforces.com/contest/2272"
     },
     {
       "platform": "NowCoder",
@@ -217,20 +217,6 @@
       "start_time": "2026-10-14 22:35:00",
       "duration": "2小时0分钟",
       "url": "https://codeforces.com/contest/2276"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "Codeforces Round (Div. 1)",
-      "start_time": "2026-10-12 02:35:00",
-      "duration": "2小时0分钟",
-      "url": "https://codeforces.com/contest/2273"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "Codeforces Round (Div. 2)",
-      "start_time": "2026-10-12 02:35:00",
-      "duration": "2小时0分钟",
-      "url": "https://codeforces.com/contest/2274"
     }
   ]
 }
