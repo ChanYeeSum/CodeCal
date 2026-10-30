@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-30 15:34:31",
+  "last_updated": "2026-10-30 23:10:52",
   "contests": [
     {
       "platform": "AtCoder",
@@ -112,13 +112,6 @@
       "start_time": "2026-10-30 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/141882?from=acm_calendar"
-    },
-    {
-      "platform": "AtCoder",
-      "name": "HACK TO THE FUTURE 2027 (AtCoder Heuristic Contest 074)",
-      "start_time": "2026-10-30 18:00:00",
-      "duration": "240小时0分钟",
-      "url": "https://atcoder.jp/contests/ahc074"
     },
     {
       "platform": "NowCoder",
