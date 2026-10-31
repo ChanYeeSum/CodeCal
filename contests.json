@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-31 07:57:10",
+  "last_updated": "2026-10-31 14:07:02",
   "contests": [
     {
       "platform": "AtCoder",
@@ -70,13 +70,6 @@
       "start_time": "2026-11-06 22:35:00",
       "duration": "2小时15分钟",
       "url": "https://codeforces.com/contest/2284"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "ICPC 2026 Online Challenge 2 powered by Huawei",
-      "start_time": "2026-11-05 19:00:00",
-      "duration": "336小时0分钟",
-      "url": "https://codeforces.com/contest/2281"
     },
     {
       "platform": "Codeforces",
