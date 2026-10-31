@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-10-31 20:56:37",
+  "last_updated": "2026-11-01 01:51:55",
   "contests": [
+    {
+      "platform": "NowCoder",
+      "name": "北京信息科技大学第十八届程序设计竞赛（校外同步赛）",
+      "start_time": "2026-11-25 13:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/142975?from=acm_calendar"
+    },
     {
       "platform": "AtCoder",
       "name": "AtCoder Regular Contest++ 234",
@@ -16,6 +23,13 @@
       "url": "https://atcoder.jp/contests/abc485"
     },
     {
+      "platform": "Codeforces",
+      "name": "Codeforces Round (Div. 2)",
+      "start_time": "2026-11-15 22:35:00",
+      "duration": "2小时0分钟",
+      "url": "https://codeforces.com/contest/2285"
+    },
+    {
       "platform": "AtCoder",
       "name": "AtCoder Beginner Contest 484",
       "start_time": "2026-11-14 20:00:00",
@@ -23,11 +37,25 @@
       "url": "https://atcoder.jp/contests/abc484"
     },
     {
+      "platform": "NowCoder",
+      "name": "牛客小白月赛140",
+      "start_time": "2026-11-13 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/143195?from=acm_calendar"
+    },
+    {
       "platform": "AtCoder",
       "name": "AtCoder Grand Contest 079",
       "start_time": "2026-11-08 20:00:00",
       "duration": "3小时0分钟",
       "url": "https://atcoder.jp/contests/agc079"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客周赛 Round 169",
+      "start_time": "2026-11-08 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/143199?from=acm_calendar"
     },
     {
       "platform": "LeetCode",
@@ -72,11 +100,25 @@
       "url": "https://codeforces.com/contest/2284"
     },
     {
+      "platform": "NowCoder",
+      "name": "牛客练习赛159",
+      "start_time": "2026-11-06 19:00:00",
+      "duration": "2小时30分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/142560?from=acm_calendar"
+    },
+    {
       "platform": "Codeforces",
       "name": "Educational Codeforces Round 196 (Rated for Div. 2)",
       "start_time": "2026-11-04 22:35:00",
       "duration": "2小时0分钟",
       "url": "https://codeforces.com/contest/2283"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客周赛 Round 168",
+      "start_time": "2026-11-01 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/142559?from=acm_calendar"
     },
     {
       "platform": "LeetCode",
@@ -86,32 +128,11 @@
       "url": "https://leetcode.com/contest/weekly-contest-526"
     },
     {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1131 (Div. 3)",
-      "start_time": "2026-10-31 22:35:00",
-      "duration": "2小时15分钟",
-      "url": "https://codeforces.com/contest/2278"
-    },
-    {
       "platform": "NowCoder",
-      "name": "牛客小白月赛139",
-      "start_time": "2026-10-30 19:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/141882?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "AtCoder Regular Contest++ 233",
-      "start_time": "2026-10-25 20:00:00",
-      "duration": "2小时30分钟",
-      "url": "https://atcoder.jp/contests/arc233"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客周赛 Round 167",
-      "start_time": "2026-10-25 19:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/142115?from=acm_calendar"
+      "name": "华南理工大学ACM程序设计竞赛（秋季赛）第一场",
+      "start_time": "2026-11-01 10:15:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/143041?from=acm_calendar"
     },
     {
       "platform": "LeetCode",
@@ -128,60 +149,11 @@
       "url": "https://leetcode.com/contest/biweekly-contest-194"
     },
     {
-      "platform": "NowCoder",
-      "name": "SMBCプログラミングコンテスト #2（AtCoder Beginner Contest 481）",
-      "start_time": "2026-10-24 20:00:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/abc481"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客2026年1024程序员节娱乐赛",
-      "start_time": "2026-10-24 19:00:00",
-      "duration": "3小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/141819?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客挑战赛93",
-      "start_time": "2026-10-23 19:00:00",
-      "duration": "3小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/141878?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客周赛 Round 166",
-      "start_time": "2026-10-18 19:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/141877?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "【华为杯】2026年广东工业大学月赛（同步赛）",
-      "start_time": "2026-10-18 13:30:00",
-      "duration": "5小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/142131?from=acm_calendar"
-    },
-    {
       "platform": "LeetCode",
       "name": "Weekly Contest 524",
       "start_time": "2026-10-18 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-524"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "WorldQuant Round 1 (Codeforces Round Div. 1 + Div. 2)",
-      "start_time": "2026-10-17 22:35:00",
-      "duration": "3小时0分钟",
-      "url": "https://codeforces.com/contest/2261"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "AtCoder Talent Quest 〜 今から28卒には脱出してもらいます〜予選 #2（AtCoder Beginner Contest 480）",
-      "start_time": "2026-10-17 20:00:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/abc480"
     }
   ]
 }
