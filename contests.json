@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-31 14:07:02",
+  "last_updated": "2026-10-31 20:56:37",
   "contests": [
     {
       "platform": "AtCoder",
@@ -93,13 +93,6 @@
       "url": "https://codeforces.com/contest/2278"
     },
     {
-      "platform": "AtCoder",
-      "name": "AtCoder Beginner Contest 482",
-      "start_time": "2026-10-31 20:00:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/abc482"
-    },
-    {
       "platform": "NowCoder",
       "name": "牛客小白月赛139",
       "start_time": "2026-10-30 19:00:00",
@@ -189,13 +182,6 @@
       "start_time": "2026-10-17 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc480"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客练习赛158",
-      "start_time": "2026-10-16 19:00:00",
-      "duration": "2小时30分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/141876?from=acm_calendar"
     }
   ]
 }
