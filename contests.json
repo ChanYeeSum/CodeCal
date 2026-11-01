@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-01 09:21:04",
+  "last_updated": "2026-11-01 15:54:02",
   "contests": [
     {
       "platform": "NowCoder",
@@ -47,7 +47,7 @@
       "platform": "AtCoder",
       "name": "AtCoder Grand Contest 079",
       "start_time": "2026-11-08 20:00:00",
-      "duration": "3小时0分钟",
+      "duration": "3小时30分钟",
       "url": "https://atcoder.jp/contests/agc079"
     },
     {
