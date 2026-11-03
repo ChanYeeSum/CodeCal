@@ -1,12 +1,26 @@
 {
-  "last_updated": "2026-11-03 07:59:16",
+  "last_updated": "2026-11-03 15:06:49",
   "contests": [
+    {
+      "platform": "NowCoder",
+      "name": "2026 年广东工业大学新生赛（同步赛）",
+      "start_time": "2026-11-29 13:30:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/143460?from=acm_calendar"
+    },
     {
       "platform": "AtCoder",
       "name": "AtCoder Beginner Contest 486",
       "start_time": "2026-11-28 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc486"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客练习赛160",
+      "start_time": "2026-11-27 19:00:00",
+      "duration": "2小时30分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/143482?from=acm_calendar"
     },
     {
       "platform": "NowCoder",
