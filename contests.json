@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-04 09:33:37",
+  "last_updated": "2026-11-05 02:09:30",
   "contests": [
     {
       "platform": "NowCoder",
@@ -37,6 +37,13 @@
       "url": "https://atcoder.jp/contests/arc234"
     },
     {
+      "platform": "NowCoder",
+      "name": "2026年海南大学程序设计竞赛（同步赛）",
+      "start_time": "2026-11-22 14:30:00",
+      "duration": "4小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/142288?from=acm_calendar"
+    },
+    {
       "platform": "AtCoder",
       "name": "AtCoder Beginner Contest 485",
       "start_time": "2026-11-21 20:00:00",
@@ -65,6 +72,13 @@
       "url": "https://ac.nowcoder.com/acm/contest/143406?from=acm_calendar"
     },
     {
+      "platform": "luogu",
+      "name": "【LGR-315-Div.3】洛谷基础赛 #42 & IXOI Round 4",
+      "start_time": "2026-11-15 14:00:00",
+      "duration": "3小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/311136"
+    },
+    {
       "platform": "LeetCode",
       "name": "Weekly Contest 528",
       "start_time": "2026-11-15 10:30:00",
@@ -77,6 +91,13 @@
       "start_time": "2026-11-14 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc484"
+    },
+    {
+      "platform": "luogu",
+      "name": "【LGR-314】洛谷 NOIP 2026 模拟赛",
+      "start_time": "2026-11-14 08:30:00",
+      "duration": "4小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/370700"
     },
     {
       "platform": "NowCoder",
@@ -107,15 +128,22 @@
       "url": "https://leetcode.com/contest/weekly-contest-527"
     },
     {
+      "platform": "luogu",
+      "name": "「GLR R5」GLR Autumn Round",
+      "start_time": "2026-11-08 08:00:00",
+      "duration": "10小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/358449"
+    },
+    {
       "platform": "Codeforces",
-      "name": "Codeforces Round (Div. 1)",
+      "name": "Codeforces Round 1133 (Div. 1)",
       "start_time": "2026-11-07 22:35:00",
       "duration": "2小时30分钟",
       "url": "https://codeforces.com/contest/2279"
     },
     {
       "platform": "Codeforces",
-      "name": "Codeforces Round (Div. 2)",
+      "name": "Codeforces Round 1133 (Div. 2)",
       "start_time": "2026-11-07 22:35:00",
       "duration": "2小时30分钟",
       "url": "https://codeforces.com/contest/2280"
@@ -135,8 +163,15 @@
       "url": "https://atcoder.jp/contests/abc483"
     },
     {
+      "platform": "luogu",
+      "name": "【LGR-313-Div.2】洛谷 11 月月赛 I &『LBA-OI』Round 6",
+      "start_time": "2026-11-07 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/329950"
+    },
+    {
       "platform": "Codeforces",
-      "name": "Codeforces Round (Div. 2)",
+      "name": "Codeforces Round 1132 (Div. 2)",
       "start_time": "2026-11-06 22:35:00",
       "duration": "2小时15分钟",
       "url": "https://codeforces.com/contest/2284"
@@ -149,18 +184,18 @@
       "url": "https://ac.nowcoder.com/acm/contest/142560?from=acm_calendar"
     },
     {
-      "platform": "Codeforces",
-      "name": "Educational Codeforces Round 196 (Rated for Div. 2)",
-      "start_time": "2026-11-04 22:35:00",
-      "duration": "2小时0分钟",
-      "url": "https://codeforces.com/contest/2283"
-    },
-    {
       "platform": "NowCoder",
       "name": "牛客周赛 Round 168",
       "start_time": "2026-11-01 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/142559?from=acm_calendar"
+    },
+    {
+      "platform": "luogu",
+      "name": "2026 年 CaMeL AI 杯上海市临港五校程序设计邀请赛（重现赛）",
+      "start_time": "2026-11-01 13:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/367488"
     },
     {
       "platform": "LeetCode",
@@ -177,6 +212,48 @@
       "url": "https://ac.nowcoder.com/acm/contest/143041?from=acm_calendar"
     },
     {
+      "platform": "luogu",
+      "name": "CSP-S 2026 自测（民间数据）",
+      "start_time": "2026-10-31 19:00:00",
+      "duration": "239小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/369912"
+    },
+    {
+      "platform": "luogu",
+      "name": "CSP-J 2026 自测（民间数据）",
+      "start_time": "2026-10-31 12:15:00",
+      "duration": "245小时45分钟",
+      "url": "https://www.luogu.com.cn/contest/369911"
+    },
+    {
+      "platform": "luogu",
+      "name": "COCI 2026/2027 #1 Unofficial Mirror",
+      "start_time": "2026-10-30 14:00:00",
+      "duration": "3小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/369513"
+    },
+    {
+      "platform": "luogu",
+      "name": "[ICPC2019 Nanchang R] ICPC 2019 区域赛南昌站重现赛",
+      "start_time": "2026-10-29 13:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/366008"
+    },
+    {
+      "platform": "luogu",
+      "name": "【LGR-316-Div.4】洛谷入门赛 #53 & ++RP 赛",
+      "start_time": "2026-10-25 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/366453"
+    },
+    {
+      "platform": "luogu",
+      "name": "CXOI Round 7",
+      "start_time": "2026-10-25 13:30:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/296670"
+    },
+    {
       "platform": "LeetCode",
       "name": "Weekly Contest 525",
       "start_time": "2026-10-25 10:30:00",
@@ -184,11 +261,60 @@
       "url": "https://leetcode.com/contest/weekly-contest-525"
     },
     {
+      "platform": "luogu",
+      "name": "百合不是罪过",
+      "start_time": "2026-10-25 08:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/364829"
+    },
+    {
       "platform": "LeetCode",
       "name": "Biweekly Contest 194",
       "start_time": "2026-10-24 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-194"
+    },
+    {
+      "platform": "luogu",
+      "name": "【LGR-311-Div.2】洛谷 10 月月赛 IV &「LDOI」Round #2",
+      "start_time": "2026-10-24 14:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/364653"
+    },
+    {
+      "platform": "luogu",
+      "name": "【LGR-311-Div.1】洛谷 10 月月赛 IV &「LDOI」Round #2",
+      "start_time": "2026-10-24 14:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/304314"
+    },
+    {
+      "platform": "luogu",
+      "name": "【LGR-312-Div.3】洛谷基础赛 #41 & 奶龙 OI Round 3",
+      "start_time": "2026-10-24 08:30:00",
+      "duration": "3小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/345405"
+    },
+    {
+      "platform": "luogu",
+      "name": "CSP-S 必备模板赛",
+      "start_time": "2026-10-23 10:00:00",
+      "duration": "200小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/367097"
+    },
+    {
+      "platform": "luogu",
+      "name": "CSP-J 必备模板赛",
+      "start_time": "2026-10-23 10:00:00",
+      "duration": "200小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/367096"
+    },
+    {
+      "platform": "luogu",
+      "name": "[ICPC2019 Xuzhou R] ICPC 2019 区域赛徐州站重现赛",
+      "start_time": "2026-10-22 13:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/366007"
     }
   ]
 }
