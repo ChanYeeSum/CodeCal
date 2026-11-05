@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-05 07:51:41",
+  "last_updated": "2026-11-05 15:10:25",
   "contests": [
     {
       "platform": "NowCoder",
@@ -119,6 +119,13 @@
       "start_time": "2026-11-08 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/143199?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "深圳职业技术大学2026年程序设计竞赛(重现赛)",
+      "start_time": "2026-11-08 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/143085?from=acm_calendar"
     },
     {
       "platform": "LeetCode",
