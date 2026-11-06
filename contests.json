@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-06 19:20:39",
+  "last_updated": "2026-11-07 02:14:32",
   "contests": [
     {
       "platform": "NowCoder",
@@ -42,6 +42,27 @@
       "start_time": "2026-11-22 14:30:00",
       "duration": "4小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/142288?from=acm_calendar"
+    },
+    {
+      "platform": "Codeforces",
+      "name": "Codeforces Round (Div. 1)",
+      "start_time": "2026-11-21 22:35:00",
+      "duration": "2小时0分钟",
+      "url": "https://codeforces.com/contest/2287"
+    },
+    {
+      "platform": "Codeforces",
+      "name": "Codeforces Round (Div. 2)",
+      "start_time": "2026-11-21 22:35:00",
+      "duration": "2小时0分钟",
+      "url": "https://codeforces.com/contest/2288"
+    },
+    {
+      "platform": "LeetCode",
+      "name": "Biweekly Contest 196",
+      "start_time": "2026-11-21 22:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/biweekly-contest-196"
     },
     {
       "platform": "AtCoder",
@@ -189,13 +210,6 @@
       "start_time": "2026-11-07 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://www.luogu.com.cn/contest/329950"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1132 (Div. 2)",
-      "start_time": "2026-11-06 22:35:00",
-      "duration": "2小时15分钟",
-      "url": "https://codeforces.com/contest/2284"
     },
     {
       "platform": "NowCoder",
