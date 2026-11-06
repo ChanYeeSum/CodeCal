@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-06 10:43:22",
+  "last_updated": "2026-11-06 19:20:39",
   "contests": [
     {
       "platform": "NowCoder",
@@ -140,6 +140,13 @@
       "start_time": "2026-11-08 10:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/weekly-contest-527"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2026华南理工大学程序设计竞赛（秋季赛）第二场",
+      "start_time": "2026-11-08 10:15:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/143669?from=acm_calendar"
     },
     {
       "platform": "luogu",
@@ -322,13 +329,6 @@
       "start_time": "2026-10-23 10:00:00",
       "duration": "200小时30分钟",
       "url": "https://www.luogu.com.cn/contest/367096"
-    },
-    {
-      "platform": "luogu",
-      "name": "[ICPC2019 Xuzhou R] ICPC 2019 区域赛徐州站重现赛",
-      "start_time": "2026-10-22 13:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/366007"
     }
   ]
 }
