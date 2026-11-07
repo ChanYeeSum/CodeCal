@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-07 07:24:12",
+  "last_updated": "2026-11-07 11:02:37",
   "contests": [
     {
       "platform": "NowCoder",
@@ -336,20 +336,6 @@
       "start_time": "2026-10-24 08:30:00",
       "duration": "3小时30分钟",
       "url": "https://www.luogu.com.cn/contest/345405"
-    },
-    {
-      "platform": "luogu",
-      "name": "CSP-S 必备模板赛",
-      "start_time": "2026-10-23 10:00:00",
-      "duration": "200小时30分钟",
-      "url": "https://www.luogu.com.cn/contest/367097"
-    },
-    {
-      "platform": "luogu",
-      "name": "CSP-J 必备模板赛",
-      "start_time": "2026-10-23 10:00:00",
-      "duration": "200小时30分钟",
-      "url": "https://www.luogu.com.cn/contest/367096"
     }
   ]
 }
