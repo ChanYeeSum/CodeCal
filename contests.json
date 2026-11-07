@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-07 18:34:53",
+  "last_updated": "2026-11-08 05:00:59",
   "contests": [
     {
       "platform": "NowCoder",
@@ -135,6 +135,13 @@
       "url": "https://ac.nowcoder.com/acm/contest/143195?from=acm_calendar"
     },
     {
+      "platform": "Codeforces",
+      "name": "Codeforces Round 1134 (Div. 4)",
+      "start_time": "2026-11-12 22:35:00",
+      "duration": "2小时15分钟",
+      "url": "https://codeforces.com/contest/2290"
+    },
+    {
       "platform": "luogu",
       "name": "[FJCPC 2026] 2026 年福建省大学生程序设计竞赛重现赛",
       "start_time": "2026-11-12 13:00:00",
@@ -171,7 +178,7 @@
     },
     {
       "platform": "NowCoder",
-      "name": "2026华南理工大学程序设计竞赛（秋季赛）第二场",
+      "name": "华南理工大学ACM程序设计竞赛（秋季赛）第二场",
       "start_time": "2026-11-08 10:15:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/143669?from=acm_calendar"
@@ -184,32 +191,11 @@
       "url": "https://www.luogu.com.cn/contest/358449"
     },
     {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1133 (Div. 1)",
-      "start_time": "2026-11-07 22:35:00",
-      "duration": "2小时30分钟",
-      "url": "https://codeforces.com/contest/2279"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1133 (Div. 2)",
-      "start_time": "2026-11-07 22:35:00",
-      "duration": "2小时30分钟",
-      "url": "https://codeforces.com/contest/2280"
-    },
-    {
       "platform": "LeetCode",
       "name": "Biweekly Contest 195",
       "start_time": "2026-11-07 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-195"
-    },
-    {
-      "platform": "AtCoder",
-      "name": "AtCoder Beginner Contest 483",
-      "start_time": "2026-11-07 20:00:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/abc483"
     },
     {
       "platform": "luogu",
