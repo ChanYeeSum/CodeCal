@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-08 05:00:59",
+  "last_updated": "2026-11-08 08:50:41",
   "contests": [
     {
       "platform": "NowCoder",
@@ -315,13 +315,6 @@
       "start_time": "2026-10-24 14:00:00",
       "duration": "5小时0分钟",
       "url": "https://www.luogu.com.cn/contest/304314"
-    },
-    {
-      "platform": "luogu",
-      "name": "【LGR-312-Div.3】洛谷基础赛 #41 & 奶龙 OI Round 3",
-      "start_time": "2026-10-24 08:30:00",
-      "duration": "3小时30分钟",
-      "url": "https://www.luogu.com.cn/contest/345405"
     }
   ]
 }
