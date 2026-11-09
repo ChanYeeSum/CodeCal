@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-09 07:54:07",
+  "last_updated": "2026-11-09 15:00:39",
   "contests": [
     {
       "platform": "NowCoder",
@@ -150,6 +150,13 @@
     },
     {
       "platform": "NowCoder",
+      "name": "AtCoder Grand Contest 079",
+      "start_time": "2026-11-08 20:00:00",
+      "duration": "3小时30分钟",
+      "url": "https://atcoder.jp/contests/agc079"
+    },
+    {
+      "platform": "NowCoder",
       "name": "牛客周赛 Round 169",
       "start_time": "2026-11-08 19:00:00",
       "duration": "2小时0分钟",
@@ -273,27 +280,6 @@
       "start_time": "2026-10-25 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://www.luogu.com.cn/contest/366453"
-    },
-    {
-      "platform": "luogu",
-      "name": "CXOI Round 7",
-      "start_time": "2026-10-25 13:30:00",
-      "duration": "4小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/296670"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 525",
-      "start_time": "2026-10-25 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-525"
-    },
-    {
-      "platform": "luogu",
-      "name": "百合不是罪过",
-      "start_time": "2026-10-25 08:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/364829"
     }
   ]
 }
