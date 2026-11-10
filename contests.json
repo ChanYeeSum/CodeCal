@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-10 18:13:45",
+  "last_updated": "2026-11-11 02:05:00",
   "contests": [
     {
       "platform": "AtCoder",
@@ -38,10 +38,10 @@
     },
     {
       "platform": "AtCoder",
-      "name": "AtCoder Regular Contest++ 234",
+      "name": "AtCoder Grand Contest 080",
       "start_time": "2026-11-22 20:00:00",
-      "duration": "2小时30分钟",
-      "url": "https://atcoder.jp/contests/arc234"
+      "duration": "3小时0分钟",
+      "url": "https://atcoder.jp/contests/agc080"
     },
     {
       "platform": "NowCoder",
@@ -49,6 +49,13 @@
       "start_time": "2026-11-22 14:30:00",
       "duration": "4小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/142288?from=acm_calendar"
+    },
+    {
+      "platform": "luogu",
+      "name": "[CPOI] Round 1",
+      "start_time": "2026-11-22 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/321119"
     },
     {
       "platform": "LeetCode",
