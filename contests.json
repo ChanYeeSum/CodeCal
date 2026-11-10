@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-11-10 09:43:08",
+  "last_updated": "2026-11-10 18:13:45",
   "contests": [
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Beginner Contest 487",
+      "start_time": "2026-12-05 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc487"
+    },
     {
       "platform": "NowCoder",
       "name": "2026 年广东工业大学新生赛（同步赛）",
@@ -44,6 +51,13 @@
       "url": "https://ac.nowcoder.com/acm/contest/142288?from=acm_calendar"
     },
     {
+      "platform": "LeetCode",
+      "name": "Weekly Contest 529",
+      "start_time": "2026-11-22 10:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/weekly-contest-529"
+    },
+    {
       "platform": "Codeforces",
       "name": "Codeforces Round (Div. 1)",
       "start_time": "2026-11-21 22:35:00",
@@ -84,6 +98,13 @@
       "start_time": "2026-11-20 19:00:00",
       "duration": "3小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/143407?from=acm_calendar"
+    },
+    {
+      "platform": "luogu",
+      "name": "[ICPC2026 Nanchang I] ICPC 2026 邀请赛南昌站重现赛",
+      "start_time": "2026-11-19 13:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/372198"
     },
     {
       "platform": "Codeforces",
@@ -150,7 +171,7 @@
     },
     {
       "platform": "NowCoder",
-      "name": "交互、通信新题型测试比赛",
+      "name": "牛客交互、通信新题型测试比赛",
       "start_time": "2026-11-10 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/143824?from=acm_calendar"
@@ -257,14 +278,14 @@
       "platform": "luogu",
       "name": "CSP-S 2026 自测（官方数据）",
       "start_time": "2026-10-31 19:00:00",
-      "duration": "239小时0分钟",
+      "duration": "311小时0分钟",
       "url": "https://www.luogu.com.cn/contest/369912"
     },
     {
       "platform": "luogu",
       "name": "CSP-J 2026 自测（官方数据）",
       "start_time": "2026-10-31 12:15:00",
-      "duration": "245小时45分钟",
+      "duration": "317小时45分钟",
       "url": "https://www.luogu.com.cn/contest/369911"
     },
     {
