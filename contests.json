@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-12 21:05:09",
+  "last_updated": "2026-11-13 04:59:59",
   "contests": [
     {
       "platform": "AtCoder",
@@ -129,7 +129,7 @@
     },
     {
       "platform": "Codeforces",
-      "name": "Codeforces Round (Div. 2)",
+      "name": "Codeforces Round 1135 (Div. 2)",
       "start_time": "2026-11-15 22:35:00",
       "duration": "2小时0分钟",
       "url": "https://codeforces.com/contest/2285"
@@ -175,13 +175,6 @@
       "start_time": "2026-11-13 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/143195?from=acm_calendar"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1134 (Div. 4)",
-      "start_time": "2026-11-12 22:35:00",
-      "duration": "2小时15分钟",
-      "url": "https://codeforces.com/contest/2290"
     },
     {
       "platform": "luogu",
