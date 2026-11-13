@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-13 10:01:10",
+  "last_updated": "2026-11-13 17:51:40",
   "contests": [
     {
       "platform": "AtCoder",
@@ -72,6 +72,13 @@
       "url": "https://www.luogu.com.cn/contest/321119"
     },
     {
+      "platform": "NowCoder",
+      "name": "2026年广东工业大学揭阳校区新生赛（同步赛）",
+      "start_time": "2026-11-22 13:30:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/143633?from=acm_calendar"
+    },
+    {
       "platform": "LeetCode",
       "name": "Weekly Contest 529",
       "start_time": "2026-11-22 10:30:00",
@@ -140,6 +147,13 @@
       "start_time": "2026-11-15 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/143406?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "河南工大2026新生程序设计周赛第（二）场",
+      "start_time": "2026-11-15 19:00:00",
+      "duration": "3小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/144001?from=acm_calendar"
     },
     {
       "platform": "luogu",
@@ -308,13 +322,6 @@
       "start_time": "2026-10-30 14:00:00",
       "duration": "3小时0分钟",
       "url": "https://www.luogu.com.cn/contest/369513"
-    },
-    {
-      "platform": "luogu",
-      "name": "[ICPC2019 Nanchang R] ICPC 2019 区域赛南昌站重现赛",
-      "start_time": "2026-10-29 13:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/366008"
     }
   ]
 }
