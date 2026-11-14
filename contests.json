@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-14 22:24:11",
+  "last_updated": "2026-11-15 03:23:27",
   "contests": [
     {
       "platform": "AtCoder",
@@ -63,6 +63,13 @@
       "start_time": "2026-11-22 20:00:00",
       "duration": "2小时30分钟",
       "url": "https://atcoder.jp/contests/arc234"
+    },
+    {
+      "platform": "Codeforces",
+      "name": "Codeforces Round (Div. 2)",
+      "start_time": "2026-11-22 17:05:00",
+      "duration": "2小时0分钟",
+      "url": "https://codeforces.com/contest/2289"
     },
     {
       "platform": "NowCoder",
