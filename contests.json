@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-16 10:56:33",
+  "last_updated": "2026-11-16 19:55:11",
   "contests": [
     {
       "platform": "AtCoder",
@@ -14,6 +14,13 @@
       "start_time": "2026-12-05 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc487"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客周赛 Round 172",
+      "start_time": "2026-11-29 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/144191?from=acm_calendar"
     },
     {
       "platform": "AtCoder",
@@ -63,6 +70,13 @@
       "start_time": "2026-11-22 20:00:00",
       "duration": "2小时30分钟",
       "url": "https://atcoder.jp/contests/arc234"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "牛客周赛 Round 171",
+      "start_time": "2026-11-22 19:00:00",
+      "duration": "2小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/144189?from=acm_calendar"
     },
     {
       "platform": "Codeforces",
@@ -280,20 +294,6 @@
       "start_time": "2026-11-06 19:00:00",
       "duration": "2小时30分钟",
       "url": "https://ac.nowcoder.com/acm/contest/142560?from=acm_calendar"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客周赛 Round 168",
-      "start_time": "2026-11-01 19:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/142559?from=acm_calendar"
-    },
-    {
-      "platform": "luogu",
-      "name": "2026 年 CaMeL AI 杯上海市临港五校程序设计邀请赛（重现赛）",
-      "start_time": "2026-11-01 13:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/367488"
     }
   ]
 }
