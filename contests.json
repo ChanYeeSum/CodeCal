@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-16 07:03:12",
+  "last_updated": "2026-11-16 10:56:33",
   "contests": [
     {
       "platform": "AtCoder",
@@ -294,20 +294,6 @@
       "start_time": "2026-11-01 13:00:00",
       "duration": "4小时0分钟",
       "url": "https://www.luogu.com.cn/contest/367488"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 526",
-      "start_time": "2026-11-01 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-526"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "华南理工大学ACM程序设计竞赛（秋季赛）第一场",
-      "start_time": "2026-11-01 10:15:00",
-      "duration": "5小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/143041?from=acm_calendar"
     }
   ]
 }
