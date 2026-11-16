@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-16 19:55:11",
+  "last_updated": "2026-11-17 06:25:47",
   "contests": [
     {
       "platform": "AtCoder",
@@ -14,6 +14,13 @@
       "start_time": "2026-12-05 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc487"
+    },
+    {
+      "platform": "Codeforces",
+      "name": "Kotlin Heroes: Practice 15",
+      "start_time": "2026-12-01 22:30:00",
+      "duration": "168小时0分钟",
+      "url": "https://codeforces.com/contest/2286"
     },
     {
       "platform": "NowCoder",
