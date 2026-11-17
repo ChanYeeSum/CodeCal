@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-17 12:42:06",
+  "last_updated": "2026-11-17 22:46:21",
   "contests": [
     {
       "platform": "AtCoder",
@@ -161,6 +161,13 @@
       "start_time": "2026-11-21 14:00:00",
       "duration": "5小时0分钟",
       "url": "https://www.luogu.com.cn/contest/365827"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2026年广州大学程序设计竞赛新生赛（同步赛）",
+      "start_time": "2026-11-21 13:30:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/144178?from=acm_calendar"
     },
     {
       "platform": "NowCoder",
