@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-19 21:43:55",
+  "last_updated": "2026-11-20 06:21:45",
   "contests": [
     {
       "platform": "AtCoder",
@@ -72,20 +72,6 @@
       "url": "https://ac.nowcoder.com/acm/contest/143482?from=acm_calendar"
     },
     {
-      "platform": "luogu",
-      "name": "【LGR-323-Div.4】洛谷入门赛 #54",
-      "start_time": "2026-11-27 19:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/373991"
-    },
-    {
-      "platform": "luogu",
-      "name": "[CCPC 2026 长春站] CCPC 2026 长春站重现赛",
-      "start_time": "2026-11-26 13:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/372200"
-    },
-    {
       "platform": "NowCoder",
       "name": "北京信息科技大学第十八届程序设计竞赛（校外同步赛）",
       "start_time": "2026-11-25 13:00:00",
@@ -119,13 +105,6 @@
       "start_time": "2026-11-22 14:30:00",
       "duration": "4小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/142288?from=acm_calendar"
-    },
-    {
-      "platform": "luogu",
-      "name": "[CPOI] Round 1",
-      "start_time": "2026-11-22 14:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/321119"
     },
     {
       "platform": "NowCoder",
@@ -177,13 +156,6 @@
       "url": "https://atcoder.jp/contests/abc485"
     },
     {
-      "platform": "luogu",
-      "name": "【LGR-317-Div.2】洛谷 11 月月赛 II & P.A.TASKS S1",
-      "start_time": "2026-11-21 14:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/365827"
-    },
-    {
       "platform": "NowCoder",
       "name": "2026年广州大学程序设计竞赛新生赛（同步赛）",
       "start_time": "2026-11-21 13:30:00",
@@ -196,13 +168,6 @@
       "start_time": "2026-11-20 19:00:00",
       "duration": "3小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/143407?from=acm_calendar"
-    },
-    {
-      "platform": "luogu",
-      "name": "[ICPC2026 Nanchang I] ICPC 2026 邀请赛南昌站重现赛",
-      "start_time": "2026-11-19 13:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/372198"
     },
     {
       "platform": "NowCoder",
@@ -219,13 +184,6 @@
       "url": "https://ac.nowcoder.com/acm/contest/144001?from=acm_calendar"
     },
     {
-      "platform": "luogu",
-      "name": "【LGR-315-Div.3】洛谷基础赛 #42 & IXOI Round 4",
-      "start_time": "2026-11-15 14:00:00",
-      "duration": "3小时30分钟",
-      "url": "https://www.luogu.com.cn/contest/311136"
-    },
-    {
       "platform": "LeetCode",
       "name": "Weekly Contest 528",
       "start_time": "2026-11-15 10:30:00",
@@ -240,25 +198,11 @@
       "url": "https://atcoder.jp/contests/abc484"
     },
     {
-      "platform": "luogu",
-      "name": "【LGR-314】洛谷 NOIP 2026 模拟赛",
-      "start_time": "2026-11-14 08:30:00",
-      "duration": "4小时30分钟",
-      "url": "https://www.luogu.com.cn/contest/370700"
-    },
-    {
       "platform": "NowCoder",
       "name": "牛客小白月赛140",
       "start_time": "2026-11-13 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/143195?from=acm_calendar"
-    },
-    {
-      "platform": "luogu",
-      "name": "[FJCPC 2026] 2026 年福建省大学生程序设计竞赛重现赛",
-      "start_time": "2026-11-12 13:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/371093"
     },
     {
       "platform": "NowCoder",
@@ -303,13 +247,6 @@
       "url": "https://ac.nowcoder.com/acm/contest/143669?from=acm_calendar"
     },
     {
-      "platform": "luogu",
-      "name": "「GLR R5」GLR Autumn Round",
-      "start_time": "2026-11-08 08:00:00",
-      "duration": "10小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/358449"
-    },
-    {
       "platform": "LeetCode",
       "name": "Biweekly Contest 195",
       "start_time": "2026-11-07 22:30:00",
@@ -322,13 +259,6 @@
       "start_time": "2026-11-07 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc483"
-    },
-    {
-      "platform": "luogu",
-      "name": "【LGR-313-Div.2】洛谷 11 月月赛 I &『LBA-OI』Round 6",
-      "start_time": "2026-11-07 14:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/329950"
     },
     {
       "platform": "NowCoder",
