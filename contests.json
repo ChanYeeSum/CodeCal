@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-11-20 11:39:12",
+  "last_updated": "2026-11-20 21:26:56",
   "contests": [
+    {
+      "platform": "AtCoder",
+      "name": "UNIQUE VISION Programming Contest 2026 (ChristmasAtCoder Beginner Contest 489)",
+      "start_time": "2026-12-20 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc489"
+    },
     {
       "platform": "AtCoder",
       "name": "AtCoder Grand Contest 080",
@@ -114,6 +121,13 @@
       "url": "https://ac.nowcoder.com/acm/contest/144189?from=acm_calendar"
     },
     {
+      "platform": "NowCoder",
+      "name": "河南工大2026新生程序设计周赛第（三）场",
+      "start_time": "2026-11-22 19:00:00",
+      "duration": "3小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/144492?from=acm_calendar"
+    },
+    {
       "platform": "Codeforces",
       "name": "Codeforces Round 1137 (Div. 2)",
       "start_time": "2026-11-22 17:05:00",
@@ -161,6 +175,13 @@
       "start_time": "2026-11-22 10:00:00",
       "duration": "3小时30分钟",
       "url": "https://ac.nowcoder.com/acm/contest/144393?from=acm_calendar"
+    },
+    {
+      "platform": "luogu",
+      "name": "LXQ OI Round 2 && 胡桃杯 Round 1",
+      "start_time": "2026-11-22 08:00:00",
+      "duration": "4小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/372048"
     },
     {
       "platform": "Codeforces",
