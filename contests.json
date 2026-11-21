@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-21 10:42:44",
+  "last_updated": "2026-11-21 19:35:24",
   "contests": [
     {
       "platform": "AtCoder",
@@ -21,6 +21,13 @@
       "start_time": "2026-12-12 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc488"
+    },
+    {
+      "platform": "luogu",
+      "name": "【LGR-320-Div.3】洛谷基础赛 #43 & Kobe OI Round Ⅰ",
+      "start_time": "2026-12-06 14:00:00",
+      "duration": "3小时30分钟",
+      "url": "https://www.luogu.com.cn/contest/368856"
     },
     {
       "platform": "LeetCode",
@@ -178,7 +185,7 @@
     },
     {
       "platform": "NowCoder",
-      "name": "DNUI &amp; DUE高校算法友赛",
+      "name": "DNUI &amp; DUE高校算法友谊赛",
       "start_time": "2026-11-22 10:00:00",
       "duration": "3小时30分钟",
       "url": "https://ac.nowcoder.com/acm/contest/144393?from=acm_calendar"
@@ -371,13 +378,6 @@
       "start_time": "2026-11-07 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://www.luogu.com.cn/contest/329950"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客练习赛159",
-      "start_time": "2026-11-06 19:00:00",
-      "duration": "2小时30分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/142560?from=acm_calendar"
     }
   ]
 }
