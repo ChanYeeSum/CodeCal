@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-22 16:33:45",
+  "last_updated": "2026-11-23 01:17:17",
   "contests": [
     {
       "platform": "AtCoder",
@@ -121,13 +121,6 @@
       "url": "https://ac.nowcoder.com/acm/contest/142975?from=acm_calendar"
     },
     {
-      "platform": "AtCoder",
-      "name": "AtCoder Regular Contest++ 234",
-      "start_time": "2026-11-22 20:00:00",
-      "duration": "2小时30分钟",
-      "url": "https://atcoder.jp/contests/arc234"
-    },
-    {
       "platform": "NowCoder",
       "name": "牛客周赛 Round 171",
       "start_time": "2026-11-22 19:00:00",
@@ -140,13 +133,6 @@
       "start_time": "2026-11-22 19:00:00",
       "duration": "3小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/144492?from=acm_calendar"
-    },
-    {
-      "platform": "Codeforces",
-      "name": "Codeforces Round 1137 (Div. 2)",
-      "start_time": "2026-11-22 17:05:00",
-      "duration": "2小时0分钟",
-      "url": "https://codeforces.com/contest/2289"
     },
     {
       "platform": "NowCoder",
@@ -343,20 +329,6 @@
       "start_time": "2026-11-08 08:00:00",
       "duration": "10小时0分钟",
       "url": "https://www.luogu.com.cn/contest/358449"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Biweekly Contest 195",
-      "start_time": "2026-11-07 22:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/biweekly-contest-195"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "AtCoder Beginner Contest 483",
-      "start_time": "2026-11-07 20:00:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/abc483"
     }
   ]
 }
