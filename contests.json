@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-22 08:34:40",
+  "last_updated": "2026-11-22 16:33:45",
   "contests": [
     {
       "platform": "AtCoder",
@@ -186,7 +186,7 @@
     {
       "platform": "NowCoder",
       "name": "DNUI &amp; DUE高校算法友谊赛",
-      "start_time": "2026-11-22 10:00:00",
+      "start_time": "2026-11-22 10:05:00",
       "duration": "3小时30分钟",
       "url": "https://ac.nowcoder.com/acm/contest/144393?from=acm_calendar"
     },
@@ -203,6 +203,13 @@
       "start_time": "2026-11-21 22:30:00",
       "duration": "1小时30分钟",
       "url": "https://leetcode.com/contest/biweekly-contest-196"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "AtCoder Beginner Contest 485",
+      "start_time": "2026-11-21 20:00:00",
+      "duration": "1小时40分钟",
+      "url": "https://atcoder.jp/contests/abc485"
     },
     {
       "platform": "luogu",
@@ -350,13 +357,6 @@
       "start_time": "2026-11-07 20:00:00",
       "duration": "1小时40分钟",
       "url": "https://atcoder.jp/contests/abc483"
-    },
-    {
-      "platform": "luogu",
-      "name": "【LGR-313-Div.2】洛谷 11 月月赛 I &『LBA-OI』Round 6",
-      "start_time": "2026-11-07 14:00:00",
-      "duration": "4小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/329950"
     }
   ]
 }
