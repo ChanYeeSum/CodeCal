@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-23 06:41:14",
+  "last_updated": "2026-11-23 11:54:01",
   "contests": [
     {
       "platform": "AtCoder",
@@ -119,6 +119,13 @@
       "start_time": "2026-11-25 13:00:00",
       "duration": "4小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/142975?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "AtCoder Regular Contest++ 234",
+      "start_time": "2026-11-22 20:00:00",
+      "duration": "2小时30分钟",
+      "url": "https://atcoder.jp/contests/arc234"
     },
     {
       "platform": "NowCoder",
@@ -308,27 +315,6 @@
       "start_time": "2026-11-08 14:00:00",
       "duration": "4小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/143085?from=acm_calendar"
-    },
-    {
-      "platform": "LeetCode",
-      "name": "Weekly Contest 527",
-      "start_time": "2026-11-08 10:30:00",
-      "duration": "1小时30分钟",
-      "url": "https://leetcode.com/contest/weekly-contest-527"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "华南理工大学ACM程序设计竞赛（秋季赛）第二场",
-      "start_time": "2026-11-08 10:15:00",
-      "duration": "5小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/143669?from=acm_calendar"
-    },
-    {
-      "platform": "luogu",
-      "name": "「GLR R5」GLR Autumn Round",
-      "start_time": "2026-11-08 08:00:00",
-      "duration": "10小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/358449"
     }
   ]
 }
