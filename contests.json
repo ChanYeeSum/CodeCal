@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-24 10:28:12",
+  "last_updated": "2026-11-24 20:51:32",
   "contests": [
     {
       "platform": "AtCoder",
@@ -105,6 +105,13 @@
       "start_time": "2026-11-28 13:00:00",
       "duration": "4小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/144200?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2026盐城工学院程序设计竞赛（同步赛）",
+      "start_time": "2026-11-28 10:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/144267?from=acm_calendar"
     },
     {
       "platform": "Codeforces",
