@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-26 09:54:09",
+  "last_updated": "2026-11-26 19:19:45",
   "contests": [
     {
       "platform": "AtCoder",
@@ -45,6 +45,13 @@
     },
     {
       "platform": "LeetCode",
+      "name": "Weekly Contest 531",
+      "start_time": "2026-12-06 10:30:00",
+      "duration": "1小时30分钟",
+      "url": "https://leetcode.com/contest/weekly-contest-531"
+    },
+    {
+      "platform": "LeetCode",
       "name": "Biweekly Contest 197",
       "start_time": "2026-12-05 22:30:00",
       "duration": "1小时30分钟",
@@ -84,6 +91,13 @@
       "start_time": "2026-11-29 13:30:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/143460?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2026年CCPC新疆维吾尔自治区大学生程序设计竞赛",
+      "start_time": "2026-11-29 12:00:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/142934?from=acm_calendar"
     },
     {
       "platform": "LeetCode",
@@ -133,6 +147,13 @@
       "start_time": "2026-11-27 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://www.luogu.com.cn/contest/373991"
+    },
+    {
+      "platform": "luogu",
+      "name": "COCI 2026/2027 #2 Unofficial Mirror",
+      "start_time": "2026-11-27 14:00:00",
+      "duration": "3小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/375975"
     },
     {
       "platform": "luogu",
