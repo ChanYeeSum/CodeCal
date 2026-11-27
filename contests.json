@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-11-27 11:05:20",
+  "last_updated": "2026-11-27 20:57:40",
   "contests": [
+    {
+      "platform": "AtCoder",
+      "name": "AtCoder Grand Contest 081",
+      "start_time": "2026-12-27 20:00:00",
+      "duration": "3小时0分钟",
+      "url": "https://atcoder.jp/contests/agc081"
+    },
     {
       "platform": "AtCoder",
       "name": "UNIQUE VISION Programming Contest 2026 (ChristmasAtCoder Beginner Contest 489)",
@@ -91,6 +98,13 @@
       "start_time": "2026-11-29 13:30:00",
       "duration": "5小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/143460?from=acm_calendar"
+    },
+    {
+      "platform": "NowCoder",
+      "name": "2026河南大学ACM程序设计新生赛（校外同步赛）",
+      "start_time": "2026-11-29 13:30:00",
+      "duration": "5小时0分钟",
+      "url": "https://ac.nowcoder.com/acm/contest/144937?from=acm_calendar"
     },
     {
       "platform": "NowCoder",
@@ -329,13 +343,6 @@
       "start_time": "2026-11-13 19:00:00",
       "duration": "2小时0分钟",
       "url": "https://ac.nowcoder.com/acm/contest/143195?from=acm_calendar"
-    },
-    {
-      "platform": "luogu",
-      "name": "[FJCPC 2026] 2026 年福建省大学生程序设计竞赛重现赛",
-      "start_time": "2026-11-12 13:00:00",
-      "duration": "5小时0分钟",
-      "url": "https://www.luogu.com.cn/contest/371093"
     }
   ]
 }
