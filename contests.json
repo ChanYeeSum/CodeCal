@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-28 12:05:22",
+  "last_updated": "2026-11-28 21:26:54",
   "contests": [
     {
       "platform": "AtCoder",
@@ -21,6 +21,13 @@
       "start_time": "2026-12-13 20:00:00",
       "duration": "3小时0分钟",
       "url": "https://atcoder.jp/contests/agc080"
+    },
+    {
+      "platform": "luogu",
+      "name": "第二届“⌬杯”蓝桥杯省赛模拟赛",
+      "start_time": "2026-12-13 14:00:00",
+      "duration": "4小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/372249"
     },
     {
       "platform": "AtCoder",
@@ -128,11 +135,11 @@
       "url": "https://leetcode.com/contest/weekly-contest-530"
     },
     {
-      "platform": "AtCoder",
-      "name": "AtCoder Beginner Contest 486",
-      "start_time": "2026-11-28 20:00:00",
-      "duration": "1小时40分钟",
-      "url": "https://atcoder.jp/contests/abc486"
+      "platform": "luogu",
+      "name": "NOIP 2026 自测（民间数据）",
+      "start_time": "2026-11-28 13:30:00",
+      "duration": "168小时0分钟",
+      "url": "https://www.luogu.com.cn/contest/376524"
     },
     {
       "platform": "NowCoder",
@@ -336,13 +343,6 @@
       "start_time": "2026-11-14 08:30:00",
       "duration": "4小时30分钟",
       "url": "https://www.luogu.com.cn/contest/370700"
-    },
-    {
-      "platform": "NowCoder",
-      "name": "牛客小白月赛140",
-      "start_time": "2026-11-13 19:00:00",
-      "duration": "2小时0分钟",
-      "url": "https://ac.nowcoder.com/acm/contest/143195?from=acm_calendar"
     }
   ]
 }
